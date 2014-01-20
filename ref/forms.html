@@ -11,7 +11,7 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 	<link rel="stylesheet" type="text/css" href="../resources/style/css/main.css" />
-	
+
 	<script type="text/javascript" src="../resources/js/vendor/html5shiv.js"></script>
 	<script type="text/javascript" src="../resources/js/vendor/modernizr-2.6.2.min.js"></script>
     <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
@@ -37,50 +37,65 @@
 				<a href="#">Help</a>
 			</nav>
 		</aside>
-		
+
 <section>
 	<header>
 		<ul class="menu">
+			<!-- Start Changes -->
+			<!-- We should be styling text to be uppercase in the css isntead of in the HTML. -->
 			<li class="main-nav"><a>MENU</a></li>
 			<li class="mid-nav"><a>SOLESTRUCK</a></li>
 			<li class="rt-nav"><a>CART</a></li>
+			<!-- End Changes -->
 		</ul>
 	</header>
-	
+
 	<article class="header-subnav">
-		
+
+		<!-- Start Changes -->
+
+		<!-- The menu tag is not supported in any browser. Please update to the nav tag. -->
+		<!-- Change "Typograph" to "Typography" -->
+		<!-- Each link should go to the individual module page like we talked about. -->
+		<!-- Even though we are using upper case in the css like we should, we should still try to format the text correctly. Each word should be capitalized. -->
+		<!-- Please look into including the / with a css style. I believe this can be done using the content property in css. -->
 		<menu>
 			<a>Typograph</a> /
 			<a>colors</a>	/
-			<a>media</a>	/				
+			<a>media</a>	/
 			<a>buttons</a>  /
-			<a href="" class="active">forms</a>	/									
+			<a href="" class="active">forms</a>	/
 			<a>tables</a>   /
-			<a>navigation</a>  /										
-			<a>other</a>					
+			<a>navigation</a>  /
+			<a>other</a>
 		</menu>
-	
+		<!-- End Changes -->
 	</article>
+
 	<article class="mid-content-holder">
-	
+
+			<!-- Start Changes -->
+
+			<!-- I don't think that we should be using br tags for postional spacing. We can do a set of styles that is specifically for displaying the modules. So everything has style without positioning then we include a modules.scss with things like padding for the bottom of buttons and the h2 with a border on the bottom, etc. -->
+
 			<h2>Buttons - Default Button</h2>
+
 			<button>DEFAULT BUTTON</button>
 			<br/>
 			<br/>
-			
-			<h2>Buttons - Button Sizes</h2>	
-			<button class="lr-btn">LARGE BUTTON</button> 
+			<h2>Buttons - Button Sizes</h2>
+			<button class="lr-btn">LARGE BUTTON</button>
 			<br/><br/>
 			<button>DEFAULT BUTTON</button>
 			<br/><br/>
 			<button class="sm-btn">Smal BUTTON</button>
 			<br/><br/>
-			<button class="cancel-btn">Cancel</button>	
+			<button class="cancel-btn">Cancel</button>
 			<br/><br/>
-			
+
 			<h2>BUTTONS - block level buttons</h2>
-			<button class="fl-btn">Full Button</button>			
-			
+			<button class="fl-btn">Full Button</button>
+
 		<!--	 <div class="dropdown">
 			     <select name="data[select]" class="cform">
 			     <option value="">Please Select</option>
@@ -96,14 +111,24 @@
 			     <option value="10">Option 10</option>
 			     </select>
 			</div> -->
-			
+
 		<br/>
 		<br/>
-		
+
+		<!-- End Changes -->
+
+		<!-- Start Changes -->
+
+		<!-- Again, the h2 should be formatted correctly. Capatialized, and styled through css. It should read good if the css were turned off. -->
+
+		<!-- In the browser, the drop downs, in the middle where they are touching eachother, there are double borders, this needs to be addressed so it looks like one line seperating them. It could be that if they are in a wrapper with a certain class applied it removes the border on one side and adds it back on the last child or something like that. -->
+
+		<!-- We should show 1 or 2 more options in the dropdown view. -->
+
 		<h2>forms - drop down</h2>
-			
+
 		<ul class="dropdown-holder">
-			<li>	
+			<li>
 				<div class="selectBox">
 				    <span class='selected'></span><code class='selectArrow'></code>
 				    <div class="selectOptions">
@@ -116,7 +141,7 @@
 				    </div>
 				</div>
 			</li>
-			<li>	
+			<li>
 				<div class='selectBox'>
 				    <span class='selected'></span>
 				    <code class='selectArrow'></code>
@@ -142,20 +167,26 @@
 				            <li class="selectOption" value="Option 3"><img src="../resources/images/Pierre_Green.png" width="30px" class="fl_selectimg" />OPTION 3</li>
 				        </ul>
 				    </div>
-				</div>	
+				</div>
 			</li>
 		</ul>
+
 		<br/>
 		<br/>
-		
-		
+
+		<!-- End Changes -->
+
+		<!-- Start Changes -->
+
+		<!-- Again, the h2 should be formatted correctly. Capatialized, and styled through css. It should read good if the css were turned off. -->
+
 		<h2>forms - stacked drop down</h2>
 		<form>
 			<ul class="stacked-li">
 				<li>
 				 <input type="radio" name="data[radio]" value="option1" id="option1" class="cform">
 				 <label for="option1" class="lblr">Radio option 1</label>
-			 	</li>	
+			 	</li>
 			 	<li>
 				 <input type="radio" name="data[radio]" value="option2" id="option2" class="cform">
 				 <label for="option2" class="lblr">Radio option 2</label>
@@ -171,9 +202,18 @@
 		 	</ul>
 		</form>
 		<div style="clear:both;"></div>
-		
+
+		<!-- End Changes -->
+
+		<!-- Start Changes -->
+
+		<!-- Again, the h2 should be formatted correctly. Capatialized, and styled through css. It should read good if the css were turned off. -->
+
+		<!-- The cursor in the form field is not centered. I think it's from the line height. We should be using padding here instead so the cursor is centered within the field. -->
+
+
 		<h2>forms - stacked Form</h2>
-		
+
 		<form>
 			<ul class="form-field-holder">
 				<li>
@@ -186,12 +226,20 @@
 				</li>
 				<li>
 					<button>SEND</button>
-				</li>	
+				</li>
 			</ul>
 		</form>
-		
+
+		<!-- End Changes -->
+
+		<!-- Start Changes -->
+
+		<!-- Again, the h2 should be formatted correctly. Capatialized, and styled through css. It should read good if the css were turned off. -->
+
+		<!-- The cursor in the form field is not centered. I think it's from the line height. We should be using padding here instead so the cursor is centered within the field. -->
+
 		<h2>forms - Error</h2>
-		
+
 		<form>
 			<ul class="form-field-holder">
 				<li>
@@ -206,12 +254,14 @@
 				</li>
 				<li>
 					<button>SEND</button>
-				</li>	
+				</li>
 			</ul>
 		</form>
-		
+
+		<!-- End Changes -->
+
 		<h2>forms - in active</h2>
-		
+
 		<form>
 			<ul class="form-field-holder inline-li">
 				<li>
@@ -225,7 +275,7 @@
 				<li>
 					<label>&nbsp;</label>
 					<button>SEND</button>
-				</li>	
+				</li>
 			</ul>
 		</form>
 
@@ -245,6 +295,6 @@
 <script type="text/javascript" src="../resources/js/actions.js"></script>
 
 <script type="text/javascript" src="../resources/js/dropdown.js"></script>
-	
+
 </body>
 </html>

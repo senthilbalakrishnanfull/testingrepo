@@ -1,22 +1,31 @@
 button {
 	padding:22px 30px;
-	font-size:20px;
 	border:0px;
 	margin:10px;
 	background:$black;
+	// Start Changes
+	// All font sizes,line heights, style should be in a typography file, not mixed throughout.
 	color:$white;
+	font-size:20px;
 	text-transform:uppercase;
-	
+	// End Changes
+
 	&.lr-btn{
+		// Start Changes
+		// All font sizes,line heights, style should be in a typography file, not mixed throughout.
 		font-size:30px;
+		// End Changes
 	}
 	&.sm-btn {
+		// Start Changes
+		// All font sizes,line heights, style should be in a typography file, not mixed throughout.
 		font-size:16px;
+		// End Changes
 		padding:18px;
 	}
 	&.fl-btn{
 		width:99%;
-		padding:30px 0px;		
+		padding:30px 0px;
 	}
 	&:hover{
 		background:$red;
@@ -26,9 +35,12 @@ button {
 		background:none;
 		&:hover {
 			background:none;
+			// Start Changes
+			// All font sizes,line heights, style should be in a typography file, not mixed throughout.
 			color:$gray;
+			// End Changes
 		}
 	}
-	
+
 }
 

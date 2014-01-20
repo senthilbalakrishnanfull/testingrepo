@@ -5,7 +5,8 @@ ul {
 		padding:0px;
 		list-style-type:none;
 		@include outer-container;
-		
+
+		// Start Changes
 		li {
 			margin-bottom:1.66666%;
 			a {
@@ -14,17 +15,21 @@ ul {
 			@include media($twig) {
 				@include span-columns(4);
 				@include omega(3n);
+				// All font sizes,line heights, style should be in a typography file, not mixed throughout.
 				body { font-size: 150%; }
 			}
 			@include media($leaf) {
 				@include span-columns(6);
 				@include omega(2n);
+				// All font sizes,line heights, style should be in a typography file, not mixed throughout.
 				body { font-size: 125%; }
 			}
 			@include media($seed) {
 				@include span-columns(12);
+				// All font sizes,line heights, style should be in a typography file, not mixed throughout.
 				body { font-size: 99%; }
 			}
 		}
+		// End Changes
 	}
 }

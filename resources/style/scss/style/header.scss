@@ -1,5 +1,4 @@
 section {
-
 	&.push-none{
 		left:0px;
 		right:0px;
@@ -11,7 +10,12 @@ section {
 		left:-300px;
 	}
 	header {
+		// Start Changes
+		// We should be using the fill-parent function in neat for elements that are 100%
+		// http://neat.bourbon.io/docs/#fill-parent
 		width:100%;
+		// End Changes
+
 		overflow:auto;
 		.menu {
 			margin:0px;		padding:0px;
@@ -21,23 +25,27 @@ section {
 				a {
 					text-align:left;
 					padding:5px;
-					cursor:pointer;	
+					cursor:pointer;
 				   }
 				&.rt-nav{
 					text-align:right;
 				}
-				
+
 				&.mid-nav {
 					@include span-columns(8);
 					text-align:center;
-					font-size:2.188em;				
-				}
 
-			}	
+					// Start Changes
+					// All font sizes,line heights, style should be in a typography file, not mixed throughout.
+					font-size:2.188em;
+					// End Changes
+
+				}
+			}
 		}
 	}
 	article {
-		
+
 		&.header-subnav{
 			background:$black;
 			color:$white;
@@ -47,19 +55,29 @@ section {
 				width:47%;
 				text-align:center;
  				margin:30px auto;
+				// Start Changes
+				// All font sizes,line heights, style should be in a typography file, not mixed throughout.
 				text-transform:uppercase;
 				font-weight:bold;
-				font-size: $base-font-size;				
+				font-size: $base-font-size;
 				line-height:36px;
-				a {
+				// End Changes
 
+				a {
+					// Start Changes
+					// All font sizes,line heights, style should be in a typography file, not mixed throughout.
 					color:$white;
+					// End Changes
+
 				&.active {
+					// Start Changes
+					// All font sizes,line heights, style should be in a typography file, not mixed throughout.
 					color:$red;
-					}	
+					// End Changes
+
+					}
 				}
-			} 
-		
+			}
 		}
 	}
 }

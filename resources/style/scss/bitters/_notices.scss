@@ -5,18 +5,20 @@ div {
 		color:$red;
 		padding:25px 20px;
 		margin:20px 40px;
+		// Start Changes
+		// All font sizes,line heights, style should be in a typography file, not mixed throughout.
 		text-transform:uppercase;
 		font-style:italic;
-		
+		// End Changes
 		h3 {
 			padding:0px 0px 8px;
-		} 
+		}
 		h4{
 			margin:0px;
 			padding:0px 0px 3px;
 		}
 	}
-	
+
 	&.success {
 		background:$light-green;
 		border:2px solid $green;

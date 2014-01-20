@@ -3,7 +3,7 @@ body {
 	#bodyWrapper {
 		position:relative;
 		overflow:hidden;
-		
+
 		section{
 			@include span-columns(12);
 			background:$white;
@@ -11,7 +11,7 @@ body {
 		}
 	}
 	@include media($twig) {
-		font-size: 110%; 
+		font-size: 110%;
 	}
 	@include media($leaf) {
 		font-size: 95%;
@@ -19,18 +19,23 @@ body {
 	@include media($seed) {
 		font-size: 75%;
 	}
+
+	// Start Changes
+	// There is a bourbon clearfix already that we should be using
 	.clearAll {clear:both;}
+	// End Changes
+
 	section {
 		article {
-			margin:0px;	
+			margin:0px;
 			padding:0px;
-			
+
 			&.mid-content-holder {
 				clear:both;
 				margin:0px auto !important;
-				
+
 				@include media($twig) {
-					width:800px; 
+					width:800px;
 				}
 				@include media($leaf) {
 					width:600px;
@@ -38,9 +43,9 @@ body {
 				@include media($seed) {
 					width:340px;
 				}
-				
-			}	
+
+			}
 		}
 	}
-			
+
 }
