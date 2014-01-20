@@ -1,0 +1,20 @@
+body #bodyWrapper section article ul.img-rack li {
+	 
+	 @include media(1024px) {
+		@include span-columns(4);
+		@include omega(3n);
+	}
+}
+body #bodyWrapper section article ul.img-rack li {
+	 
+	@include media(min-width 480px max-width 1024px) {
+		@include span-columns(6);
+		@include omega(2n);
+	}
+}
+body #bodyWrapper section article ul.img-rack li {
+	 
+	 @include media(min-width 320px max-width 480px) {
+		@include span-columns(12);
+	}
+}

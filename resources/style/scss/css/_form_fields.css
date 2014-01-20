@@ -1,0 +1,149 @@
+label {
+  display: inline;
+  margin-bottom: 10px; }
+
+.normal-form {
+  margin-top: 40px; }
+  .normal-form label {
+    display: inline;
+    margin: 0; }
+
+label.lblr {
+  float: left;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 33px;
+  text-transform: uppercase;
+  width: 214px; }
+
+.custom-form-select {
+  background: url(../../images/form_image.png) no-repeat scroll right -196px transparent;
+  color: #000000;
+  overflow: hidden;
+  padding: 32px 24px 26px 15px;
+  position: absolute;
+  width: 210px;
+  font: bold 12px / 35px Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  border: 3px solid #000000;
+  line-height: 0px;
+  text-transform: uppercase; }
+
+select option {
+  padding: 5px;
+  font-size: 13px;
+  text-transform: uppercase; }
+
+.custom-form-focused {
+  background-position: right -196px; }
+
+.custom-form-checkbox {
+  float: left;
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background: url(../../images/form_image.png) no-repeat scroll 0px 0px transparent; }
+  .custom-form-checkbox.custom-form-focused {
+    background-position: 0px 0px; }
+  .custom-form-checkbox.custom-form-checked {
+    background-position: 0px -46px; }
+    .custom-form-checkbox.custom-form-checked.custom-form-focused {
+      background-position: 0px -46px; }
+
+.custom-form-radio {
+  background: url(../../images/form_image.png) no-repeat scroll 0 -90px transparent;
+  display: block;
+  float: left;
+  height: 30px;
+  margin-right: 10px;
+  width: 30px; }
+  .custom-form-radio.custom-form-focused {
+    background-position: 0px -90px; }
+  .custom-form-radio.custom-form-checked {
+    background-position: 0px -136px; }
+    .custom-form-radio.custom-form-checked.custom-form-focused {
+      background-position: 0px -136px; }
+
+/* custom-dropdown */
+div.selectBox {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  line-height: 30px;
+  clear: both;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  border: 3px solid #000000;
+  width: 270px;
+  font-size: 14px;
+  font-weight: bold; }
+
+span.selected {
+  width: 210px;
+  border-right: none;
+  overflow: hidden;
+  padding: 15px 0px 15px 20px;
+  height: 60px;
+  line-height: 35px; }
+
+code.selectArrow {
+  background: url(../../images/form_image.png) no-repeat scroll 5px -195px;
+  border-width: 3px 3px 3px 0;
+  font-size: 20px;
+  padding: 30px 27px;
+  text-align: center;
+  *padding-top: 6px;
+  position: relative;
+  float: left;
+  z-index: 1; }
+
+span.selected {
+  position: relative;
+  float: left;
+  z-index: 1; }
+
+div.selectOptions {
+  position: absolute;
+  top: 60px;
+  left: -3px;
+  width: 270px;
+  border: 3px solid #000000;
+  overflow-y: scroll;
+  padding-top: 2px;
+  display: none;
+  height: 130px;
+  background-color: #ffffff;
+  z-index: 9; }
+
+.fl_selectimg {
+  float: left;
+  padding: 5px 5px 0px 0px; }
+
+.selectOptions ul {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0px; }
+  .selectOptions ul li {
+    padding: 5px 0px 5px 20px;
+    height: 40px;
+    overflow: hidden;
+    line-height: 35px; }
+    .selectOptions ul li:hover {
+      background: #f5f5f5; }
+
+.selectBox_full {
+  width: 100% !important; }
+  .selectBox_full span.selected {
+    width: 100% !important; }
+  .selectBox_full code.selectArrow {
+    float: right !important;
+    margin-top: -60px !important; }
+  .selectBox_full div.selectOptions {
+    width: 100%; }
+
+/* fix select height bug on webkit browsers for Mac OS */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select.cform {
+    -webkit-appearance: menulist-button; } }

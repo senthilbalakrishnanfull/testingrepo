@@ -1,0 +1,225 @@
+
+label {
+	font-size: $base-font-size * 0.8; // 20 * 1 = 16px
+	text-transform: uppercase;
+	font-weight:bold;
+	font-style:italic;
+	display:block;
+	
+	&.lblr {
+	  float: left;
+	  display:inline-block;
+	  line-height: 33px;
+	  font-weight:normal;
+	  width: 214px;
+	}
+}
+input[type="text"], input[type="password"] {
+	border:2px solid $gray;
+	font-size: $base-font-size * 0.8; // 20 * 1 = 16px
+	padding-left:15px;
+	line-height:3.4em;
+	font-weight:bold;
+	margin:10px 0px 25px;
+
+	&.error-field {
+		border:2px solid $red;
+		background:$light-red;		
+	}
+	&:disabled {
+		background:$light-gray;
+		color:$dark-gray;
+	}
+	
+}
+p {
+	&.error-text {
+		font-size: $base-font-size * 0.50;
+		margin:0px;
+		padding:0px;
+		color:$red;
+		font-weight:bold;
+		font-style:italic;
+	}
+}
+
+.custom-form-select {
+  background: url(../../images/form_image.png) no-repeat scroll right -196px transparent;
+  color: #000000;
+  overflow: hidden;
+  padding: 32px 24px 26px 15px;
+  position: absolute;
+  width: 210px;
+  font: bold 12px / 35px Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  border: 3px solid #000000;
+  line-height: 0px;
+  text-transform: uppercase;
+}
+
+.custom-form-focused {
+  background-position: right -196px;
+}
+
+.custom-form-checkbox {
+  float: left;
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background: url(../../images/form_image.png) no-repeat scroll 0px 0px transparent;
+  &.custom-form-focused {
+    background-position: 0px 0px;
+  }
+  &.custom-form-checked {
+    background-position: 0px -46px;
+    &.custom-form-focused {
+      background-position: 0px -46px;
+    }
+  }
+}
+
+.custom-form-radio {
+  background: url(../../images/form_image.png) no-repeat scroll 0 -90px transparent;
+  display: block;
+  float: left;
+  height: 30px;
+  margin-right: 10px;
+  width: 30px;
+  &.custom-form-focused {
+    background-position: 0px -90px;
+  }
+  &.custom-form-checked {
+    background-position: 0px -136px;
+    &.custom-form-focused {
+      background-position: 0px -136px;
+    }
+  }
+}
+
+
+/* custom-dropdown */
+
+.dropdown-holder {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	@include outer-container;
+	>li {
+		@include media($twig) {
+			@include span-columns(4);
+			@include omega();
+			body { font-size: 150%; }
+		}
+		@include media($leaf) {
+			@include span-columns(4);
+			@include omega();
+			body { font-size: 125%; }
+		}
+		@include media($seed) {
+			@include span-columns(12);
+			body { font-size: 99%; }
+		}
+		
+	}
+}
+
+div.selectBox {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  line-height: 30px;
+  clear: both;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  border: 3px solid #000000;
+  font-size: 14px;
+  font-weight: bold;
+  width:100%;
+}
+
+span.selected {
+  width: 90%;
+  border-right: none;
+  overflow: hidden;
+  padding: 15px 0px 15px 20px;
+  height: 60px;
+  line-height: 35px;
+}
+
+code.selectArrow {
+  background: url(../../images/form_image.png) no-repeat scroll 5px -195px;
+  border-width: 3px 3px 3px 0;
+  font-size: 20px;
+  padding: 30px 27px;
+  text-align: center;
+  *padding-top: 6px;
+  position: absolute;
+  right:0px;
+  z-index: 1;
+}
+
+span.selected {
+  position: relative;
+  float: left;
+  z-index: 1;
+}
+
+div.selectOptions {
+  position: absolute;
+  top: 60px;
+  left: -3px;
+  width: 100%;
+  border: 3px solid $black;
+  overflow-y: scroll;
+  padding-top: 2px;
+  display: none;
+  height: 130px;
+  background-color: #ffffff;
+  z-index: 9;
+}
+
+
+
+.selectOptions ul {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0px;
+  li {
+  	clear:both;
+    padding: 5px 0px 5px 20px;
+    height: 40px;
+    overflow: hidden;
+    line-height: 35px;
+    &:hover {
+      background: #f5f5f5;
+      }
+      .fl_selectimg {
+        float: left;
+        padding: 5px 5px 0px 0px;
+      
+    }
+  }
+}
+/*
+.selectBox_full {
+  width: 100% !important;
+  span.selected {
+    width: 100% !important;
+  }
+  code.selectArrow {
+    float: right !important;
+    margin-top: -60px !important;
+  }
+  div.selectOptions {
+    width: 100%;
+  }
+}
+*/
+/* fix select height bug on webkit browsers for Mac OS */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select.cform {
+    -webkit-appearance: menulist-button;
+  }
+}

@@ -1,0 +1,26 @@
+div {
+	&.error, &.success {
+		background:$light-red;
+		border:2px solid $red;
+		color:$red;
+		padding:25px 20px;
+		margin:20px 40px;
+		text-transform:uppercase;
+		font-style:italic;
+		
+		h3 {
+			padding:0px 0px 8px;
+		} 
+		h4{
+			margin:0px;
+			padding:0px 0px 3px;
+		}
+	}
+	
+	&.success {
+		background:$light-green;
+		border:2px solid $green;
+		color:$green;
+		padding:15px 20px 5px;
+	}
+}

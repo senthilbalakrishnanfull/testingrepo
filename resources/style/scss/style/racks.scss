@@ -1,0 +1,30 @@
+ul {
+
+	&.img-rack {
+		margin:0px;
+		padding:0px;
+		list-style-type:none;
+		@include outer-container;
+		
+		li {
+			margin-bottom:1.66666%;
+			a {
+				@include fill-parent;
+			}
+			@include media($twig) {
+				@include span-columns(4);
+				@include omega(3n);
+				body { font-size: 150%; }
+			}
+			@include media($leaf) {
+				@include span-columns(6);
+				@include omega(2n);
+				body { font-size: 125%; }
+			}
+			@include media($seed) {
+				@include span-columns(12);
+				body { font-size: 99%; }
+			}
+		}
+	}
+}

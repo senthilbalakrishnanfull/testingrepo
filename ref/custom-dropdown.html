@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Solestruck</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+
+
+	
+	<style type="text/css">
+		
+		.cust-dropdown {
+		    border: 3px solid #000000;
+		    width: 250px;
+		    float:left;
+		    position: relative;
+		    top: 0px;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:14px;
+		}
+		.cust-dropdown a{
+			display: block;
+			padding:20px;
+		}
+		.cust-dropdown code{
+			background:url("http://commondatastorage.googleapis.com/images2.solestruck.com/SSv3-04jan-2014/images/form_image.png") no-repeat scroll 5px -195px;
+			float: right;
+			margin: -20px -26px 0 0;
+			padding: 30px;
+		}
+		.dropdown-menu {
+		    border: 3px solid #000000;
+		    display: none;
+		    float: left;
+		    font-size: 14px;
+		    left: 0;
+		    list-style: none outside none;
+		    margin: 0 0 0 -3px;
+		    width: 100%;
+		    min-width: 160px;
+		    padding: 0;
+		    position: absolute;
+		    top: 100%;
+		    z-index: 1000;
+		}
+		.dropdown-menu > li {
+		    clear: both;
+		    color: #333333;
+		    display: block;
+		    font-weight: normal;
+		    line-height: 40px;
+		    padding: 3px 20px;
+		    white-space: nowrap;
+		    min-width: 121px;
+		}
+		.dropdown-menu > li > img{
+			margin:0px !important;
+		}
+		.dropdown-menu > li:hover, .dropdown-menu > li:focus {
+		    background-color: #F5F5F5;
+		    color: #262626;
+		    text-decoration: none;
+		}
+		.cust-dropdown.open .dropdown-menu{
+		display: block;
+		}
+		.fl_selectimg{
+			float: left;
+			margin-top:-10px;
+		}
+	</style>
+	
+	<script type="text/javascript" src="resources/js/vendor/html5shiv.js"></script>
+	<script type="text/javascript" src="resources/js/vendor/modernizr-2.6.2.min.js"></script>
+	
+	
+</head>
+<body>
+
+	
+<div class="cust-dropdown">
+	<a><b>PLEASE SELECT</b><code></code></a>
+	<ul class="dropdown-menu">
+		<li>Test1</li>
+		<li>Test2</li>
+		<li>Test3</li>
+		<li>Test4</li>
+	</ul>
+</div>	
+ 
+ <div class="cust-dropdown" style="margin-left:10px;">
+	<a><b>PLEASE SELECT</b><code></code></a>
+	<ul class="dropdown-menu">
+		<li><img src="resources/images/Pierre_Green.png" width="30px" class="fl_selectimg" />Test1</li>
+		<li><img src="resources/images/Pierre_Green.png" width="30px" class="fl_selectimg" />Test2</li>
+		<li><img src="resources/images/Pierre_Green.png" width="30px" class="fl_selectimg" />Test3</li>
+		<li><img src="resources/images/Pierre_Green.png" width="30px" class="fl_selectimg" />Test4</li>
+	</ul>
+</div>
+<div style="clear:both;"></div>
+
+<div>&nbsp;</div>
+
+<script type="text/javascript" src="resources/js/vendor/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="resources/js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" src="resources/js/vendor/custom.forms.jquery.js"></script>
+
+<script type="text/javascript">
+ 
+$(document).ready(function() {
+	var flag;
+	$('body').on('click','.cust-dropdown a',function(){
+	
+	//	console.log($(this).parent().attr('class'));
+	
+	//	$('.cust-dropdown').removeClass('open');
+	
+	if ($('body').find('a').hasClass('cust-dropdown')){
+	
+			console.log($(this).parent().attr('class'));
+			$('.cust-dropdown').removeClass('open');
+		}
+	
+	//	console.log($(this).parent().attr('class'));
+	
+		if($(this).parent().hasClass('cust-dropdown open'))
+			{
+			$(this).parent().removeClass('open');
+			}
+		else {
+			$(this).parent().addClass('open');
+		}	
+//		
+//		if (flag == 1)
+//		{
+//			$(this).parent().removeClass('open');
+//			flag = 0;
+//		}
+//		else {
+//			$(this).parent().addClass('open');
+//		flag = 1;
+//		}
+//	alert($(this).size());
+
+//		if ($(this).size() === 1)
+//		{
+//			$(this).parent().addClass('open');
+//		}
+//		else {
+//			$(this).parent().removeClass('open');
+//		}
+				
+	});		
+				
+	$('.cust-dropdown').on('click','ul.dropdown-menu li',function(){
+		$(this).parent().parent().removeClass('open');
+		$(this).parent().parent().find('b').html($(this).html());
+		
+	});
+
+	$(window).click(function(e){
+    	if($( e.target ).parents( '.cust-dropdown').size() === 0 ) {
+        	$('.cust-dropdown').removeClass('open');
+    	}
+	});
+			
+});			
+</script>
+
+
+	
+</body>
+</html>

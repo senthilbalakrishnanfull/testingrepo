@@ -1,0 +1,25 @@
+aside{
+	position:absolute; 
+	z-index:-1;
+	left:0px;
+	background:$black;
+	width:320px;	
+	height:100%;
+	&.rt-side {
+		left:inherit;	
+		right:-15px;
+		width:30
+		0px;
+		z-index:-2;
+	}
+	nav {
+		a {
+			display:block;
+			color:$white;
+			text-decoration:none;
+			text-transform:uppercase;
+			padding:3px 0px 3px 30px;
+			font-size:1em;
+		}
+	}
+}

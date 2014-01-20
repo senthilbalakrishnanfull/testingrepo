@@ -1,0 +1,46 @@
+body {
+	margin:0px;		padding:0px;
+	#bodyWrapper {
+		position:relative;
+		overflow:hidden;
+		
+		section{
+			@include span-columns(12);
+			background:$white;
+			position:relative;
+		}
+	}
+	@include media($twig) {
+		font-size: 110%; 
+	}
+	@include media($leaf) {
+		font-size: 95%;
+	}
+	@include media($seed) {
+		font-size: 75%;
+	}
+	.clearAll {clear:both;}
+	section {
+		article {
+			margin:0px;	
+			padding:0px;
+			
+			&.mid-content-holder {
+				clear:both;
+				margin:0px auto !important;
+				
+				@include media($twig) {
+					width:800px; 
+				}
+				@include media($leaf) {
+					width:600px;
+				}
+				@include media($seed) {
+					width:340px;
+				}
+				
+			}	
+		}
+	}
+			
+}

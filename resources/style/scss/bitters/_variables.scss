@@ -1,0 +1,72 @@
+// Typography
+///////////////////////////////////////////////////////////////////////////////
+$sans-serif: “effara”, sans-serif;
+$serif: “effara”, sans-serif;
+
+$base-font-family: $sans-serif;
+$header-font-family: $serif;
+
+// Sizes
+///////////////////////////////////////////////////////////////////////////////
+$base-font-size: 1.250em;
+$base-line-height: $base-font-size * 1.5;
+$base-border-radius: em(3);
+
+// Main Colors
+$white:				#ffffff;
+$black:				#000000;
+$light-red:			#feeff0;
+$red:				#f2646d;
+$light-green:		#eefcf1;
+$green:				#56de79;
+$light-gray:		#e6e6e6;
+$gray:				#cccccc;
+$dark-gray:			#808080;
+
+$transGray:			rgba(26,25,23,0.8);
+$transGrayHover:	rgba(26,25,23,0.9);
+
+
+
+//  Font Colors
+$base-font-color: $black;
+$base-accent-color: $gray;
+$header-inactive-color: $gray;
+
+//  Text Link Colors
+$base-link-color: $red;
+$hover-link-color: $red;
+
+$header-link-color: $white;
+$header-hover-link-color: $red;
+
+// Border color
+$base-border-color: $gray;
+
+
+
+// Banner Images Path
+$bn:  "../../images/banners/";
+
+//Grid Images Path
+$bg:  "../../images/grid-photos/";
+
+
+// Mixins
+// This controls all instances of the css3 animated transitions I am using throughout.
+@mixin trans {
+	@include transition ( all 0.125s ease-in-out );
+}
+
+
+// Opacity
+
+@mixin Opacity($color, $value){
+    
+  $rgba: rgba($color, $value);
+    $ie-hex-str: ie-hex-str($rgba);
+    background-color: transparent;
+    background-color: $rgba;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+    zoom: 1;
+}

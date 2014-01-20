@@ -1,0 +1,57 @@
+//table {
+//  margin: ($base-line-height / 2) 0;
+//  width: 100%;
+//}
+//
+//th {
+//  border-bottom: 3px solid darken($base-border-color, 95%);
+//  font-weight: bold;
+//  padding: ($base-line-height / 2) 15px;
+//  text-align: left;
+//}
+//
+//td {
+//  border-bottom: 2px solid $base-border-color;
+//  padding: ($base-line-height / 2) 15px;
+//}
+//
+//tr, td, th {
+//  vertical-align: middle;
+//}
+
+
+table {
+  margin: ($base-line-height / 2) 0;
+  width: 100%;
+  
+  tr{
+	  vertical-align: middle;
+	  th {
+		  border-bottom: 3px solid darken($base-border-color, 95%);
+		  font-weight: bold;
+		  padding: ($base-line-height / 2) 15px;
+		  text-align: left;
+	  		
+	  }
+	  td {
+	  	border-bottom: 2px solid $base-border-color;
+	  	padding: ($base-line-height / 2) 15px;
+	  }
+  
+	  &.odd {
+ 		  	background:$light-gray;
+ 	  }
+	  &.odd, &.even{
+	  	td {
+	  		border-bottom:0px;
+	  	}
+	  }
+	  &.horz{
+	  	td{
+		  	border-left:2px solid $base-border-color;
+	  	}
+	  }
+  
+  }
+  
+}
