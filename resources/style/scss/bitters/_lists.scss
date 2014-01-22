@@ -36,17 +36,14 @@ ul, ol {
   	}
   }
 }
-// Start Changes
-// All font sizes,line heights, style should be in a typography file, not mixed throughout.
+
+
 dl {
-  line-height: $base-line-height;
   margin-bottom: $base-line-height / 2;
 
   dt {
-    font-weight: bold;
     margin-top: $base-line-height / 2;
   }
-// End Changes
   dd {
     margin: 0;
   }

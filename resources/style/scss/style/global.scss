@@ -19,12 +19,12 @@ body {
 	@include media($seed) {
 		font-size: 75%;
 	}
-
-	// Start Changes
-	// There is a bourbon clearfix already that we should be using
-	.clearAll {clear:both;}
-	// End Changes
-
+	.title{
+		border-bottom:3px solid $black;
+		margin-bottom:30px;
+		padding:50px 40px 10px;
+		text-transform:uppercase;
+	}
 	section {
 		article {
 			margin:0px;
@@ -47,5 +47,5 @@ body {
 			}
 		}
 	}
-
+	
 }

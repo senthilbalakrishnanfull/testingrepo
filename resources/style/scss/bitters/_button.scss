@@ -3,24 +3,8 @@ button {
 	border:0px;
 	margin:10px;
 	background:$black;
-	// Start Changes
-	// All font sizes,line heights, style should be in a typography file, not mixed throughout.
-	color:$white;
-	font-size:20px;
-	text-transform:uppercase;
-	// End Changes
 
-	&.lr-btn{
-		// Start Changes
-		// All font sizes,line heights, style should be in a typography file, not mixed throughout.
-		font-size:30px;
-		// End Changes
-	}
 	&.sm-btn {
-		// Start Changes
-		// All font sizes,line heights, style should be in a typography file, not mixed throughout.
-		font-size:16px;
-		// End Changes
 		padding:18px;
 	}
 	&.fl-btn{
@@ -31,14 +15,9 @@ button {
 		background:$red;
 	}
 	&.cancel-btn{
-		color:$black;
 		background:none;
 		&:hover {
 			background:none;
-			// Start Changes
-			// All font sizes,line heights, style should be in a typography file, not mixed throughout.
-			color:$gray;
-			// End Changes
 		}
 	}
 

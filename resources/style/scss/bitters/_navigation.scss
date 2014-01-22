@@ -5,17 +5,10 @@ ul {
 		list-style-type:none;
 		border:3px solid $black;
 		border-width:3px 0px;
-
 		li {
 			padding:8px 20px;
 			display:inline-block;
 			border-left:3px solid $black;
-
-			// Start Changes
-			// All font sizes,line heights, style should be in a typography file, not mixed throughout.
-			text-transform:uppercase;
-			font-size: $base-font-size * 0.88;
-			// End Changes
 
 			&:first-child {
 			    border-left:0px;
@@ -26,15 +19,11 @@ ul {
 		}
 	}
 }
-.pagenation {
+.pagination {
 		float: left;
 		position: relative;
 		left: 50%;
  		padding-top: 10px;
- 		// Start Changes
- 		// All font sizes,line heights, style should be in a typography file, not mixed throughout.
-		font-size: $base-font-size * 1.5;
-		// End Changes
 
 	div {
 		float: left;
@@ -54,11 +43,6 @@ ul {
 				padding:8px 20px;
 				display:inline-block;
 				border-left:2px solid $black;
-				// Start Changes
-				// All font sizes,line heights, style should be in a typography file, not mixed throughout.
-				font-weight:bold;
-				// End Changes
-
 				&:first-child {
 				    border-left:0px;
 				}
