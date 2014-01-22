@@ -1,0 +1,11 @@
+article {
+ 	&.fullsize {
+		@include fill-parent;
+		height:auto;
+ 
+		img {
+			@include fill-parent;
+			height:100%;
+		}
+	}
+ }
