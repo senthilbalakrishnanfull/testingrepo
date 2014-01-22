@@ -41,95 +41,31 @@
 <section>
 	<header>
 		<ul class="menu">
-			<!-- Start Changes -->
-			<!-- We should be styling text to be uppercase in the css isntead of in the HTML. -->
-			<li class="main-nav"><a>MENU</a></li>
-			<li class="mid-nav"><a>SOLESTRUCK</a></li>
-			<li class="rt-nav"><a>CART</a></li>
-			<!-- End Changes -->
+			<li class="main-nav"><a>menu</a></li>
+			<li class="mid-nav"><a>solestruck</a></li>
+			<li class="rt-nav"><a>cart</a></li>
 		</ul>
 	</header>
 
 	<article class="header-subnav">
-
-		<!-- Start Changes -->
-
-		<!-- The menu tag is not supported in any browser. Please update to the nav tag. -->
-		<!-- Change "Typograph" to "Typography" -->
-		<!-- Each link should go to the individual module page like we talked about. -->
-		<!-- Even though we are using upper case in the css like we should, we should still try to format the text correctly. Each word should be capitalized. -->
-		<!-- Please look into including the / with a css style. I believe this can be done using the content property in css. -->
-		<menu>
-			<a>Typograph</a> /
-			<a>colors</a>	/
-			<a>media</a>	/
-			<a>buttons</a>  /
-			<a href="" class="active">forms</a>	/
-			<a>tables</a>   /
-			<a>navigation</a>  /
-			<a>other</a>
-		</menu>
-		<!-- End Changes -->
-	</article>
+ 		<nav>
+			<a href="typography.html">TYPOGRAPHY</a> 
+			<a href="">COLORS</a>	
+			<a href="">MEDIA</a>	
+			<a href="buttons">BUTTONS</a>  
+			<a href="forms.html" class="active">FORMS</a>	
+			<a href="tables.html">TABLES</a>   
+			<a href="navigation.html">NAVIGATION</a>  
+			<a href="notice.html">OTHER</a>
+		</nav>
+ 	</article>
 
 	<article class="mid-content-holder">
-
-			<!-- Start Changes -->
-
-			<!-- I don't think that we should be using br tags for postional spacing. We can do a set of styles that is specifically for displaying the modules. So everything has style without positioning then we include a modules.scss with things like padding for the bottom of buttons and the h2 with a border on the bottom, etc. -->
-
-			<h2>Buttons - Default Button</h2>
-
-			<button>DEFAULT BUTTON</button>
-			<br/>
-			<br/>
-			<h2>Buttons - Button Sizes</h2>
-			<button class="lr-btn">LARGE BUTTON</button>
-			<br/><br/>
-			<button>DEFAULT BUTTON</button>
-			<br/><br/>
-			<button class="sm-btn">Smal BUTTON</button>
-			<br/><br/>
-			<button class="cancel-btn">Cancel</button>
-			<br/><br/>
-
-			<h2>BUTTONS - block level buttons</h2>
-			<button class="fl-btn">Full Button</button>
-
-		<!--	 <div class="dropdown">
-			     <select name="data[select]" class="cform">
-			     <option value="">Please Select</option>
-			     <option value="1">Option 1</option>
-			     <option value="2">Option 2</option>
-			     <option value="3">Option 3</option>
-			     <option value="4">jQueryScript.Net</option>
-			     <option value="5">Option 5</option>
-			     <option value="6">Option 6</option>
-			     <option value="7">Option 7</option>
-			     <option value="8">Option 8</option>
-			     <option value="9">Option 9</option>
-			     <option value="10">Option 10</option>
-			     </select>
-			</div> -->
-
-		<br/>
-		<br/>
-
-		<!-- End Changes -->
-
-		<!-- Start Changes -->
-
-		<!-- Again, the h2 should be formatted correctly. Capatialized, and styled through css. It should read good if the css were turned off. -->
-
-		<!-- In the browser, the drop downs, in the middle where they are touching eachother, there are double borders, this needs to be addressed so it looks like one line seperating them. It could be that if they are in a wrapper with a certain class applied it removes the border on one side and adds it back on the last child or something like that. -->
-
-		<!-- We should show 1 or 2 more options in the dropdown view. -->
-
-		<h2>forms - drop down</h2>
+		<h2 class="title">FORMS -  DROP DOWN</h2>
 
 		<ul class="dropdown-holder">
 			<li>
-				<div class="selectBox">
+				<div class="selectBox rm_rt_br">
 				    <span class='selected'></span><code class='selectArrow'></code>
 				    <div class="selectOptions">
 				        <ul>
@@ -142,7 +78,7 @@
 				</div>
 			</li>
 			<li>
-				<div class='selectBox'>
+				<div class='selectBox rm_rt_br'>
 				    <span class='selected'></span>
 				    <code class='selectArrow'></code>
 				    <div class="selectOptions">
@@ -171,16 +107,10 @@
 			</li>
 		</ul>
 
-		<br/>
-		<br/>
 
-		<!-- End Changes -->
+ 
 
-		<!-- Start Changes -->
-
-		<!-- Again, the h2 should be formatted correctly. Capatialized, and styled through css. It should read good if the css were turned off. -->
-
-		<h2>forms - stacked drop down</h2>
+		<h2 class="title">FORMS - STACKED DROP DOWN</h2>
 		<form>
 			<ul class="stacked-li">
 				<li>
@@ -203,16 +133,11 @@
 		</form>
 		<div style="clear:both;"></div>
 
-		<!-- End Changes -->
-
-		<!-- Start Changes -->
-
-		<!-- Again, the h2 should be formatted correctly. Capatialized, and styled through css. It should read good if the css were turned off. -->
-
-		<!-- The cursor in the form field is not centered. I think it's from the line height. We should be using padding here instead so the cursor is centered within the field. -->
+ 
 
 
-		<h2>forms - stacked Form</h2>
+
+		<h2 class="title">FORMS - STACKED FORM</h2>
 
 		<form>
 			<ul class="form-field-holder">
@@ -230,15 +155,10 @@
 			</ul>
 		</form>
 
-		<!-- End Changes -->
 
-		<!-- Start Changes -->
+ 
 
-		<!-- Again, the h2 should be formatted correctly. Capatialized, and styled through css. It should read good if the css were turned off. -->
-
-		<!-- The cursor in the form field is not centered. I think it's from the line height. We should be using padding here instead so the cursor is centered within the field. -->
-
-		<h2>forms - Error</h2>
+		<h2 class="title">FORMS - ERROR</h2>
 
 		<form>
 			<ul class="form-field-holder">
@@ -258,9 +178,8 @@
 			</ul>
 		</form>
 
-		<!-- End Changes -->
-
-		<h2>forms - in active</h2>
+ 
+		<h2 class="title">FORMS - IN ACTIVE</h2>
 
 		<form>
 			<ul class="form-field-holder inline-li">

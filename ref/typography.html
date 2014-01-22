@@ -11,10 +11,26 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 	<link rel="stylesheet" type="text/css" href="../resources/style/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../resources/style/css/fonts.css" />
 
 	<script type="text/javascript" src="../resources/js/vendor/html5shiv.js"></script>
 	<script type="text/javascript" src="../resources/js/vendor/modernizr-2.6.2.min.js"></script>
 
+	<style type="text/css">
+		.css-mapping {
+				margin:0px 0px 50px;
+				padding:0px;
+				list-style-type:none;
+		}
+		.css-mapping li {
+			display: inline-block;
+			width: 200px;
+			height: 40px;
+		}
+		.css-mapping li span{		
+			padding-left: 5px;
+		}
+	</style>
 </head>
 <body>
 	<div id="bodyWrapper">
@@ -42,51 +58,40 @@
 		<section class="push-none">
 			<header>
 				<ul class="menu">
-					<!-- Start Changes -->
-					<!-- We should be styling text to be uppercase in the css isntead of in the HTML. -->
-					<li class="main-nav"><a>MENU</a></li>
-					<li class="mid-nav"><a>SOLESTRUCK</a></li>
-					<li class="rt-nav"><a>CART</a></li>
-					<!-- End Changes -->
+					<li class="main-nav"><a>menu</a></li>
+					<li class="mid-nav"><a>solestruck</a></li>
+					<li class="rt-nav"><a>cart</a></li>
 				</ul>
 			</header>
 
 			<article class="header-subnav">
-				<!-- Start Changes -->
-
-				<!-- The menu tag is not supported in any browser. Please update to the nav tag. -->
-				<!-- Change "Typograph" to "Typography" -->
-				<!-- Each link should go to the individual module page like we talked about. -->
-				<!-- Even though we are using upper case in the css like we should, we should still try to format the text correctly. Each word should be capitalized. -->
-				<!-- Please look into including the / with a css style. I believe this can be done using the content property in css. -->
-				<menu>
-					<a href="" class="active">Typograph</a> /
-					<a>colors</a>	/
-					<a>media</a>	/
-					<a>buttons</a>  /
-					<a>forms</a>	/
-					<a>tables</a>   /
-					<a>navigation</a>  /
-					<a>other</a>
-				</menu>
-				<!-- End Changes -->
+				<nav>
+					<a href="typography.html" class="active">TYPOGRAPHY</a> 
+					<a href="">COLORS</a>	
+					<a href="">MEDIA</a>	
+					<a href="buttons">BUTTONS</a>  
+					<a href="forms.html">FORMS</a>	
+					<a href="tables.html">TABLES</a>   
+					<a href="navigation.html">NAVIGATION</a>  
+					<a href="notice.html">OTHER</a>
+				</nav>
 			</article>
 
 			<article class="mid-content-holder">
 
 				<!-- Start Changes -->
 
-				<!-- All headers should be formatted correctly. Names (like Solestruck) should be capitalized even though we are using uppercase in the css. We want to make sure it reads correct if the styles were to be shut off. -->
+ 
 
-				<h2>Typography - font stacks</h2>
+				<h2 class="title">Typography - FONT STACKS</h2>
 				<!-- For some reason the font stack names didn't make it in here. -->
 				<!-- Please see the PSD for the names -->
 
-				<h2>Typography - Headings</h2>
+				<h2 class="title">Typography - HEADINGS</h2>
 
 				<h1>(h1: 50px) Cursus Commodo Sit Egestas Adipiscing</h1>
 
-				<!-- The h2 here has an underline because there is no class name for the intro h2 titles. You will need to make a seperate modules positioning and style sass file so you can have this underline removed. -->
+ 
 
 				<h2>(h2: 30px) Why Everyone loves solestruck:</h2>
 
@@ -96,11 +101,9 @@
 
 				<!-- End Changes -->
 
-				<!-- Start Changes -->
+ 
 
-				<!-- All headers should be formatted correctly. Names (like Solestruck) should be capitalized even though we are using uppercase in the css. We want to make sure it reads correct if the styles were to be shut off. -->
-
-				<h2>Typography - lists</h2>
+				<h2 class="title">TYPOGRAPHY - LISTS</h2>
 
 					<ul class="default-ul">
 						<li>List Item 1</li>
@@ -159,9 +162,8 @@
 							  <dd>Definition description</dd>
 					</dl>
 
-					<!-- End Changes -->
-
-					<h2>Typography - Blockquotes</h2>
+ 
+					<h2 class="title">TYPOGRAPHY - BLOCKQUOTES</h2>
 
 						<blockquote>
 						 	Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla.
@@ -172,29 +174,22 @@
 					<!-- Lead in p should be uppercase through CSS style -->
 					<!-- All HTML copy should be formatted correctly in case the styles don't load. Capitalization, punctuation, etc. -->
 
-					<h2>Typography - lead in</h2>
+					<h2 class="title">TYPOGRAPHY - LEAD IN</h2>
 
 					<p class="lead-in">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 					<!-- End Changes -->
 
-					<!-- Start Changes -->
-
-					<!-- All HTML copy should be formatted correctly in case the styles don't load. Capitalization, punctuation, etc. -->
-
-					<h2>Typography - paragraph</h2>
+ 
+ 
+					<h2 class="title">TYPOGRAPHY - PARAGRAPH</h2>
 					<p>
 						Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue.
 					</p>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 					</p>
-					<!-- End Changes -->
-
-					<!-- Start Changes -->
-
-					<!-- All HTML copy should be formatted correctly in case the styles don't load. Capitalization, punctuation, etc. -->
-
-					<h2>Typography - EMPHASIS TAGS</h2>
+ 
+				 	<h2 class="title">TYPOGRAPHY - EMPHASIS TAGS</h2>
 
 					The <small>small element</small> example <br/>
 					The <b>b element</b> example.<br/>
@@ -205,17 +200,57 @@
 					The <s>s element</s> example. <br/>
 					The <u>u element</u> example. <br/>
 					The <a href="#">A element</a> example. <br/>
-					<!-- End Changes -->
+ 
+				 	<h2 class="title">TYPOGRAPHY - ICON FONT</h2>
 
-					<!-- Start Changes -->
-
-					<!-- All HTML copy should be formatted correctly in case the styles don't load. Capitalization, punctuation, etc. -->
-
-					<!-- We need the icon font in place. -->
-
-					<h2>Typography - icon font</h2>
-					<!-- End Changes -->
-
+					<ul class="glyphs css-mapping">
+					        <li>
+					          <code class="icon icon-icons-add"></code> <span>icons-add</span>
+					         </li>
+					        <li>
+					          <code class="icon icon-icons-cart-add"></code> <span>icons-cart-add</span>
+					         </li>
+					        <li>
+					          <code class="icon icon-icons-cart-empty"></code> <span>icons-cart-empty</span>
+					         </li>
+					        <li>
+					          <code class="icon icon-icons-cart-zero"></code> <span>icons-cart-zero</span>
+					         </li>
+					        <li>
+					          <code class="icon icon-icons-down"></code> <span>icons-down</span>
+					         </li>
+					        <li>
+					          <code class="icon icon-icons-heart"></code> <span>icons-heart</span>
+					         </li>
+					        <li>
+					          <code class="icon icon-icons-info"></code> <span>icons-info</span>
+					         </li>
+					        <li>
+					          <code class="icon icon-icons-left"></code> <span>icons-left</span>
+					         </li>
+					        <li>
+					          <code class="icon icon-icons-menu"></code> <span>icons-menu</span>
+					         </li>
+					        <li>
+					          <code class="icon icon-icons-remove"></code> <span>icons-remove</span>
+					         </li>
+					        <li>
+					          <code class="icon icon-icons-right"></code> <span>icons-right</span>
+					         </li>
+					        <li>
+					          <code class="icon icon-icons-search"></code> <span>icons-search</span>
+					         </li>
+					        <li>
+					          <code class="icon icon-icons-up"></code> <span>icons-up</span>
+					         </li>
+					        <li>
+					          <code class="icon icon-icons-star"></code> <span>icons-star</span>
+					         </li>
+					        <li>
+					          <code class="icon icon-icons-heart-stroke"></code> <span>icons-heart-stroke</span>
+					         </li>
+					      </ul>				 	
+ 
 			</article>
 		</section>
 
