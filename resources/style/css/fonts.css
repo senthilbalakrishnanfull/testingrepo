@@ -1,0 +1,102 @@
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: "solestruck7";
+  src:url("../../fonts/solestruck7.eot");
+  src:url("../../fonts/solestruck7.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/solestruck7.ttf") format("truetype"),
+    url("../../fonts/solestruck7.svg#solestruck7") format("svg"),
+    url("../../fonts/solestruck7.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "solestruck7" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "solestruck7" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-icons-add:before {
+  content: "a";
+}
+
+.icon-icons-cart-add:before {
+  content: "b";
+}
+
+.icon-icons-cart-empty:before {
+  content: "c";
+}
+
+.icon-icons-cart-zero:before {
+  content: "d";
+}
+
+.icon-icons-down:before {
+  content: "e";
+}
+
+.icon-icons-heart:before {
+  content: "f";
+}
+
+.icon-icons-info:before {
+  content: "g";
+}
+
+.icon-icons-left:before {
+  content: "h";
+}
+
+.icon-icons-menu:before {
+  content: "i";
+}
+
+.icon-icons-remove:before {
+  content: "j";
+}
+
+.icon-icons-right:before {
+  content: "k";
+}
+
+.icon-icons-search:before {
+  content: "l";
+}
+
+.icon-icons-up:before {
+  content: "m";
+}
+
+.icon-icons-star:before {
+  content: "n";
+}
+
+.icon-icons-heart-stroke:before {
+  content: "o";
+}
+
