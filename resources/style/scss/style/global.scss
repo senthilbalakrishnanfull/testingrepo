@@ -25,6 +25,21 @@ body {
 		padding:50px 40px 10px;
 		text-transform:uppercase;
 	}
+	.title2Test{
+		border-bottom:3px solid $black;
+		margin:0px auto 30px;
+		padding:50px 40px 10px;
+		text-transform:uppercase;
+		@include media($twig) {
+			width:800px;
+		}
+		@include media($leaf) {
+			width:600px;
+		}
+		@include media($seed) {
+			width:340px;
+		}
+	}
 	section {
 		article {
 			margin:0px;

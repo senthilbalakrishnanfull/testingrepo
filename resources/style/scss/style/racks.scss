@@ -11,6 +11,28 @@ ul {
 			margin-bottom:1.66666%;
 			a {
 				@include fill-parent;
+				position:relative;
+				display:block;
+				span {
+					position:absolute;
+					z-index:10;
+					margin:20px;
+					&.new {
+						top:0px;
+					}
+					&.name {
+						bottom:0px;
+					}
+					&.price{
+						right:0px;
+						bottom:0px;
+					}
+					&.like{
+						top:0px;
+						right:0px;
+					}
+					
+				}
 			}
 			@include media($twig) {
 				@include span-columns(4);
