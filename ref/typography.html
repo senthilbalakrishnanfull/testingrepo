@@ -1,11 +1,14 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Solestruck</title>
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width">
+	<meta charset="UTF-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Solestruck - Typography</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width">
 
 	<script type="text/javascript" src="//use.typekit.net/tgy6zuu.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -18,16 +21,16 @@
 
 	<style type="text/css">
 		.css-mapping {
-				margin:0px 0px 50px;
-				padding:0px;
-				list-style-type:none;
+			margin:0px 0px 50px;
+			padding:0px;
+			list-style-type:none;
 		}
 		.css-mapping li {
 			display: inline-block;
 			width: 200px;
 			height: 40px;
 		}
-		.css-mapping li span{		
+		.css-mapping li span{
 			padding-left: 5px;
 		}
 	</style>
@@ -54,87 +57,89 @@
 			</nav>
 		</aside>
 
-
 		<section class="push-none">
 			<header>
 				<ul class="menu">
+					<!-- Start Changes -->
+					<!-- The words here should be formatted like so...
+					Menu, Solestruck, Cart
+					Not lowercase, those things should be handled by CSS. -->
 					<li class="main-nav"><a>menu</a></li>
 					<li class="mid-nav"><a>solestruck</a></li>
 					<li class="rt-nav"><a>cart</a></li>
+					<!-- End Changes -->
 				</ul>
 			</header>
 
 			<article class="header-subnav">
 				<nav>
-					<a href="typography.html" class="active">TYPOGRAPHY</a> 
-					<a href="">COLORS</a>	
-					<a href="media.html">MEDIA</a>	
-					<a href="buttons">BUTTONS</a>  
-					<a href="forms.html">FORMS</a>	
-					<a href="tables.html">TABLES</a>   
-					<a href="navigation.html">NAVIGATION</a>  
+					<!-- Start Changes -->
+					<!-- All text should be only capitalized, not uppercase.
+					Uppercase text should be handled in the CSS.
+					Ex. Typography, Colors, Media, etc. -->
+					<a href="typography.html" class="active">TYPOGRAPHY</a>
+					<a href="">COLORS</a>
+					<a href="media.html">MEDIA</a>
+					<a href="buttons.html">BUTTONS</a>
+					<a href="forms.html">FORMS</a>
+					<a href="tables.html">TABLES</a>
+					<a href="navigation.html">NAVIGATION</a>
 					<a href="notice.html">OTHER</a>
+					<!-- End Changes -->
 				</nav>
 			</article>
 
 			<article class="mid-content-holder">
 
 				<!-- Start Changes -->
-
- 
-
 				<h2 class="title">Typography - FONT STACKS</h2>
 				<!-- For some reason the font stack names didn't make it in here. -->
 				<!-- Please see the PSD for the names -->
-
-				<h2 class="title">Typography - HEADINGS</h2>
-
-				<h1>(h1: 50px) Cursus Commodo Sit Egestas Adipiscing</h1>
-
- 
-
-				<h2>(h2: 30px) Why Everyone loves solestruck:</h2>
-
-				<h3>(h3: 20px)Why Everyone loves solestruck:</h3>
-
-				<h4>(h4: 16px)Why Everyone loves solestruck:</h4>
-
 				<!-- End Changes -->
 
- 
+				<!-- Start Changes -->
+				<!-- No Uppercase text in the HTML please. -->
+				<h2 class="title">Typography - HEADINGS</h2>
+				<!-- End Changes -->
 
+				<h1>(h1: 50px) Cursus Commodo Sit Egestas Adipiscing</h1>
+				<h2>(h2: 30px) Why Everyone loves solestruck:</h2>
+				<h3>(h3: 20px)Why Everyone loves solestruck:</h3>
+				<h4>(h4: 16px)Why Everyone loves solestruck:</h4>
+
+				<!-- Start Changes -->
+				<!-- No Uppercase text in the HTML please. -->
 				<h2 class="title">TYPOGRAPHY - LISTS</h2>
+				<!-- End Changes -->
 
-					<ul class="default-ul">
-						<li>List Item 1</li>
-						<li>List Item 1</li>
-						<li class="empty-type">
-							<ul>
+				<ul class="default-ul">
+					<li>List Item 1</li>
+					<li>List Item 1</li>
+					<li class="empty-type">
+						<ul>
+							<li>List Item 2</li>
+							<li>List Item 2</li>
+							<li class="empty-type">
+								<ul class="default-ul">
+									<li>List Item 3</li>
+									<li>List Item 3</li>
+								</ul>
 								<li>List Item 2</li>
 								<li>List Item 2</li>
-								<li class="empty-type">
-									<ul class="default-ul">
-										<li>List Item 3</li>
-										<li>List Item 3</li>
-									</ul>
-								<li>List Item 2</li>
-								<li>List Item 2</li>
-								</li>
+							</li>
+						</ul>
+					</li>
+					<li>List Item 1</li>
+					<li>List Item 1</li>
+				</ul>
 
-							</ul>
-						</li>
-						<li>List Item 1</li>
-						<li>List Item 1</li>
-
-					</ul>
-
-					<ol class="default-ol">
-						<li>List Item 1</li>
-						<li>List Item 1</li>
-						<li class="empty-type">
-							<ol>
-								<li>List Item 2</li>
-								<li>List Item 2</li>
+				<ol class="default-ol">
+					<li>List Item 1</li>
+					<li>List Item 1</li>
+					<li class="empty-type">
+						<ol>
+							<li>List Item 2</li>
+							<li>List Item 2</li>
 								<li class="empty-type">
 									<ol class="default-ul">
 										<li>List Item 3</li>
@@ -142,124 +147,143 @@
 									</ol>
 								<li>List Item 2</li>
 								<li>List Item 2</li>
-								</li>
+							</li>
+						</ol>
+					</li>
+					<li>List Item 1</li>
+					<li>List Item 1</li>
+				</ol>
 
-							</ol>
-						</li>
-						<li>List Item 1</li>
-						<li>List Item 1</li>
+				<dl>
+					<dt>Definition Term</dt>
+					<dd>Definition description</dd>
+					<dt>Definition Term</dt>
+					<dd>Definition description</dd>
+					<dd>Definition description</dd>
+					<dt>Definition Term</dt>
+					<dt>Definition Term</dt>
+					<dd>Definition description</dd>
+				</dl>
 
-					</ol>
+				<!-- Start Changes -->
+				<!-- No Uppercase text in the HTML please. -->
+				<h2 class="title">TYPOGRAPHY - BLOCKQUOTES</h2>
+				<!-- End Changes -->
 
-					<dl>
-					  <dt>Definition Term</dt>
-						  <dd>Definition description</dd>
-					  <dt>Definition Term</dt>
-						  <dd>Definition description</dd>
-						  <dd>Definition description</dd>
-						<dt>Definition Term</dt>
-						<dt>Definition Term</dt>
-							  <dd>Definition description</dd>
-					</dl>
+				<blockquote>
+					Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla.
+				</blockquote>
 
- 
-					<h2 class="title">TYPOGRAPHY - BLOCKQUOTES</h2>
+				<!-- Start Changes -->
+				<!-- No Uppercase text in the HTML please. -->
+				<h2 class="title">TYPOGRAPHY - LEAD IN</h2>
+				<!-- End Changes -->
 
-						<blockquote>
-						 	Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla.
-						</blockquote>
+				<p class="lead-in">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 
-					<!-- Start Changes -->
+				<!-- Start Changes -->
+				<!-- No Uppercase text in the HTML please. -->
+				<h2 class="title">TYPOGRAPHY - PARAGRAPH</h2>
+				<!-- End Changes -->
 
-					<!-- Lead in p should be uppercase through CSS style -->
-					<!-- All HTML copy should be formatted correctly in case the styles don't load. Capitalization, punctuation, etc. -->
+				<p>
+					Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				</p>
 
-					<h2 class="title">TYPOGRAPHY - LEAD IN</h2>
+				<!-- Start Changes -->
+				<!-- No Uppercase text in the HTML please. -->
+				<h2 class="title">TYPOGRAPHY - EMPHASIS TAGS</h2>
+				<!-- End Changes -->
 
-					<p class="lead-in">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-					<!-- End Changes -->
+				<!-- Start Changes -->
+				<!-- Each line should be a paragraph with these tags nested inside because that is how they will be applied most times. -->
+				The <small>small element</small> example <br/>
+				The <b>b element</b> example.<br/>
+				The <strong>strong element</strong>example. <br/>
+				The <em>em element</em> example. <br/>
+				The <i>i element</i> example. <br/>
+				The <del>del element</del> example. <br/>
+				The <s>s element</s> example. <br/>
+				The <u>u element</u> example. <br/>
+				The <a href="#">A element</a> example. <br/>
+				<!-- End Changes -->
 
- 
- 
-					<h2 class="title">TYPOGRAPHY - PARAGRAPH</h2>
-					<p>
-						Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-					</p>
- 
-				 	<h2 class="title">TYPOGRAPHY - EMPHASIS TAGS</h2>
+				<!-- Start Changes -->
+				<!-- No Uppercase text in the HTML please. -->
+				<h2 class="title">TYPOGRAPHY - ICON FONT</h2>
+				<!-- End Changes -->
 
-					The <small>small element</small> example <br/>
-					The <b>b element</b> example.<br/>
-					The <strong>strong element</strong>example. <br/>
-					The <em>em element</em> example. <br/>
-					The <i>i element</i> example. <br/>
-					The <del>del element</del> example. <br/>
-					The <s>s element</s> example. <br/>
-					The <u>u element</u> example. <br/>
-					The <a href="#">A element</a> example. <br/>
- 
-				 	<h2 class="title">TYPOGRAPHY - ICON FONT</h2>
-
-					<ul class="glyphs css-mapping">
-					        <li>
-					          <code class="icon icon-icons-add"></code> <span>icons-add</span>
-					         </li>
-					        <li>
-					          <code class="icon icon-icons-cart-add"></code> <span>icons-cart-add</span>
-					         </li>
-					        <li>
-					          <code class="icon icon-icons-cart-empty"></code> <span>icons-cart-empty</span>
-					         </li>
-					        <li>
-					          <code class="icon icon-icons-cart-zero"></code> <span>icons-cart-zero</span>
-					         </li>
-					        <li>
-					          <code class="icon icon-icons-down"></code> <span>icons-down</span>
-					         </li>
-					        <li>
-					          <code class="icon icon-icons-heart"></code> <span>icons-heart</span>
-					         </li>
-					        <li>
-					          <code class="icon icon-icons-info"></code> <span>icons-info</span>
-					         </li>
-					        <li>
-					          <code class="icon icon-icons-left"></code> <span>icons-left</span>
-					         </li>
-					        <li>
-					          <code class="icon icon-icons-menu"></code> <span>icons-menu</span>
-					         </li>
-					        <li>
-					          <code class="icon icon-icons-remove"></code> <span>icons-remove</span>
-					         </li>
-					        <li>
-					          <code class="icon icon-icons-right"></code> <span>icons-right</span>
-					         </li>
-					        <li>
-					          <code class="icon icon-icons-search"></code> <span>icons-search</span>
-					         </li>
-					        <li>
-					          <code class="icon icon-icons-up"></code> <span>icons-up</span>
-					         </li>
-					        <li>
-					          <code class="icon icon-icons-star"></code> <span>icons-star</span>
-					         </li>
-					        <li>
-					          <code class="icon icon-icons-heart-stroke"></code> <span>icons-heart-stroke</span>
-					         </li>
-					      </ul>				 	
- 
+				<ul class="glyphs css-mapping">
+					<li>
+						<code class="icon icon-icons-add"></code>
+						<span>icons-add</span>
+					</li>
+					<li>
+						<code class="icon icon-icons-cart-add"></code>
+						<span>icons-cart-add</span>
+					</li>
+					<li>
+						<code class="icon icon-icons-cart-empty"></code>
+						<span>icons-cart-empty</span>
+					</li>
+					<li>
+						<code class="icon icon-icons-cart-zero"></code>
+						<span>icons-cart-zero</span>
+					</li>
+					<li>
+						<code class="icon icon-icons-down"></code>
+						<span>icons-down</span>
+					</li>
+					<li>
+						<code class="icon icon-icons-heart"></code>
+						<span>icons-heart</span>
+					</li>
+					<li>
+						<code class="icon icon-icons-info"></code>
+						<span>icons-info</span>
+					</li>
+					<li>
+						<code class="icon icon-icons-left"></code>
+						<span>icons-left</span>
+					</li>
+					<li>
+						<code class="icon icon-icons-menu"></code>
+						<span>icons-menu</span>
+					</li>
+					<li>
+						<code class="icon icon-icons-remove"></code>
+						<span>icons-remove</span>
+					</li>
+					<li>
+						<code class="icon icon-icons-right"></code>
+						<span>icons-right</span>
+					</li>
+					<li>
+						<code class="icon icon-icons-search"></code>
+						<span>icons-search</span>
+					</li>
+					<li>
+						<code class="icon icon-icons-up"></code>
+						<span>icons-up</span>
+					</li>
+					<li>
+						<code class="icon icon-icons-star"></code>
+						<span>icons-star</span>
+					</li>
+					<li>
+						<code class="icon icon-icons-heart-stroke"></code>
+						<span>icons-heart-stroke</span>
+					</li>
+				</ul>
 			</article>
 		</section>
-
-	</div> <!-- bodyWrapper -->
+	</div>
 
 	<script type="text/javascript" src="../resources/js/vendor/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="../resources/js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
-
 	<script type="text/javascript" src="../resources/js/actions.js"></script>
-
 </body>
 </html>

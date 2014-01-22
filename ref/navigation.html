@@ -1,11 +1,12 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Solestruck</title>
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Solestruck - Navigation</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
 
 	<script type="text/javascript" src="//use.typekit.net/tgy6zuu.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -14,7 +15,6 @@
 
 	<script type="text/javascript" src="../resources/js/vendor/html5shiv.js"></script>
 	<script type="text/javascript" src="../resources/js/vendor/modernizr-2.6.2.min.js"></script>
-
 </head>
 <body>
 	<div id="bodyWrapper">
@@ -38,89 +38,102 @@
 			</nav>
 		</aside>
 
-
 		<section class="push-none">
-			<header>
-				<ul class="menu">
-					<li class="main-nav"><a>menu</a></li>
-					<li class="mid-nav"><a>solestruck</a></li>
-					<li class="rt-nav"><a>cart</a></li>
- 				</ul>
-			</header>
+		<header>
+			<!-- Start Changes -->
+			<!-- The words here should be formatted like so...
+			Menu, Solestruck, Cart
+			Not lowercase, those things should be handled by CSS. -->
+			<ul class="menu">
+				<li class="main-nav"><a>menu</a></li>
+				<li class="mid-nav"><a>solestruck</a></li>
+				<li class="rt-nav"><a>cart</a></li>
+			</ul>
+			<!-- End Changes -->
+		</header>
 
-			<article class="header-subnav">
-				<nav>
-					<a href="typography.html">TYPOGRAPHY</a> 
-					<a href="">COLORS</a>	
-					<a href="media.html">MEDIA</a>	
-					<a href="buttons">BUTTONS</a>  
-					<a href="forms.html">FORMS</a>	
-					<a href="tables.html">TABLES</a>   
-					<a href="navigation.html" class="active">NAVIGATION</a>  
-					<a href="notice.html">OTHER</a>
-				</nav>
-			</article>
+		<article class="header-subnav">
+			<!-- Start Changes -->
+			<!-- All text should be only capitalized, not uppercase.
+			Uppercase text should be handled in the CSS.
+			Ex. Typography, Colors, Media, etc. -->
+			<nav>
+				<a href="typography.html">TYPOGRAPHY</a>
+				<a href="">COLORS</a>
+				<a href="media.html">MEDIA</a>
+				<a href="buttons.html">BUTTONS</a>
+				<a href="forms.html">FORMS</a>
+				<a href="tables.html">TABLES</a>
+				<a href="navigation.html" class="active">NAVIGATION</a>
+				<a href="notice.html">OTHER</a>
+			</nav>
+			<!-- End Changes -->
+		</article>
 
-			<article class="mid-content-holder">
-				<h2 class="title">NAVIGATION - BREADCRUMB</h2>
-			</article>
+		<!-- Start Changes -->
+		<!-- No Uppercase text in the HTML please. -->
+		<article class="mid-content-holder">
+			<h2 class="title">NAVIGATION - BREADCRUMB</h2>
+		</article>
 
-			<article>
-				<!-- Start Changes -->
+		<article>
+			<!-- Start Changes -->
+			<!-- The breadcrumb should contain links like the current version. Everything except the last item should be a link to go back one page. -->
+			<ul class="breadcrumb">
+				<li>Item one</li>
+				<li>Item two</li>
+				<li>Item three</li>
+				<li>Item four</li>
+			</ul>
+			<!-- End Changes -->
+		</article>
 
-				<!-- The breadcrumb should contain links like the current version. Everything except the last item should be a link to go back one page. -->
+		<article class="mid-content-holder">
+			<!-- Start Changes -->
 
-				<ul class="breadcrumb">
-					<li>Item one</li>
-					<li>Item two</li>
-					<li>Item three</li>
-					<li>Item four</li>
-				</ul>
-				<!-- End Changes -->
-			</article>
+			<!-- Please change "Pagenation" to "Pagination" including the class names. We want to spell everything correctly. -->
+			<!-- Every number should be a link similar to any other pagination used on a site. -->
+			<h2 class="title">NAVIGATION - PAGINATION</h2>
+			<!-- End Changes -->
 
-			<article class="mid-content-holder">
-				<!-- Start Changes -->
-
-				<!-- Please change "Pagenation" to "Pagination" including the class names. We want to spell everything correctly. -->
-				<!-- Every number should be a link similar to any other pagination used on a site. -->
-				<h2 class="title">NAVIGATION - PAGINATION</h2>
-
-				<div class="pagination">
-					<div>
-						<i>&lt;</i>
-						<ul>
-							<li>1</li>
-							<li>2</li>
-							<li>3</li>
-							<li>4</li>
-							<li>5</li>
-							<li>6</li>
-							<li>7</li>
-							<li>8</li>
-							<li>9</li>
-							<li>10</li>
-						</ul>
-						<i>&gt;</i>
-					</div>
+			<!-- Start Changes -->
+			<!-- You should make every instance of navigation with the <nav> tag. -->
+			<div class="pagination">
+				<div>
+					<i>&lt;</i>
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+						<li>7</li>
+						<li>8</li>
+						<li>9</li>
+						<li>10</li>
+					</ul>
+					<i>&gt;</i>
 				</div>
-				<!-- End Changes -->
-			</article>
+			</div>
+			<!-- End Changes -->
+		</article>
 
-			<article class="mid-content-holder">
-				<h2 class="title">Navigation -  Progress</h2>
+		<article class="mid-content-holder">
+			<h2 class="title">Navigation -  Progress</h2>
 
-				<menu class="nav-progress">
-					<a href="">First</a>
-					<a href="" class="active">Second</a>
-					<a href="">Third</a>
-					<a href="">Fourth</a>
-				</menu>
-			</article>
-
+			<!-- Start Changes -->
+			<!-- <menu> tag is not supported in any major browsers. Change to <nav> -->
+			<menu class="nav-progress">
+				<a href="">First</a>
+				<a href="" class="active">Second</a>
+				<a href="">Third</a>
+				<a href="">Fourth</a>
+			</menu>
+			<!-- End Changes -->
+		</article>
 		</section>
-
-	</div> <!-- bodyWrapper -->
+	</div>
 
 	<script type="text/javascript" src="../resources/js/vendor/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="../resources/js/vendor/jquery-ui-1.10.3.custom.min.js"></script>

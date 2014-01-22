@@ -1,5 +1,7 @@
 body {
-	margin:0px;		padding:0px;
+	margin:0px;
+	padding:0px;
+
 	#bodyWrapper {
 		position:relative;
 		overflow:hidden;
@@ -23,13 +25,13 @@ body {
 		border-bottom:3px solid $black;
 		margin-bottom:30px;
 		padding:50px 40px 10px;
-		text-transform:uppercase;
+		text-transform: uppercase;
 	}
 	.title2Test{
 		border-bottom:3px solid $black;
 		margin:0px auto 30px;
 		padding:50px 40px 10px;
-		text-transform:uppercase;
+		text-transform: uppercase;
 		@include media($twig) {
 			width:800px;
 		}
@@ -58,9 +60,7 @@ body {
 				@include media($seed) {
 					width:340px;
 				}
-
 			}
 		}
 	}
-	
 }

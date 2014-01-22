@@ -11,10 +11,10 @@ section {
 	}
 	header {
 		@include fill-parent;
-
 		overflow:auto;
 		.menu {
-			margin:0px;		padding:0px;
+			margin:0px;
+			padding:0px;
 			list-style-type:none;
 			li {
 				@include span-columns(2);
@@ -27,7 +27,6 @@ section {
 				&.rt-nav{
 					text-align:right;
 				}
-
 				&.mid-nav {
 					@include span-columns(8);
 					text-align:center;
@@ -35,9 +34,7 @@ section {
 			}
 		}
 	}
-	
 	article {
-
 		&.header-subnav{
 			background:$black;
 			color:$white;
@@ -47,16 +44,13 @@ section {
 				width:47%;
 				text-align:center;
  				margin:30px auto;
-
-
 				a {
 					&:after {
-						content: " / ";		
-					}	
+						content: " / ";
+					}
 					&:lastchild:after {
-						content: " ";		
-					}	
-					
+						content: " ";
+					}
 				}
 			}
 		}

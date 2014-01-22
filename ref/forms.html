@@ -1,11 +1,13 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Solestruck</title>
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Solestruck - Forms</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width">
 
 	<script type="text/javascript" src="//use.typekit.net/tgy6zuu.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -14,10 +16,10 @@
 
 	<script type="text/javascript" src="../resources/js/vendor/html5shiv.js"></script>
 	<script type="text/javascript" src="../resources/js/vendor/modernizr-2.6.2.min.js"></script>
-    <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 </head>
 <body>
-<div id="bodyWrapper">
+	<div id="bodyWrapper">
 		<aside class="lt-side">
 			<nav>
 				<a href="#">Women</a>
@@ -38,182 +40,210 @@
 			</nav>
 		</aside>
 
-<section>
-	<header>
-		<ul class="menu">
-			<li class="main-nav"><a>menu</a></li>
-			<li class="mid-nav"><a>solestruck</a></li>
-			<li class="rt-nav"><a>cart</a></li>
-		</ul>
-	</header>
+		<section>
+			<header>
+				<!-- Start Changes -->
+				<!-- The words here should be formatted like so...
+				Menu, Solestruck, Cart
+				Not lowercase, those things should be handled by CSS. -->
+				<ul class="menu">
+					<li class="main-nav"><a>menu</a></li>
+					<li class="mid-nav"><a>solestruck</a></li>
+					<li class="rt-nav"><a>cart</a></li>
+				</ul>
+				<!-- End Changes -->
+			</header>
 
-	<article class="header-subnav">
- 		<nav>
-			<a href="typography.html">TYPOGRAPHY</a> 
-			<a href="">COLORS</a>	
-			<a href="media.html">MEDIA</a>	
-			<a href="buttons">BUTTONS</a>  
-			<a href="forms.html" class="active">FORMS</a>	
-			<a href="tables.html">TABLES</a>   
-			<a href="navigation.html">NAVIGATION</a>  
-			<a href="notice.html">OTHER</a>
-		</nav>
- 	</article>
+			<article class="header-subnav">
+				<!-- Start Changes -->
+				<!-- All text should be only capitalized, not uppercase.
+				Uppercase text should be handled in the CSS.
+				Ex. Typography, Colors, Media, etc. -->
+				<nav>
+					<a href="typography.html">TYPOGRAPHY</a>
+					<a href="">COLORS</a>
+					<a href="media.html">MEDIA</a>
+					<a href="buttons.html">BUTTONS</a>
+					<a href="forms.html" class="active">FORMS</a>
+					<a href="tables.html">TABLES</a>
+					<a href="navigation.html">NAVIGATION</a>
+					<a href="notice.html">OTHER</a>
+				</nav>
+				<!-- End Changes -->
+			</article>
 
-	<article class="mid-content-holder">
-		<h2 class="title">FORMS -  DROP DOWN</h2>
+				<article class="mid-content-holder">
 
-		<ul class="dropdown-holder">
-			<li>
-				<div class="selectBox rm_rt_br">
-				    <span class='selected'></span><code class='selectArrow'></code>
-				    <div class="selectOptions">
-				        <ul>
-				            <li class="selectOption" value="Option 0">PLEASE SELECT</li>
-				            <li class="selectOption" value="Option 1">SELECTED THE FIRST OPTION ONE</li>
-				            <li class="selectOption" value="Option 2">OPTION 2</li>
-				            <li class="selectOption" value="Option 3">OPTION 3</li>
-				        </ul>
-				    </div>
-				</div>
-			</li>
-			<li>
-				<div class='selectBox rm_rt_br'>
-				    <span class='selected'></span>
-				    <code class='selectArrow'></code>
-				    <div class="selectOptions">
-				        <ul>
-				            <li class="selectOption" value="Option 0">PLEASE SELECT</li>
-				            <li class="selectOption" value="Option 1">SELECTED THE FIRST OPTION ONE</li>
-				            <li class="selectOption" value="Option 2">OPTION 2</li>
-				            <li class="selectOption" value="Option 3">OPTION 3</li>
-				        </ul>
-				    </div>
-				</div>
-			</li>
-			<li>
-				<div class='selectBox'>
-				    <span class='selected'></span>
-				    <code class='selectArrow'></code>
-				    <div class="selectOptions">
-				        <ul>
-				            <li class="selectOption" value="Option 0">PLEASE SELECT</li>
-				            <li class="selectOption" value="Option 1"><img src="../resources/images/Pierre_Green.png" width="30px" class="fl_selectimg" />SELECTED THE FIRST OPTION ONE</li>
-				            <li class="selectOption" value="Option 2"><img src="../resources/images/Pierre_Green.png" width="30px" class="fl_selectimg" />OPTION 2</li>
-				            <li class="selectOption" value="Option 3"><img src="../resources/images/Pierre_Green.png" width="30px" class="fl_selectimg" />OPTION 3</li>
-				        </ul>
-				    </div>
-				</div>
-			</li>
-		</ul>
+				<!-- Start Changes -->
+				<!-- No Uppercase text in the HTML please. -->
+				<h2 class="title">FORMS -  DROP DOWN</h2>
+				<!-- End Changes -->
 
+				<ul class="dropdown-holder">
+					<li>
+						<div class="selectBox rm_rt_br">
+							<span class='selected'></span><code class='selectArrow'></code>
+							<div class="selectOptions">
+								<ul>
+									<!-- Start Changes -->
+									<!-- No Uppercase text in the HTML please. -->
+									<li class="selectOption" value="Option 0">PLEASE SELECT</li>
+									<li class="selectOption" value="Option 1">SELECTED THE FIRST OPTION ONE</li>
+									<li class="selectOption" value="Option 2">OPTION 2</li>
+									<li class="selectOption" value="Option 3">OPTION 3</li>
+									<!-- End Changes -->
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class='selectBox rm_rt_br'>
+						<span class='selected'></span>
+						<code class='selectArrow'></code>
+							<div class="selectOptions">
+								<ul>
+									<!-- Start Changes -->
+									<!-- No Uppercase text in the HTML please. -->
+									<li class="selectOption" value="Option 0">PLEASE SELECT</li>
+									<li class="selectOption" value="Option 1">SELECTED THE FIRST OPTION ONE</li>
+									<li class="selectOption" value="Option 2">OPTION 2</li>
+									<li class="selectOption" value="Option 3">OPTION 3</li>
+									<!-- End Changes -->
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class='selectBox'>
+							<span class='selected'></span>
+							<code class='selectArrow'></code>
+							<div class="selectOptions">
+								<ul>
+									<!-- Start Changes -->
+									<!-- No Uppercase text in the HTML please. -->
+									<!-- Also, please check what the drop down content actually looks like, when I checked, it looked really cramped, there should be padding so the option is easy to select. -->
+									<li class="selectOption" value="Option 0">PLEASE SELECT</li>
+									<li class="selectOption" value="Option 1">
+										<img src="../resources/images/Pierre_Green.png" width="30px" class="fl_selectimg" />SELECTED THE FIRST OPTION ONE
+									</li>
+									<li class="selectOption" value="Option 2">
+										<img src="../resources/images/Pierre_Green.png" width="30px" class="fl_selectimg" />OPTION 2
+									</li>
+									<li class="selectOption" value="Option 3">
+										<img src="../resources/images/Pierre_Green.png" width="30px" class="fl_selectimg" />OPTION 3
+									</li>
+									<!-- End Changes -->
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
 
- 
+				<!-- Start Changes -->
+				<!-- No Uppercase text in the HTML please. -->
+				<h2 class="title">FORMS - STACKED DROP DOWN</h2>
+				<!-- End Changes -->
+				<form>
+					<ul class="stacked-li">
+						<li>
+							<input type="radio" name="data[radio]" value="option1" id="option1" class="cform">
+							<label for="option1" class="lblr">Radio option 1</label>
+						</li>
+						<li>
+							<input type="radio" name="data[radio]" value="option2" id="option2" class="cform">
+							<label for="option2" class="lblr">Radio option 2</label>
+						</li>
+						<li>
+							<input type="checkbox" name="data[check]" value="female" id="optiona" class="cform">
+							<label for="optiona" class="lblr">Input Checkbox</label>
+						</li>
+						<li>
+							<input type="checkbox" name="data[check]" value="male" id="optionb" class="cform">
+							<label for="optionb" class="lblr">Input Checkbox</label>
+						</li>
+					</ul>
+				</form>
 
-		<h2 class="title">FORMS - STACKED DROP DOWN</h2>
-		<form>
-			<ul class="stacked-li">
-				<li>
-				 <input type="radio" name="data[radio]" value="option1" id="option1" class="cform">
-				 <label for="option1" class="lblr">Radio option 1</label>
-			 	</li>
-			 	<li>
-				 <input type="radio" name="data[radio]" value="option2" id="option2" class="cform">
-				 <label for="option2" class="lblr">Radio option 2</label>
-				</li>
-				<li>
-				 <input type="checkbox" name="data[check]" value="female" id="optiona" class="cform">
-				 <label for="optiona" class="lblr">Input Checkbox</label>
-			 	 </li>
-				 <li>
-				 <input type="checkbox" name="data[check]" value="male" id="optionb" class="cform">
-			 	 <label for="optionb" class="lblr">Input Checkbox</label>
-			 	  </li>
-		 	</ul>
-		</form>
-		<div style="clear:both;"></div>
+				<div style="clear:both;"></div>
 
- 
+				<!-- Start Changes -->
+				<!-- No Uppercase text in the HTML please. -->
+				<h2 class="title">FORMS - STACKED FORM</h2>
 
+				<form>
+					<ul class="form-field-holder">
+						<li>
+							<label>UserName</label>
+							<input type="text" name="" value="Hari Kumar" />
+						</li>
+						<li>
+						<label>Password</label>
+							<input type="password" name="" value="Hari Kumar" />
+						</li>
+						<li>
+							<button>SEND</button>
+							<!-- End Changes -->
+						</li>
+					</ul>
+				</form>
 
+				<!-- Start Changes -->
+				<!-- No Uppercase text in the HTML please. -->
+				<h2 class="title">FORMS - ERROR</h2>
 
-		<h2 class="title">FORMS - STACKED FORM</h2>
+				<form>
+					<ul class="form-field-holder">
+						<li>
+						<label>UserName</label>
+							<p class="error-text">*USERNAME DOESN’T EXIST</p>
+							<input type="text" name="" value="Hari Kumar" class="error-field" />
+						</li>
+						<li>
+						<label>Password</label>
+							<p class="error-text">*PASSWORD DOESN’T EXIST</p>
+							<input type="password" name="" value="Hari Kumar" class="error-field" />
+						</li>
+						<li>
+							<button>SEND</button>
+							<!-- End Changes -->
+						</li>
+					</ul>
+				</form>
 
-		<form>
-			<ul class="form-field-holder">
-				<li>
-					<label>UserName</label>
-					<input type="text" name="" value="Hari Kumar" />
-				</li>
-				<li>
-					<label>Password</label>
-					<input type="password" name="" value="Hari Kumar" />
-				</li>
-				<li>
-					<button>SEND</button>
-				</li>
-			</ul>
-		</form>
+				<!-- Start Changes -->
+				<!-- No Uppercase text in the HTML please. -->
+				<h2 class="title">FORMS - IN ACTIVE</h2>
+				<form>
+					<ul class="form-field-holder inline-li">
+						<li>
+							<label>UserName</label>
+							<input type="text" name="" value="Hari Kumar" disabled />
+						</li>
+						<li>
+							<label>Password</label>
+							<input type="password" name="" value="Hari Kumar" disabled />
+						</li>
+						<li>
+							<label>&nbsp;</label>
+							<button>SEND</button>
+							<!-- End Changes -->
+						</li>
+					</ul>
+				</form>
+			</article>
+		</section>
+	</div>
 
-
- 
-
-		<h2 class="title">FORMS - ERROR</h2>
-
-		<form>
-			<ul class="form-field-holder">
-				<li>
-					<label>UserName</label>
-					<p class="error-text">*USERNAME DOESN’T EXIST</p>
-					<input type="text" name="" value="Hari Kumar" class="error-field" />
-				</li>
-				<li>
-					<label>Password</label>
-					<p class="error-text">*PASSWORD DOESN’T EXIST</p>
-					<input type="password" name="" value="Hari Kumar" class="error-field" />
-				</li>
-				<li>
-					<button>SEND</button>
-				</li>
-			</ul>
-		</form>
-
- 
-		<h2 class="title">FORMS - IN ACTIVE</h2>
-
-		<form>
-			<ul class="form-field-holder inline-li">
-				<li>
-					<label>UserName</label>
-					<input type="text" name="" value="Hari Kumar" disabled />
-				</li>
-				<li>
-					<label>Password</label>
-					<input type="password" name="" value="Hari Kumar" disabled />
-				</li>
-				<li>
-					<label>&nbsp;</label>
-					<button>SEND</button>
-				</li>
-			</ul>
-		</form>
-
-</article>
-</section>
-</div>
-<script type="text/javascript" src="../resources/js/vendor/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="../resources/js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
-<script type="text/javascript" src="../resources/js/vendor/custom.forms.jquery.js"></script>
-
-<script type="text/javascript">
-			$(function() {
-				$('.dropdown, form').customForm();
-			});
-</script>
-
-<script type="text/javascript" src="../resources/js/actions.js"></script>
-
-<script type="text/javascript" src="../resources/js/dropdown.js"></script>
+	<script type="text/javascript" src="../resources/js/vendor/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="../resources/js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+	<script type="text/javascript" src="../resources/js/vendor/custom.forms.jquery.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('.dropdown, form').customForm();
+		});
+	</script>
+	<script type="text/javascript" src="../resources/js/actions.js"></script>
+	<script type="text/javascript" src="../resources/js/dropdown.js"></script>
 
 </body>
 </html>
