@@ -12,6 +12,7 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 	<link rel="stylesheet" type="text/css" href="../resources/style/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../resources/style/css/fonts.css" />
 
 	<script type="text/javascript" src="../resources/js/vendor/html5shiv.js"></script>
 	<script type="text/javascript" src="../resources/js/vendor/modernizr-2.6.2.min.js"></script>
@@ -39,99 +40,72 @@
 		</aside>
 
 		<section class="push-none">
-		<header>
-			<!-- Start Changes -->
-			<!-- The words here should be formatted like so...
-			Menu, Solestruck, Cart
-			Not lowercase, those things should be handled by CSS. -->
-			<ul class="menu">
-				<li class="main-nav"><a>menu</a></li>
-				<li class="mid-nav"><a>solestruck</a></li>
-				<li class="rt-nav"><a>cart</a></li>
-			</ul>
-			<!-- End Changes -->
-		</header>
+			<header>
+				<ul class="menu">
+					<li class="main-nav"><a>Menu</a></li>
+					<li class="mid-nav"><a>Solestruck</a></li>
+					<li class="rt-nav"><a>Cart</a></li>
+				</ul>
+			</header>
 
-		<article class="header-subnav">
-			<!-- Start Changes -->
-			<!-- All text should be only capitalized, not uppercase.
-			Uppercase text should be handled in the CSS.
-			Ex. Typography, Colors, Media, etc. -->
-			<nav>
-				<a href="typography.html">TYPOGRAPHY</a>
-				<a href="">COLORS</a>
-				<a href="media.html">MEDIA</a>
-				<a href="buttons.html">BUTTONS</a>
-				<a href="forms.html">FORMS</a>
-				<a href="tables.html">TABLES</a>
-				<a href="navigation.html" class="active">NAVIGATION</a>
-				<a href="notice.html">OTHER</a>
-			</nav>
-			<!-- End Changes -->
-		</article>
+			<article class="header-subnav">
+				<nav>
+					<a href="typography.html">Typography</a>
+					<a href="">Colors</a>
+					<a href="media.html">Media</a>
+					<a href="buttons.html">Buttons</a>
+					<a href="forms.html">Forms</a>
+					<a href="tables.html">Tables</a>
+					<a href="navigation.html" class="active">Navigation</a>
+					<a href="notice.html">Other</a>
+				</nav>
+			</article>
 
-		<!-- Start Changes -->
-		<!-- No Uppercase text in the HTML please. -->
-		<article class="mid-content-holder">
-			<h2 class="title">NAVIGATION - BREADCRUMB</h2>
-		</article>
+			<article class="mid-content-holder">
+				<h2 class="title">Navigation - Breadcrumb</h2>
+			</article>
 
 		<article>
-			<!-- Start Changes -->
-			<!-- The breadcrumb should contain links like the current version. Everything except the last item should be a link to go back one page. -->
-			<ul class="breadcrumb">
-				<li>Item one</li>
-				<li>Item two</li>
-				<li>Item three</li>
+ 			<ul class="breadcrumb">
+				<li><a href="#">Item one</a></li>
+				<li><a href="#">Item two</a></li>
+				<li><a href="#">Item three</a></li>
 				<li>Item four</li>
 			</ul>
-			<!-- End Changes -->
-		</article>
+ 		</article>
 
 		<article class="mid-content-holder">
-			<!-- Start Changes -->
-
-			<!-- Please change "Pagenation" to "Pagination" including the class names. We want to spell everything correctly. -->
-			<!-- Every number should be a link similar to any other pagination used on a site. -->
-			<h2 class="title">NAVIGATION - PAGINATION</h2>
-			<!-- End Changes -->
-
-			<!-- Start Changes -->
-			<!-- You should make every instance of navigation with the <nav> tag. -->
+ 
+			<h2 class="title">Navigation - Pagination</h2>
+  
 			<div class="pagination">
-				<div>
-					<i>&lt;</i>
-					<ul>
-						<li>1</li>
-						<li>2</li>
-						<li>3</li>
-						<li>4</li>
-						<li>5</li>
-						<li>6</li>
-						<li>7</li>
-						<li>8</li>
-						<li>9</li>
-						<li>10</li>
-					</ul>
-					<i>&gt;</i>
-				</div>
-			</div>
-			<!-- End Changes -->
-		</article>
+ 					<nav>
+						<a href=""><code class="icon icon-icons-left"></code></a>
+						<a href="">1</a>
+						<a href="">2</a>
+						<a href="">3</a>
+						<a href="">4</a>
+						<a href="">5</a>
+						<a href="">6</a>
+						<a href="">7</a>
+						<a href="">8</a>
+						<a href="">9</a>
+						<a href="">10</a>
+						<a href="">...</a>
+						<a href=""><code class="icon icon-icons-right"></code></a>
+					</nav>
+ 			</div>
+ 		</article>
 
 		<article class="mid-content-holder">
 			<h2 class="title">Navigation -  Progress</h2>
-
-			<!-- Start Changes -->
-			<!-- <menu> tag is not supported in any major browsers. Change to <nav> -->
-			<menu class="nav-progress">
+ 			<nav class="nav-progress">
 				<a href="">First</a>
 				<a href="" class="active">Second</a>
 				<a href="">Third</a>
 				<a href="">Fourth</a>
-			</menu>
-			<!-- End Changes -->
-		</article>
+			</nav>
+ 		</article>
 		</section>
 	</div>
 
