@@ -28,11 +28,11 @@ h3 {
 }
 
 h4 {
-  font-size: $base-font-size * 0.8; // 20 * 1 = 16px
+  font-size: $base-font-size * 0.8; //  1 = 16px
 }
 
 h5 {
-  font-size: $base-font-size * 0.88; // 20 * .7 = 14px
+  font-size: $base-font-size * 0.7; // .875 = 14px
 }
 
 h6 {
@@ -156,12 +156,15 @@ div.selectBox {
 	font-size: $base-font-size * 0.88;
 	font-weight: bold;
 	color: $black;
-	
+	text-transform:uppercase;
 	span {
  		line-height: 35px;
 	}
 	code {
 		font-size: $base-font-size;
+	}
+	.selectOptions {
+		font-size: $base-font-size * 0.6;
 	}
 }
 

@@ -19,28 +19,20 @@ ul {
 		}
 	}
 }
+
 .pagination {
 		float: left;
 		position: relative;
 		left: 50%;
  		padding-top: 10px;
-
-	div {
-		float: left;
-		position: relative;
-		left: -50%;
-
-		i {
-			float:left;
-			padding:15px 0px;
-		}
-		ul {
-			margin:0px 0px;
-			padding:7px 0px;
-			list-style-type:none;
-			float:left;
-			li {
-				padding:8px 20px;
+ 		
+		nav {
+			float: left;
+			position: relative;
+			left: -50%;
+	
+			a {
+				padding:8px 15px;
 				display:inline-block;
 				border-left:2px solid $black;
 				&:first-child {
@@ -48,11 +40,10 @@ ul {
 				}
 			}
 		}
-	}
 }
 
 
-menu {
+nav {
 	&.nav-progress {
 		a {
 			text-decoration:none;

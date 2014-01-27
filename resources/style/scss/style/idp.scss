@@ -1,14 +1,6 @@
-// Start Changes
-// I noticed that you are using a very similar style here in the banner styles. Don't forget that we can use %placeholders and @extend to combine the elements that use the same style without duplicating code.
 article {
- 	&.fullsize {
-		@include fill-parent;
-		height:auto;
-
-		img {
-			@include fill-parent;
-			height:100%;
-		}
-	}
- }
- // End Changes
+  	&.fullsize {
+  		@extend .banner-wrapper;
+  	}
+}  
+		

@@ -21,17 +21,13 @@ body {
 	@include media($seed) {
 		font-size: 75%;
 	}
-	.title{
-		border-bottom:3px solid $black;
-		margin-bottom:30px;
-		padding:50px 40px 10px;
-		text-transform: uppercase;
-	}
-	.title2Test{
+
+	.ct-title{
 		border-bottom:3px solid $black;
 		margin:0px auto 30px;
 		padding:50px 40px 10px;
 		text-transform: uppercase;
+		
 		@include media($twig) {
 			width:800px;
 		}
@@ -60,6 +56,13 @@ body {
 				@include media($seed) {
 					width:340px;
 				}
+			
+				h2 {
+					&.title {
+						@extend .ct-title;
+					}
+					
+				}	
 			}
 		}
 	}
