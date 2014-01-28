@@ -139,6 +139,8 @@ button {
 	color:$white;
 	font-size: $base-font-size;	
 	text-transform:uppercase !important;
+	font-weight:400;
+	font-style:italic;
 	
 	&.lr-btn{
 		font-size: $base-font-size * 1.5;
