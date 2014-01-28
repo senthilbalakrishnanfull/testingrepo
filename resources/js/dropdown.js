@@ -8,11 +8,11 @@ $(document).ready(function() {
 
 function enableSelectBoxes(){
 	$('div.selectBox').each(function(){
-		$(this).children('span.selected').html($(this).children('div.selectOptions').find('ul').find('li:first').html());
+		$(this).children('span.selected, span.selected b').html($(this).children('div.selectOptions').find('ul').find('li:first').html());
 		
 		$(this).attr('value',$(this).children('div.selectOptions').find('ul').find('li:first').html());
 		
-		$(this).children('span.selected,code.selectArrow').click(function(){
+		$(this).children('span.selected, span.selected b, code.selectArrow').click(function(){
 			if($(this).parent().children('div.selectOptions').css('display') == 'none'){
 				$(this).parent().children('div.selectOptions').css('display','block');
 			}
