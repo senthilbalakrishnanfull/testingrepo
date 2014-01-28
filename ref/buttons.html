@@ -52,7 +52,7 @@
 			<article class="header-subnav">
 				<nav>
 					<a href="typography.html">Typography</a>
-					<a href="">Colors</a>
+					<a href="colors.html">Colors</a>
 					<a href="media.html">Media</a>
 					<a href="buttons.html" class="active">Buttons</a>
 					<a href="forms.html">Forms</a>
@@ -67,22 +67,23 @@
 
 			<!-- Start Changes -->
 			<!-- These are still uppercase, should not be uppercase in HTML -->
-			<button>Default Button</button>
+			<div class="btn_module"> <button>Default Button</button> <span>padding:30px, color:#ffffff, Bg-color:#000000</span></div> 
+			<div class="btn_module"> <button class="btn-hover">Default Hover</button> <span>padding:30px, color:#ffffff, Bg-color:#f2646d</span></div>
 			<!-- End Changes -->
 
 			<h2  class="title">Buttons - Button sizes</h2>
 
 			<!-- Start Changes -->
 			<!-- These are still uppercase, should not be uppercase in HTML -->
-			<button class="lr-btn">Large Button</button>
-			<button>Default Button</button>
-			<button class="sm-btn">Small Button</button>
+			<div class="btn_module"> <button class="lr-btn">Large Button</button> <span>font-size:30px, padding:30px</span> </div> 
+			<div class="btn_module"> <button>Default Button</button> <span>font-size:20px, padding:30px</span></div>	
+			<div class="btn_module"> <button class="sm-btn">Small Button</button> <span>font-size:16px, padding:20px</span></div> 
 			<!-- End Changes -->
 
-			<button class="cancel-btn">Cancel</button>
+			<div class="btn_module"> <button class="cancel-btn">Cancel</button> </div>
 
 			<h2 class="title">Buttons - Block level Buttons</h2>
-			<button class="fl-btn">Full Button</button>
+			<button class="fl-btn">Block level Buttons</button>
  		</article>
 	</section>
 </div>
@@ -93,7 +94,7 @@
 
 <script type="text/javascript">
 $(function() {
-$('.dropdown, form').customForm();
+	$('.dropdown, form').customForm();
 });
 </script>
 
