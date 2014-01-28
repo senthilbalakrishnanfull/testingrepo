@@ -113,7 +113,9 @@ cite {
 button {
   color: white;
   font-size: 1.25em;
-  text-transform: uppercase !important; }
+  text-transform: uppercase !important;
+  font-weight: 400;
+  font-style: italic; }
   button.lr-btn {
     font-size: 1.875em; }
   button.sm-btn {
@@ -323,6 +325,11 @@ div.selectBox {
     position: relative;
     float: left;
     z-index: 1; }
+    div.selectBox span b {
+      margin: -5px 0px 0px;
+      padding: 0px;
+      position: relative;
+      top: -7px; }
   div.selectBox code {
     background: url(../../images/form_image.png) no-repeat scroll 5px -195px;
     border-width: 3px 3px 3px 0;
@@ -355,9 +362,15 @@ div.selectBox {
         overflow: hidden; }
         div.selectBox .selectOptions ul li:hover {
           background: #f5f5f5; }
-        div.selectBox .selectOptions ul li .fl_selectimg {
-          float: left;
-          padding: 5px 5px 0px 0px; }
+      div.selectBox .selectOptions ul.img-list li {
+        position: relative; }
+        div.selectBox .selectOptions ul.img-list li img {
+          position: absolute;
+          top: 5px; }
+        div.selectBox .selectOptions ul.img-list li b {
+          display: block;
+          line-height: 22px;
+          padding: 2px 0px 0px 40px; }
 
 /* fix select height bug on webkit browsers for Mac OS */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -416,7 +429,7 @@ button {
   button.fl-btn {
     width: 99%;
     padding: 30px 0px; }
-  button:hover {
+  button:hover, button.btn-hover {
     background: #f2646d; }
   button.cancel-btn {
     background: none; }
@@ -797,3 +810,38 @@ ul.img-rack {
           margin-right: 0; }
         ul.img-rack li body {
           font-size: 99%; } }
+
+/* this sass file is used for module placements,  should not be included in the project */
+.btn_module {
+  margin: 20px 0px; }
+  .btn_module span {
+    padding-left: 30px;
+    text-transform: uppercase;
+    font-style: italic; }
+
+.css-mapping {
+  margin: 0px 0px 50px;
+  padding: 0px;
+  list-style-type: none; }
+  .css-mapping li {
+    display: inline-block;
+    width: 200px;
+    height: 40px; }
+    .css-mapping li span {
+      padding-left: 5px; }
+
+.colors {
+  margin: 50px 0px;
+  padding: 90px 0px;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  font-size: 1.875em;
+  text-transform: uppercase; }
+  .colors.black {
+    background: black; }
+  .colors.white {
+    border: 3px solid black;
+    color: black; }
+  .colors.red {
+    background: #f2646d; }
