@@ -3,6 +3,14 @@
 
 @font-face {
   font-family: "solestruck7";
+  src:url("../../font/solestruck7.eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "solestruck7";
   src:url("../../fonts/solestruck7.eot");
   src:url("../../fonts/solestruck7.eot?#iefix") format("embedded-opentype"),
     url("../../fonts/solestruck7.ttf") format("truetype"),
