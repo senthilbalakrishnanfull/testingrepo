@@ -4,33 +4,60 @@ section {
 		right:0px;
 	}
 	&.push-rt {
-		left:300px;
+		left:260px;
 	}
 	&.push-lt {
-		left:-300px;
+		left:-260px;
 	}
 	header {
 		@include fill-parent;
-		overflow:auto;
+		overflow:hidden;
 		.menu {
 			margin:0px;
 			padding:0px;
 			list-style-type:none;
 			li {
 				@include span-columns(2);
+				padding:15px;
+				font-weight:600;
 				a {
 					text-align:left;
-					padding:5px;
 					cursor:pointer;
 					text-transform:uppercase;
+
+
 				   }
+				&.main-nav{
+
+					a {
+						margin-top: -25px;
+						margin-left: 30px;
+						display: block;
+						@include media($seed) {
+							display:none;
+						}
+					}
+					
+				}
 				&.rt-nav{
 					text-align:right;
+					a {
+						@include media($seed) {
+							display:none;
+						}
+					}
+					
 				}
 				&.mid-nav {
 					@include span-columns(8);
 					text-align:center;
+					padding:5px 0px;
 				}
+				span{
+						border:3px solid $black;
+						padding:0px 5px;
+						border-width: 0px 4px 4px;
+					}
 			}
 		}
 	}

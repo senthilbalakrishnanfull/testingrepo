@@ -88,12 +88,12 @@ p {
 .dropdown-holder {
 	margin: 0;
 	padding: 0;
+	background:$white;
 	list-style-type: none;
-	@include outer-container;
 	>li {
 		@include media($twig) {
 			@include span-columns(4);
-			@include omega();
+			@include omega(n);
 			body { font-size: 150%; }
 		}
 		@include media($leaf) {
@@ -104,6 +104,7 @@ p {
 		@include media($seed) {
 			@include span-columns(12);
 			body { font-size: 99%; }
+
 		}
 
 	}
@@ -190,6 +191,8 @@ div.selectBox {
 	  			img {
 	  				position:absolute;
 	  				top:5px;
+	  				width:30px;
+	  				height:30px;
 	  			}
 	  			b {
 	  				display:block;

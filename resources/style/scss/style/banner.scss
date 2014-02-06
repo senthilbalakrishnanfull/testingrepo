@@ -1,8 +1,11 @@
 article {
+	&.img-idp-holder{
+		//z-index:4;
+	}
  	&.banner-wrapper, &.banner-ads {
 		@include fill-parent;
 		height:auto;
-		text-align:center;
+		position:relative;
 
 		img {
 			@include fill-parent;

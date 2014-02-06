@@ -19,7 +19,7 @@ body {
 		font-size: 95%;
 	}
 	@include media($seed) {
-		font-size: 75%;
+		font-size: 85%;
 	}
 
 	.ct-title{
@@ -39,9 +39,17 @@ body {
 		}
 	}
 	section {
+	z-index:2;
 		article {
 			margin:0px;
 			padding:0px;
+
+			@media screen and (max-width: 320px){
+		
+				ul.breadcrumb{
+					display:none;
+				}
+			}
 
 			&.mid-content-holder {
 				clear:both;
