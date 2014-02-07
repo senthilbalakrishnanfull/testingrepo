@@ -70,4 +70,24 @@ $(document).ready(function() {
 		}
 	});
 
+
+
+	$(window).load(function(){
+
+		$('.info_description, .like_description').height($('.img-idp-holder').height());
+		$('.desc_wrapper').height($('.img-idp-holder').height()-100);
+
+	});
+
+
+	
+	// $(function() {
+	// 		$(".scroller").niceScroll();
+	// 		alert("adsf");
+	// 	});
+
+/*** js scroll bar code ***/
+
+
+
 });
