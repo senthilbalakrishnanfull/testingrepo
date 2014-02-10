@@ -8,6 +8,7 @@ $(document).ready(function() {
 
 function enableSelectBoxes(){
 	$('div.selectBox').each(function(){
+		//alert("d");
 		$(this).children('span.selected, span.selected b').html($(this).children('div.selectOptions').find('ul').find('li:first').html());
 		
 		$(this).attr('value',$(this).children('div.selectOptions').find('ul').find('li:first').html());
@@ -25,7 +26,8 @@ function enableSelectBoxes(){
 		$(this).find('ul').find('li.selectOption').click(function(){
 			$(this).parent().parent().css('z-index','-1');
 			$(this).closest('div.selectBox').attr('value',$(this).attr('value'));
-			$(this).parent().parent().siblings('span.selected').html($(this).html());
+			$(this).closest('div.selectBox').find('span.selected').html($(this).html());
+			//$(this).parent().parent().siblings('span.selected').html($(this).html());
 		});
 		
 		$(this).click(function(){
