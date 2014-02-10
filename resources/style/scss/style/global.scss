@@ -11,6 +11,15 @@ body {
 			background:$white;
 			position:relative;
 		}
+		code{
+			&.icon-icons-star{
+				color:#cccccc;
+			}
+			&.review_selected{
+				color:$black !important;
+			}
+		}
+		
 	}
 	@include media($twig) {
 		font-size: 110%;

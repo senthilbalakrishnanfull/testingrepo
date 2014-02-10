@@ -10,6 +10,7 @@ article {
 		img {
 			@include fill-parent;
 			height:100%;
+			margin-bottom:-4px;
 		}
 	}
 }
