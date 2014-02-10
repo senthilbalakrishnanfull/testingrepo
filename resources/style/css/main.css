@@ -194,7 +194,7 @@ label {
     width: 214px; }
 
 input[type="text"], input[type="password"] {
-  border: 2px solid #cccccc;
+  border: 3px solid #cccccc;
   padding: 20px 0px 20px 15px;
   margin: 10px 0px 25px; }
   input[type="text"].error-field, input[type="password"].error-field {
@@ -265,7 +265,9 @@ p.error-text {
       display: block;
       float: left;
       margin-right: 2.35765%;
-      width: 31.76157%; }
+      width: 31.76157%;
+      width: 33.333%;
+      margin: 0px; }
       .dropdown-holder > li:last-child {
         margin-right: 0; }
       .dropdown-holder > li:nth-child(n) {
@@ -315,23 +317,25 @@ div.selectBox {
     width: 90%;
     border-right: none;
     overflow: hidden;
-    padding: 19px 0px 19px 20px;
-    height: 68px;
+    padding: 18px 0px 21px 20px;
+    height: 72px;
     position: relative;
     float: left;
-    z-index: 1; }
+    z-index: 1;
+    line-height: 40px; }
     div.selectBox span img {
       width: 30px;
-      height: 30px; }
+      height: 30px;
+      margin-top: 4px; }
     div.selectBox span b {
       margin: -5px 0px 0px;
       padding: 0px;
       position: relative;
-      top: -7px; }
+      top: -2px; }
   div.selectBox code {
-    background: url(../../images/form_image.png) no-repeat scroll 5px -190px;
+    background: url(../../images/form_image.png) no-repeat scroll 5px -188px;
     border-width: 3px 3px 3px 0;
-    padding: 34px 27px;
+    padding: 36px 27px;
     text-align: center;
     *padding-top: 6px;
     position: absolute;
@@ -339,15 +343,15 @@ div.selectBox {
     z-index: 1; }
   div.selectBox .selectOptions {
     position: absolute;
-    top: 68px;
+    top: 72px;
     left: -3px;
     border: 3px solid black;
-    padding-top: 2px;
-    width: 102%;
+    width: 101%;
     height: 180px;
     background-color: white;
     z-index: -1;
-    margin: 0px; }
+    margin: 0px;
+    padding: 5px 0px; }
     div.selectBox .selectOptions ul {
       list-style: none outside none;
       margin: 0;
@@ -644,12 +648,12 @@ table {
   margin: 20px 0; }
 
 .mCSB_scrollTools .mCSB_draggerRail {
-  width: 2px;
+  width: 3px;
   height: 100%;
   margin: 0 auto;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px; }
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px; }
 
 .mCSB_scrollTools .mCSB_dragger {
   cursor: pointer;
@@ -660,9 +664,9 @@ table {
   width: 3px;
   height: 100%;
   margin: 0 auto;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
   text-align: center; }
 
 .mCSB_scrollTools .mCSB_buttonUp,
@@ -1123,7 +1127,8 @@ section.push-lt {
   left: -260px; }
 section header {
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 8px 15px; }
   section header .menu {
     margin: 0px;
     padding: 0px;
@@ -1133,7 +1138,7 @@ section header {
       float: left;
       margin-right: 2.35765%;
       width: 14.70196%;
-      padding: 15px;
+      padding: 8px 0px 0px;
       font-weight: 600; }
       section header .menu li:last-child {
         margin-right: 0; }
@@ -1142,24 +1147,26 @@ section header {
         cursor: pointer;
         text-transform: uppercase; }
       section header .menu li.main-nav a {
-        margin-top: -25px;
-        margin-left: 30px;
+        margin-top: -26px;
+        margin-left: 35px;
         display: block; }
         @media screen and (min-width: 320px) and (max-width: 480px) {
           section header .menu li.main-nav a {
             display: none; } }
       section header .menu li.rt-nav {
         text-align: right; }
-        @media screen and (min-width: 320px) and (max-width: 480px) {
-          section header .menu li.rt-nav a {
-            display: none; } }
+        section header .menu li.rt-nav a {
+          margin-right: 8px; }
+          @media screen and (min-width: 320px) and (max-width: 480px) {
+            section header .menu li.rt-nav a {
+              display: none; } }
       section header .menu li.mid-nav {
         display: block;
         float: left;
         margin-right: 2.35765%;
         width: 65.88078%;
         text-align: center;
-        padding: 5px 0px; }
+        padding: 0px; }
         section header .menu li.mid-nav:last-child {
           margin-right: 0; }
       section header .menu li span {
@@ -1244,7 +1251,8 @@ article.banner-wrapper, article.fullsize, article.banner-ads {
   position: relative; }
   article.banner-wrapper img, article.fullsize img, article.banner-ads img {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    margin-bottom: -4px; }
 
 body {
   margin: 0px;
@@ -1261,6 +1269,10 @@ body {
       position: relative; }
       body #bodyWrapper section:last-child {
         margin-right: 0; }
+    body #bodyWrapper code.icon-icons-star {
+      color: #cccccc; }
+    body #bodyWrapper code.review_selected {
+      color: black !important; }
   @media screen and (min-width: 1024px) {
     body {
       font-size: 110%; } }
@@ -1310,29 +1322,51 @@ article.img-idp-holder button code {
   display: inline-table; }
 article.img-idp-holder .sorting-wrapper {
   width: 100%;
-  display: inline-block; }
+  display: inline-block;
+  height: 74px; }
+  @media screen and (min-width: 1024px) {
+    article.img-idp-holder .sorting-wrapper {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px; } }
+  @media screen and (min-width: 480px) and (max-width: 1024px) {
+    article.img-idp-holder .sorting-wrapper {
+      display: block;
+      background: white; } }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    article.img-idp-holder .sorting-wrapper {
+      display: block;
+      background: white; } }
   article.img-idp-holder .sorting-wrapper .dropdown-holder {
     display: block;
     float: left;
     margin-right: 2.35765%;
-    width: 82.94039%; }
+    width: 82.94039%;
+    margin: 0px; }
     article.img-idp-holder .sorting-wrapper .dropdown-holder:last-child {
       margin-right: 0; }
     article.img-idp-holder .sorting-wrapper .dropdown-holder:nth-child(0) {
       margin-right: 0; }
     article.img-idp-holder .sorting-wrapper .dropdown-holder:nth-child(0+1) {
       clear: left; }
+    @media screen and (min-width: 1024px) {
+      article.img-idp-holder .sorting-wrapper .dropdown-holder {
+        height: 78px; } }
   article.img-idp-holder .sorting-wrapper button {
     display: block;
     float: left;
     margin-right: 2.35765%;
-    width: 14.70196%; }
+    width: 14.70196%;
+    margin: 0px; }
     article.img-idp-holder .sorting-wrapper button:last-child {
       margin-right: 0; }
     article.img-idp-holder .sorting-wrapper button:nth-child(0) {
       margin-right: 0; }
     article.img-idp-holder .sorting-wrapper button:nth-child(0+1) {
       clear: left; }
+  article.img-idp-holder .sorting-wrapper div.mCSB_container {
+    z-index: 9 !important; }
 article.fullsize ul.img-idp {
   margin: 0px;
   padding: 0px;
@@ -1352,12 +1386,16 @@ article.fullsize ul.img-idp {
         left: 0px;
         padding: 4px;
         z-index: 1; }
+        @media screen and (min-width: 320px) and (max-width: 480px) {
+          article.fullsize ul.img-idp li span.info {
+            bottom: 0px;
+            top: inherit; } }
         article.fullsize ul.img-idp li span.info code {
           display: block; }
         article.fullsize ul.img-idp li span.info.hit {
           border: 3px solid black; }
       article.fullsize ul.img-idp li span.title {
-        top: 30px;
+        top: 15px;
         left: 0px;
         width: 100%;
         margin: 0px;
@@ -1368,8 +1406,12 @@ article.fullsize ul.img-idp {
       article.fullsize ul.img-idp li span.like {
         top: 0px;
         right: 0px;
-        padding: 4px;
+        padding: 4px 12px;
         z-index: 1; }
+        @media screen and (min-width: 320px) and (max-width: 480px) {
+          article.fullsize ul.img-idp li span.like {
+            bottom: 0px;
+            top: inherit; } }
         article.fullsize ul.img-idp li span.like code {
           display: block; }
         article.fullsize ul.img-idp li span.like.hit {
@@ -1407,23 +1449,27 @@ article.idp_review {
     padding: 0px;
     list-style-type: none; }
     article.idp_review ul li {
-      padding: 20px 40px; }
+      padding: 17px 40px; }
       @media screen and (min-width: 320px) and (max-width: 480px) {
         article.idp_review ul li {
           padding: 20px;
           text-align: center; } }
       article.idp_review ul li.review_textbox {
-        text-align: center; }
+        text-align: center;
+        position: relative; }
         article.idp_review ul li.review_textbox div {
-          font-size: 20px;
-          margin: -68px 0 0 440px;
+          font-size: 10px;
+          top: 50px;
+          right: 180px;
           position: absolute; }
           @media screen and (min-width: 320px) and (max-width: 480px) {
             article.idp_review ul li.review_textbox div {
               margin: -58px 12px 80px 10px;
               float: none; } }
       article.idp_review ul li input {
-        width: 600px; }
+        width: 590px;
+        padding: 20px 170px 20px 15px;
+        margin: 10px 10px 25px 0px; }
         @media screen and (min-width: 320px) and (max-width: 480px) {
           article.idp_review ul li input {
             width: 100%;
@@ -1484,15 +1530,22 @@ article.info_description {
   position: absolute;
   left: 0px;
   width: 70%;
-  padding: 40px 40px 40px 0px; }
+  padding: 40px 20px 40px 0px; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    article.info_description {
+      position: fixed;
+      z-index: 2;
+      width: 100%;
+      top: 0px;
+      display: none; } }
   article.info_description code {
     right: 20px;
     position: absolute;
     top: 20px;
     color: #333333;
     cursor: pointer; }
-  article.info_description div.common_scroller {
-    height: 300px; }
+  article.info_description div.desc_wrapper {
+    padding-bottom: 100px; }
 article.like_description {
   background-color: black;
   color: white;
@@ -1500,20 +1553,67 @@ article.like_description {
   right: 0px;
   width: 30%;
   text-align: center; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    article.like_description {
+      position: fixed;
+      z-index: 2;
+      width: 100%;
+      top: 0px;
+      height: 100% !important; } }
+  article.like_description h2 {
+    padding: 30px 0px;
+    text-transform: uppercase; }
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      article.like_description h2 {
+        display: block;
+        background-color: white;
+        color: black;
+        text-align: left;
+        padding-left: 30px; } }
+    article.like_description h2 code.icon-icons-remove {
+      display: none;
+      position: absolute;
+      right: 10px;
+      top: 30px;
+      cursor: pointer; }
+      @media screen and (min-width: 320px) and (max-width: 480px) {
+        article.like_description h2 code.icon-icons-remove {
+          display: block; } }
+    article.like_description h2 code.icon-icons-heart {
+      color: #f2646d; }
   article.like_description ul {
     list-style-type: none;
     margin: 0px;
-    padding: 0px; }
+    padding: 0px;
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%; }
+    article.like_description ul:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      article.like_description ul {
+        margin-left: -2px; } }
     article.like_description ul li {
+      display: block;
       float: left;
-      width: 50%;
-      border: 2px solid #3d3d3d; }
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      line-height: 250px;
+      height: 200px;
+      background-color: black;
+      border: 3px solid #3c3c3c;
+      border-width: 3px 1px 0px 2px;
+      margin: 0px;
+      Width: 50%; }
+      article.like_description ul li:last-child {
+        margin-right: 0; }
+      article.like_description ul li:nth-child(0n) {
+        margin-right: 0; }
+      article.like_description ul li:nth-child(0n+1) {
+        clear: left; }
       article.like_description ul li.bottom_line {
-        border-width: 2px 2px 0px; }
-      article.like_description ul li.top_line {
-        border-width: 4px 2px 2px; }
-      article.like_description ul li a {
-        line-height: 250px; }
+        border-width: 3px 1px 3px 2px; }
 article.push-rt {
   left: 70%;
   position: relative; }
