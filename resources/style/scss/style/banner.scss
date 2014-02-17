@@ -1,16 +1,14 @@
 article {
-	&.img-idp-holder{
-		//z-index:4;
-	}
  	&.banner-wrapper, &.banner-ads {
 		@include fill-parent;
 		height:auto;
 		position:relative;
+		top:61px;
 
 		img {
 			@include fill-parent;
 			height:100%;
-			margin-bottom:-4px;
+			margin-bottom:-6px;
 		}
 	}
 }

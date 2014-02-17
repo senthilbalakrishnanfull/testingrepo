@@ -4,7 +4,7 @@ aside{
 	z-index:1;
 	left:0px;
 	background:$black;
-	width:260px;
+	width:265px;
 	height:100%;
 
 	.scroller {
@@ -15,7 +15,7 @@ aside{
  	&.rt-side {
 		left:inherit;
 		right:0px;
-		width:260px;
+		width:265px;
  		z-index:1;
  		nav{
  			color:$white;
@@ -23,18 +23,7 @@ aside{
  				display:block;
  				padding:3px 0px;
  			}
- 			&.cart_holder{
- 			border:0px;
- 				small{
- 					float:left;
- 					&.last_subtotal{
- 						float:right;
- 					}
- 				}
- 			}
- 			div{
- 				clear:both;
- 			}
+ 			
 
  		}
  		code{
@@ -59,7 +48,7 @@ aside{
  			margin:0px;
  			color:$white;
  			border:0px;
- 			width:260px;
+ 			width:265px;
  			background-color:#262626;
  			padding-left:40px;
  		}
@@ -82,3 +71,23 @@ aside{
 		}
 	}
 }
+
+nav{
+	&.cart_holder{
+	padding:15px;
+	baclground-color:$black;
+	color:$white;
+	position:fixed;
+	z-index:1;
+	right:0px;
+	bottom:0px;
+	width:265px;
+		small{
+			float:left;
+			&.last_subtotal{
+				float:right;
+			}
+		}
+	}
+}
+

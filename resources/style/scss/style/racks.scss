@@ -12,15 +12,18 @@ ul {
 				@include fill-parent;
 				position:relative;
 				display:block;
+				z-index:1;
 				span {
 					position:absolute;
 					z-index:10;
 					margin:20px;
 					&.new {
 						top:0px;
+						left:0px;
 					}
 					&.name {
 						bottom:0px;
+						left:0px;
 					}
 					&.price{
 						right:0px;
@@ -55,4 +58,27 @@ ul {
 		}
 		// End Changes
 	}
+}
+.shoe-grid-wrapper{
+	h3{
+		padding:20px;
+		text-transform:uppercase;
+		text-align:center;
+	}
+	i{
+		font-size:66px;
+		color:#f2f2f2;
+		font-weight:bold;
+		text-align:center;
+		padding:20px 0px 0px; 
+		display:block;
+		text-transform:uppercase;
+	}
+}
+.category-shoe-grid-wrapper{
+	top:140px;
+	position:relative;
+	background:$white;
+	z-index:-1;
+	margin-bottom:140px;
 }

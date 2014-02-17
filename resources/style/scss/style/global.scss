@@ -53,8 +53,7 @@ body {
 			margin:0px;
 			padding:0px;
 
-			@media screen and (max-width: 320px){
-		
+			@include media($seed) {
 				ul.breadcrumb{
 					display:none;
 				}
@@ -63,6 +62,9 @@ body {
 			&.mid-content-holder {
 				clear:both;
 				margin:0px auto !important;
+				background-color:$white;
+				z-index:1;
+				position:relative;
 
 				@include media($twig) {
 					width:800px;
@@ -71,12 +73,25 @@ body {
 					width:600px;
 				}
 				@include media($seed) {
-					width:340px;
+					width:100%;
+					padding:0px 20px;
+				}
+				@include media($small_tab) {
+					width:380px;
 				}
 			
 				h2 {
 					&.title {
 						@extend .ct-title;
+
+						@include media($seed) {
+							width:100%;
+						}
+						@include media($small_tab) {
+							width:380px;
+						}
+
+
 					}
 					
 				}	

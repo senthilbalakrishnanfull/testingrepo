@@ -3,28 +3,41 @@ article {
 	&.img-idp-holder{
 		button{
 			code{
-				margin: 5px 5px 0px;
-				display: inline-table;
+				margin: 0px 10px;
+				position:absolute;
 			}
 		}
 		&:hover{
-			.sorting-wrapper{
-				//z-index:1;
+			.idp-sorting-wrapper{
+				-khtml-opacity:1; 
+				 -moz-opacity:1; 
+				 -ms-filter:”alpha(opacity=1)”;
+				  filter:alpha(opacity=1);
+				  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=1);
+				  opacity:1;
 			}
+			
 		}
 
-		.sorting-wrapper {
+		.idp-sorting-wrapper{
 			@include fill-parent;
 			display:inline-block;
 			height:74px;
-			//z-index:-1;
-
+			button{
+				padding:28px 30px;
+			}
 
 			@include media($twig) {
 				position:absolute;
 				bottom:20px;
 				left:20px;
 				right:20px;
+				-khtml-opacity:0; 
+				 -moz-opacity:0; 
+				 -ms-filter:”alpha(opacity=0)”;
+				  filter:alpha(opacity=0);
+				  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+				  opacity:0;
 
 			}
 			@include media($leaf) {
@@ -60,9 +73,51 @@ article {
 
 		}
 
+
 	}
   	&.fullsize {
   		@extend .banner-wrapper;
+
+
+  		.sorting-wrapper {
+			@include fill-parent;
+			display:inline-block;
+			height:74px;
+			background:$white;
+			position:fixed;
+			.dropdown-holder {
+				@include span-columns(10);
+				@include omega(0);
+			}
+			button {
+				@include span-columns(2);
+				@include omega(0);
+
+			}
+
+			div{
+				&.mCSB_container{
+				z-index:9 !important;
+				}
+			}
+
+			&.push-none{
+				left:0px;
+				right:0px;
+			}
+
+			&.push-rt {
+				left:265px;
+				
+			}
+			&.push-lt {
+				left:-265px;
+				
+			}
+
+		}
+
+
 
   		ul {
 
@@ -72,7 +127,17 @@ article {
 				list-style-type:none;
 				//@include outer-container;
 				text-transform:uppercase;
-
+					&:hover{
+						.info{
+							display:block;
+						}
+						.title{
+							display:block;
+						}
+						.like{
+							display:block;
+						}
+					}
 				li {
 					@include fill-parent;
 					position:relative;
@@ -84,10 +149,15 @@ article {
 						cursor:pointer;
 						text-align:center;
 						&.info {
-							top:0px;
+							top:50px;
 							left:0px;
 							padding:4px;
 							z-index:1;
+
+							@include media($twig) {
+								display:none;
+							}
+
 							@include media($seed) {
 								bottom:0px;
 								top:inherit;
@@ -100,7 +170,16 @@ article {
 							}
 						}
 						&.title {
-							top: 15px;
+
+							@include media($twig) {
+								display:none;
+							}
+
+							@include media($seed) {
+								top: 10px;
+							}
+
+							top: 80px;
 							left: 0px;
 							width: 100%;
 							margin: 0px;
@@ -111,7 +190,12 @@ article {
 							}
 						}
 						&.like{
-							top:0px;
+
+							@include media($twig) {
+								display:none;
+							}
+
+							top:50px;
 							right:0px;
 							padding:4px 12px;
 							z-index:1;
@@ -144,9 +228,24 @@ article {
 	  	background-color:$black;
 	  	text-align:center;
 	  	color:$white;
-	  	padding:15px 0px 40px;
+	  	padding:15px 0px 50px;
 	  	position:relative;
-	  	//z-index:3;
+	  	font-style:italic;
+
+	  	@include media($leaf) {
+			padding:15px 0px 10px;
+		}
+		@include media($seed) {
+			padding:15px 0px 0px;
+		}
+	  	
+	  	h1{
+	  		padding:0px;
+	  		
+	  	}
+	  	h4{
+	  		padding:0px;
+	  	}
   		ul{
   			margin:0px;
 			padding:0px;
@@ -155,14 +254,24 @@ article {
 				float:left;
 				margin:3px 3px 0px;
 				img{
-					width:120px;
+					width:119px;
 
+					@include media($leaf) {
+						width:122px;
+					}
 					@include media($seed) {
 						width:100px;
 					}
+					@include media($small_tab) {
+						width:113px;
+					}
+					@include media($tab) {
+						width:113px;
+					}
+					
 				}
 				b{
-					padding:45px;
+					padding:50px 26px;
 					display:inherit;
 					cursor:pointer;
 				}
@@ -180,11 +289,22 @@ article {
   	}
   	&.idp_review{
   		text-transform:uppercase;
+  		i{
+			font-size:66px;
+			color:#f2f2f2;
+			font-weight:bold;
+			text-align:center;
+			padding:20px 0px 0px; 
+			display:block;
+		}
   		ul{
   			padding:0px;
   			list-style-type:none;
   			li{
   				padding:17px 40px;
+  					@include media($leaf) {
+						padding:17px 0px;
+					}
 					@include media($seed) {
 						padding:20px;
 						text-align:center;
@@ -193,14 +313,24 @@ article {
   				&.review_textbox{ 
   					text-align:center;
   					position:relative;
+  					
+  							@include media($seed) {
+								padding:0px;
+							}
+
 						div{
 							font-size: 10px;
-							top:50px;
+							top:47px;
 							right:180px;
 						    position: absolute;
+
+						    @include media($leaf) {
+								right:135px;
+							}
+
 	  						@include media($seed) {
-	  							margin: -58px 12px 80px 10px;
-								float: none;
+	  							top: 96px;
+								right: 130px;
 							}
 
 					}
@@ -211,19 +341,20 @@ article {
   					margin:10px 10px 25px 0px;
 						@include media($seed) {
 							width:100%;
-							padding-bottom:80px;
+							padding:20px 0px 80px 15px;
+						}
+						@include media($leaf) {
+							width:484px;
+
+						}
+						@include media($small_tab) {
+							width:264px;
 						}
   				}
   				button{
   					@include media($seed) {
 						width:80%;
 					}
-  				}
-  				i{
-  					font-size:89px;
-  					color:#f2f2f2;
-  					font-weight:bold;
-  					text-align:center;
   				}
   				img{
 	  				float:left;
@@ -249,9 +380,15 @@ article {
   				&.idp_review_content{
   					width:600px;
 					@include media($seed) {
-						width:280px;
+						width:100%;
 						float:none;
 						text-align:center;
+					}
+					@include media($leaf) {
+						width:500px;
+					}
+					@include media($small_tab) {
+						width:280px;
 					}
   				}
   			&.idp_ratting_top{
@@ -286,17 +423,18 @@ article {
   		background-color:$black;
   		color:$white;
   		position:absolute;
-  		//z-index:3;
+  		top:61px;
   		left:0px;
   		width:70%;
-  		padding:40px 20px 40px 0px;
+  		padding:35px 18px 20px 0px;
 
   		@include media($seed) {
-			position:fixed;
-			z-index:2;
 			width:100%;
 			top:0px;
-			display:none;
+			height:99% !important;
+		}
+		@include media($leaf) {
+			width:55%;
 		}
 
   		code{
@@ -306,9 +444,40 @@ article {
 			color: #333333;
 			cursor:pointer;
   		}
+  		h2{
+  			background-color: $white;
+		    color: $black;
+		    height: 61px;
+		    margin: -35px 0 15px;
+		    width: 100%;
+		    display:none;
+		    padding:15px 20px;
+		    @include media($seed) {
+				display:block;
+				width: 106%;
+
+			}
+  		}
+  		h3{
+  			padding:0px 20px;
+  		}
+  		p{
+  			padding:0px 20px;
+  		}
   		div{
   			&.desc_wrapper{
   				padding-bottom:100px;
+
+  				@include media($seed) {
+						padding-bottom:50px;
+
+					}
+  			}
+  			&.common_scroller{
+  				@include media($seed) {
+						height:460px !important;
+
+					}
   			}
   		}
 
@@ -317,23 +486,23 @@ article {
   		background-color:$black;
   		color:$white;
   		position:absolute;
-  		//z-index:3;
+  		top:61px;
   		right:0px;
   		width:30%;
   		text-align:center;
   		@include media($seed) {
-			position:fixed;
-			z-index:2;
 			width:100%;
 			top:0px;
-			height:100% !important;
+			height:99% !important;
+		}
+		@include media($leaf) {
+			width:45%;
 		}
   		h2{
   			padding:30px 0px;
   			text-transform:uppercase;
 
   			@include media($seed) {
-				display:block;
 				background-color:$white;
 				color:$black;
 				text-align:left;
@@ -363,10 +532,6 @@ article {
   			padding:0px;
   			@include span-columns(12);
 
-  			@include media($seed) {
-				margin-left:-2px;
-			}
-
   			li{ 
   				@include span-columns(6);
   				@include omega(0n);
@@ -377,6 +542,13 @@ article {
   				border-width:3px 1px 0px 2px;
   				margin:0px;
   				Width:50%;
+
+  				@include media($seed) {
+						line-height:200px;
+  						height:150px;
+
+					}
+
   				&.bottom_line{
   					border-width:3px 1px 3px 2px;
   				}
@@ -387,10 +559,22 @@ article {
   	&.push-rt {
 		left:70%;
 		position:relative;
+		@include media($seed) {
+			left:0px;
+		}
+		@include media($leaf) {
+			left:55%;
+		}
 	}
 	&.push-lt {
 		right:30%;
 		position:relative;
+		@include media($seed) {
+			right:0px;
+		}
+		@include media($leaf) {
+			right:45%;
+		}
 	}
 }  
 		

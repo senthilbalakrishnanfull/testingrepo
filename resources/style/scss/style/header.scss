@@ -4,22 +4,38 @@ section {
 		right:0px;
 	}
 	&.push-rt {
-		left:260px;
+		left:265px;
 	}
 	&.push-lt {
-		left:-260px;
+		left:-265px;
 	}
 	header {
+
+			&.push-none{
+				left:0px;
+				right:0px;
+			}
+				&.push-rt {
+				left:265px;
+			}
+				&.push-lt {
+				left:-265px;
+			}
+
 		@include fill-parent;
 		overflow:hidden;
 		padding:8px 15px;
+		background-color:$white;
+		position:fixed;
+		z-index:2;
+		height:61px;
 		.menu {
 			margin:0px;
 			padding:0px;
 			list-style-type:none;
 			li {
 				@include span-columns(2);
-				padding:8px 0px 0px;
+				padding:10px 0px 0px;
 				font-weight:600;
 				a {
 					text-align:left;
@@ -31,7 +47,7 @@ section {
 				&.main-nav{
 
 					a {
-						margin-top: -26px;
+						margin-top: -23px;
 						margin-left: 35px;
 						display: block;
 						@include media($seed) {
@@ -43,23 +59,30 @@ section {
 				&.rt-nav{
 					text-align:right;
 					a {
-						margin-right:8px;
+
+						position: absolute;
+					    right: 56px;
+					    top: 25px;
 						@include media($seed) {
 							display:none;
 						}
+					}
+					span{
+						border:3px solid $black;
+						padding:0px 5px;
+						border-width: 0px 4px 4px;
+						position:absolute;
+						right:16px;
+						top:21px;
 					}
 					
 				}
 				&.mid-nav {
 					@include span-columns(8);
 					text-align:center;
-					padding:0px;
+					padding:7px 0px 0px;
 				}
-				span{
-						border:3px solid $black;
-						padding:0px 5px;
-						border-width: 0px 4px 4px;
-					}
+				
 			}
 		}
 	}
