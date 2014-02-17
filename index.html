@@ -20,7 +20,7 @@
 			<code class="icon icon-icons-search"></code>
 			<input type="text" placeholder="Search"/>
 			
-				<div class="scroller">
+				<article class="scroller">
 					<nav class="active">
 						<a href="javascript:void(0)">Women</a>
 						<a href="javascript:void(0)">Men</a>
@@ -52,27 +52,44 @@
 						<a href="javascript:void(0)">Twitter</a>
 						<a href="javascript:void(0)">Tumbla women</a>
 					</nav>
-				</div>
+				</article>
 			
 		</aside>
 
 
 		<aside class="rt-side">
-			<div class="scroller">
-				<nav class="active">
-					<img src="http://commondatastorage.googleapis.com/images2.solestruck.com/yes-shoes/YES-shoes-Venus-(Green-Leather)-010804.jpg" />
-					<code class="icon icon-icons-remove"></code>
-					<small>CATHRINE</small>
-					<small>JENNIFER CHOU</small>
-					<small>$100</small>
-				</nav>
-			</div>
+			<article class="scroller">
+				<ul>
+					<li>
+						<img src="http://commondatastorage.googleapis.com/images2.solestruck.com/yes-shoes/YES-shoes-Venus-(Green-Leather)-010804.jpg" />
+						<code class="icon icon-icons-remove"></code>
+						<span>CATHRINE</span>
+						<span>JENNIFER CHOU</span>
+						<span>$100</span>
+					</li>
+					<li>
+						<img src="http://commondatastorage.googleapis.com/images2.solestruck.com/yes-shoes/YES-shoes-Venus-(Green-Leather)-010804.jpg" />
+						<code class="icon icon-icons-remove"></code>
+						<span>CATHRINE</span>
+						<span>JENNIFER CHOU</span>
+						<span>$100</span>
+					</li>
+					<li>
+						<img src="http://commondatastorage.googleapis.com/images2.solestruck.com/yes-shoes/YES-shoes-Venus-(Green-Leather)-010804.jpg" />
+						<code class="icon icon-icons-remove"></code>
+						<span>CATHRINE</span>
+						<span>JENNIFER CHOU</span>
+						<span>$100</span>
+					</li>
+				</ul>
+				<div class="cart-holder">
+					<small>SUBTOTAL</small>
+					<small class="last-subtotal">$200.00</small>
+					<div class="clear"></div>
+				</div>
+			</article>
 		</aside>
-		<nav class="cart_holder">
-			<small>SUBTOTAL</small>
-			<small class="last_subtotal">$200.00</small>
-			<div class="clear"></div>
-		</nav>
+		
 		
 		<section class="push-none">
 			<header class="push-none">
@@ -185,8 +202,10 @@
 						</a>
 					</li>
 				</ul>
-				<i>rid the world of ugly shoes one pair at a time.</i>
 			</article>
+			<article class="mid-content-holder">
+		    	<h1>rid the world of ugly shoes one pair at a time.</h1>
+		    </article>
 
 		</section>
 		
@@ -254,8 +273,8 @@
     
     </script>
     <!-- Piwik -->
-    <script type="text/javascript">   var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://areaaperta.com/pw//";    _paq.push(['setTrackerUrl', u+'piwik.php']);    _paq.push(['setSiteId', 1]);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);  })();</script>
-    <noscript><p><img src="http://areaaperta.com/pw/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript><!-- End Piwik Code -->
+    <!-- <script type="text/javascript">   var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://areaaperta.com/pw//";    _paq.push(['setTrackerUrl', u+'piwik.php']);    _paq.push(['setSiteId', 1]);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);  })();</script>
+    <noscript><p><img src="http://areaaperta.com/pw/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript> --><!-- End Piwik Code -->
      <!-- nice scroll code end here-->
 
 
@@ -263,10 +282,10 @@
 		(function($){
 			$(window).load(function(){
 				
-				$('.info_description, .like_description').height($('.img-idp-holder').height());
-				$('.desc_wrapper').height($('.img-idp-holder').height()-50);
+				$('.info-description, .like-description').height($('.img-idp-holder').height());
+				$('.desc-wrapper').height($('.img-idp-holder').height()-50);
 
-				$(".common_scroller").mCustomScrollbar({
+				$(".common-scroller").mCustomScrollbar({
 					scrollButtons:{
 						enable:true
 					}
