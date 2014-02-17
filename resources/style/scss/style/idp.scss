@@ -9,12 +9,15 @@ article {
 		}
 		&:hover{
 			.idp-sorting-wrapper{
-				-khtml-opacity:1; 
-				 -moz-opacity:1; 
-				 -ms-filter:”alpha(opacity=1)”;
-				  filter:alpha(opacity=1);
-				  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=1);
-				  opacity:1;
+				ul{
+					-khtml-opacity:1; 
+					 -moz-opacity:1; 
+					 -ms-filter:”alpha(opacity=1)”;
+					  filter:alpha(opacity=1);
+					  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=1);
+					  opacity:1;
+				}
+				
 			}
 			
 		}
@@ -26,24 +29,29 @@ article {
 			button{
 				padding:28px 30px;
 			}
+			ul{
+				@include media($twig) {
+					 -khtml-opacity:0; 
+				 -moz-opacity:0; 
+				 -ms-filter:”alpha(opacity=0)”;
+				  filter:alpha(opacity=0);
+				  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+				  opacity:0;
+				}
+			}
 
 			@include media($twig) {
 				position:absolute;
 				bottom:20px;
 				left:20px;
 				right:20px;
-				-khtml-opacity:0; 
-				 -moz-opacity:0; 
-				 -ms-filter:”alpha(opacity=0)”;
-				  filter:alpha(opacity=0);
-				  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
-				  opacity:0;
-
 			}
+
 			@include media($leaf) {
 				display:block;
 				background:$white;
 			}
+
 			@include media($seed) {
 				display:block;
 				background:$white;
@@ -78,54 +86,8 @@ article {
   	&.fullsize {
   		@extend .banner-wrapper;
 
-
-  		.sorting-wrapper {
-			@include fill-parent;
-			display:inline-block;
-			height:74px;
-			background:$white;
-			position:fixed;
-			.dropdown-holder {
-				@include span-columns(10);
-				@include omega(0);
-			}
-			button {
-				@include span-columns(2);
-				@include omega(0);
-
-			}
-
-			div{
-				&.mCSB_container{
-				z-index:9 !important;
-				}
-			}
-
-			&.push-none{
-				left:0px;
-				right:0px;
-			}
-
-			&.push-rt {
-				left:265px;
-				
-			}
-			&.push-lt {
-				left:-265px;
-				
-			}
-
-		}
-
-
-
-  		ul {
-
-			&.img-idp {
-				margin:0px;
-				padding:0px;
-				list-style-type:none;
-				//@include outer-container;
+  		.img-idp {
+				position:relative;
 				text-transform:uppercase;
 					&:hover{
 						.info{
@@ -138,10 +100,7 @@ article {
 							display:block;
 						}
 					}
-				li {
-					@include fill-parent;
-					position:relative;
-					display:block;
+				
 					span {
 						position:absolute;
 						//z-index:10;
@@ -212,90 +171,103 @@ article {
 
 							}
 						}
-						
-					}
 					
 					// Start Changes
 				}
 				// End Changes
-			}
-		}
-
-
-  	}
-  	&.streetcred-wrapper{
-	  	text-transform:uppercase;
-	  	background-color:$black;
-	  	text-align:center;
-	  	color:$white;
-	  	padding:15px 0px 50px;
-	  	position:relative;
-	  	font-style:italic;
-
-	  	@include media($leaf) {
-			padding:15px 0px 10px;
-		}
-		@include media($seed) {
-			padding:15px 0px 0px;
-		}
-	  	
-	  	h1{
-	  		padding:0px;
-	  		
-	  	}
-	  	h4{
-	  		padding:0px;
-	  	}
-  		ul{
-  			margin:0px;
-			padding:0px;
-			list-style-type:none;
-			li{
-				float:left;
-				margin:3px 3px 0px;
-				img{
-					width:119px;
-
-					@include media($leaf) {
-						width:122px;
-					}
-					@include media($seed) {
-						width:100px;
-					}
-					@include media($small_tab) {
-						width:113px;
-					}
-					@include media($tab) {
-						width:113px;
-					}
-					
-				}
-				b{
-					padding:50px 26px;
-					display:inherit;
-					cursor:pointer;
-				}
-				&.last{
-					@include media($seed) {
-						clear:both;
-						width:100%;
-					}
-					
-				}
-			}
-
 			
-  		}
+		}
+
+  		.sorting-wrapper {
+			@include fill-parent;
+			display:inline-block;
+			height:74px;
+			background:$white;
+			position:fixed;
+			.dropdown-holder {
+				@include span-columns(10);
+				@include omega(0);
+			}
+			button {
+				@include span-columns(2);
+				@include omega(0);
+
+			}
+
+			div{
+				&.mCSB_container{
+				z-index:9 !important;
+				}
+			}
+
+			&.push-none{
+				left:0px;
+				right:0px;
+			}
+
+			&.push-rt {
+				left:265px;
+				
+			}
+			&.push-lt {
+				left:-265px;
+				
+			}
+
+		}
+
+
   	}
-  	&.idp_review{
+  	&.idp-review{
   		text-transform:uppercase;
-  		i{
-			font-size:66px;
-			color:#f2f2f2;
-			font-weight:bold;
+  		top:61px;
+  		.review-box{ 
 			text-align:center;
-			padding:20px 0px 0px; 
-			display:block;
+			position:relative;
+			
+					@include media($seed) {
+					padding:0px;
+				}
+
+			div{
+				font-size: 10px;
+				top:32px;
+				right:180px;
+			    position: absolute;
+
+			    @include media($leaf) {
+					right:135px;
+				}
+
+					@include media($seed) {
+						top: 96px;
+					right: 130px;
+				}
+
+			}
+
+			input{
+				width:590px;
+				padding:20px 170px 20px 15px;
+				margin:10px 10px 25px 0px;
+				@include media($seed) {
+					width:100%;
+					padding:20px 0px 80px 15px;
+				}
+				@include media($leaf) {
+					width:484px;
+
+				}
+				@include media($small-tab) {
+					width:264px;
+				}
+			}
+			button{
+				@include media($seed) {
+				width:80%;
+				}
+			}
+
 		}
   		ul{
   			padding:0px;
@@ -310,52 +282,7 @@ article {
 						text-align:center;
 					}
 
-  				&.review_textbox{ 
-  					text-align:center;
-  					position:relative;
-  					
-  							@include media($seed) {
-								padding:0px;
-							}
-
-						div{
-							font-size: 10px;
-							top:47px;
-							right:180px;
-						    position: absolute;
-
-						    @include media($leaf) {
-								right:135px;
-							}
-
-	  						@include media($seed) {
-	  							top: 96px;
-								right: 130px;
-							}
-
-					}
-  				}
-  				input{
-  					width:590px;
-  					padding:20px 170px 20px 15px;
-  					margin:10px 10px 25px 0px;
-						@include media($seed) {
-							width:100%;
-							padding:20px 0px 80px 15px;
-						}
-						@include media($leaf) {
-							width:484px;
-
-						}
-						@include media($small_tab) {
-							width:264px;
-						}
-  				}
-  				button{
-  					@include media($seed) {
-						width:80%;
-					}
-  				}
+  				
   				img{
 	  				float:left;
 	  				padding-right:20px;
@@ -377,7 +304,7 @@ article {
   			}
   			div{
   				float:left;
-  				&.idp_review_content{
+  				&.idp-review-content{
   					width:600px;
 					@include media($seed) {
 						width:100%;
@@ -387,11 +314,11 @@ article {
 					@include media($leaf) {
 						width:500px;
 					}
-					@include media($small_tab) {
+					@include media($small-tab) {
 						width:280px;
 					}
   				}
-  			&.idp_ratting_top{
+  			&.ratting-mob{
 				display:none;
 				@include media($seed) {
 						display:block;
@@ -401,7 +328,7 @@ article {
 						font-size:15px;
 					}
 			}
-			&.idp_ratting_btm{
+			&.ratting{
 				
 				margin:-1px 0 0 12px;
 				@include media($seed) {
@@ -411,7 +338,7 @@ article {
 						font-size:15px;
 					}
 			}
-  			 &.clear_both{
+  			 &.clear-both{
   			 	clear: both;
   			 	float:none;
   			 }
@@ -419,7 +346,7 @@ article {
   		}
 
   	}
-  	&.info_description{
+  	&.info-description{
   		background-color:$black;
   		color:$white;
   		position:absolute;
@@ -460,12 +387,13 @@ article {
   		}
   		h3{
   			padding:0px 20px;
+  			font-style:italic;
   		}
   		p{
   			padding:0px 20px;
   		}
   		div{
-  			&.desc_wrapper{
+  			&.desc-wrapper{
   				padding-bottom:100px;
 
   				@include media($seed) {
@@ -473,7 +401,7 @@ article {
 
 					}
   			}
-  			&.common_scroller{
+  			&.common-scroller{
   				@include media($seed) {
 						height:460px !important;
 
@@ -482,7 +410,7 @@ article {
   		}
 
   	}
-  	&.like_description{
+  	&.social-links{
   		background-color:$black;
   		color:$white;
   		position:absolute;
@@ -549,7 +477,7 @@ article {
 
 					}
 
-  				&.bottom_line{
+  				&.bottom-line{
   					border-width:3px 1px 3px 2px;
   				}
   				

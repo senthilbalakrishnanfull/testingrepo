@@ -15,7 +15,7 @@ body {
 			&.icon-icons-star{
 				color:#cccccc;
 			}
-			&.review_selected{
+			&.review-selected{
 				color:$black !important;
 			}
 		}
@@ -65,6 +65,7 @@ body {
 				background-color:$white;
 				z-index:1;
 				position:relative;
+				top:61px;
 
 				@include media($twig) {
 					width:800px;
@@ -76,7 +77,7 @@ body {
 					width:100%;
 					padding:0px 20px;
 				}
-				@include media($small_tab) {
+				@include media($small-tab) {
 					width:380px;
 				}
 			
@@ -87,15 +88,134 @@ body {
 						@include media($seed) {
 							width:100%;
 						}
-						@include media($small_tab) {
+						@include media($small-tab) {
 							width:380px;
 						}
 
 
 					}
 					
+				}
+				h1{
+					color:#f2f2f2;
+					text-transform:uppercase;
+					text-align:center;
+					padding:20px 45px 50px;
+					font-style:italic;
 				}	
 			}
+
+
+
+		&.filter-wrapper {
+				background:$white;
+				position:fixed;
+				
+				.filter-holder {
+					position:relative;
+					
+					.dropdown-holder {
+						margin: 0;
+						padding: 0;
+						background:$white;
+						list-style-type: none;
+						>li {
+							@include media($twig) {
+								@include span-columns(3);
+								@include omega(n);
+								width:24.999%;
+								margin:0px;
+								body { font-size: 150%; }
+							}
+							@include media($leaf) {
+								@include span-columns(3);
+								@include omega();
+								width:24.999%;
+								body { font-size: 125%; }
+							}
+							@include media($seed) {
+								@include span-columns(12);
+								body { font-size: 99%; }
+					
+							}
+					
+						}
+					}
+				}
+				
+			}
+
+
+
 		}
 	}
+
+	.streetcred-wrapper{
+	  	text-transform:uppercase;
+	  	background-color:$black;
+	  	text-align:center;
+	  	color:$white;
+	  	padding:15px 0px 50px;
+	  	position:relative;
+	  	font-style:italic;
+	  	top:61px;
+
+	  	@include media($leaf) {
+			padding:15px 0px 10px;
+		}
+		@include media($seed) {
+			padding:15px 0px 0px;
+		}
+	  	
+	  	h1{
+	  		padding:0px;
+	  		
+	  	}
+	  	h4{
+	  		padding:0px;
+	  	}
+  		ul{
+  			margin:0px;
+			padding:0px;
+			list-style-type:none;
+			text-align:left;
+			li{
+				display:inline-block;
+				margin:3px 3px 0px;
+				img{
+					width:119px;
+
+					@include media($leaf) {
+						width:122px;
+					}
+					@include media($seed) {
+						width:100px;
+					}
+					@include media($small-tab) {
+						width:113px;
+					}
+					@include media($tab) {
+						width:113px;
+					}
+					
+				}
+				b{
+					padding:50px 26px;
+					cursor:pointer;
+					font-style:italic;
+					position:absolute;
+					margin:-119px 0px 0px;
+				}
+				&.last{
+					@include media($seed) {
+						clear:both;
+						width:100%;
+					}
+					
+				}
+			}
+
+			
+  		}
+  	}
 }

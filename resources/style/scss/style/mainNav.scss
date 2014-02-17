@@ -17,25 +17,29 @@ aside{
 		right:0px;
 		width:265px;
  		z-index:1;
- 		nav{
- 			color:$white;
- 			small{ 
- 				display:block;
- 				padding:3px 0px;
+ 		color:$white;
+ 		ul{ 
+ 			list-style:none;
+ 			margin:0px;
+ 			padding:15px;
+ 			span{
+ 			 display:block;
+ 			 padding:3px 0px;
  			}
- 			
-
- 		}
- 		code{
- 			&.icon-icons-remove{
- 				position: absolute;
-				right: 12px;
-				top: 12px;
-				border: 3px solid black;
-				line-height: 20px;
-				color:$black;
+ 				code{
+		 			&.icon-icons-remove{
+		 				position: absolute;
+						right: 10px;
+						top: 10px;
+						border: 3px solid black;
+						line-height: 20px;
+						color:$black;
+						cursor:pointer;
+		 			}
+		 		}
  			}
- 		}
+ 		
+ 		
  	}
  	&.lt-side{
  		code{
@@ -72,8 +76,8 @@ aside{
 	}
 }
 
-nav{
-	&.cart_holder{
+div{
+	&.cart-holder{
 	padding:15px;
 	baclground-color:$black;
 	color:$white;
@@ -84,7 +88,7 @@ nav{
 	width:265px;
 		small{
 			float:left;
-			&.last_subtotal{
+			&.last-subtotal{
 				float:right;
 			}
 		}
