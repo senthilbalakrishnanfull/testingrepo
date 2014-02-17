@@ -12,8 +12,8 @@ $(document).ready(function() {
 			$('.img-rack li').height(($('.img-rack li').width()) - shoe_ht );	
 
 
-			$('.info_description, .like_description').height($('.img-idp-holder').height());
-				$('.desc_wrapper').height($('.img-idp-holder').height()-50);
+			$('.info-description, .social-links').height($('.img-idp-holder').height());
+				$('.desc-wrapper').height($('.img-idp-holder').height()-50);
 
 
 	});
@@ -35,12 +35,12 @@ $(document).ready(function() {
 		if ($('.img-idp-holder').hasClass('push-lt')) {
 			$('.img-idp-holder').switchClass( 'push-lt', 'push-none', 500, 'easeInOutQuad');
 			$('.like').removeClass('hit');
-			$('.like_description').show(5000);
+			$('.social-links').show(5000);
 		}
 		if ($('.img-idp-holder').hasClass('push-rt')) {
 			$('.img-idp-holder').switchClass( 'push-rt', 'push-none', 500, 'easeInOutQuad');
 			$('.info').removeClass('hit');
-			$('.info_description').show(5000);
+			$('.info-description').show(5000);
 		}
 
 	});
@@ -62,13 +62,13 @@ $(document).ready(function() {
 		if ($('.img-idp-holder').hasClass('push-lt')) {
 			$('.img-idp-holder').switchClass( 'push-lt', 'push-none', 500, 'easeInOutQuad');
 			$('.like').removeClass('hit');
-			$('.like_description').show(5000);
+			$('.social-links').show(5000);
 		}
 
 		if ($('.img-idp-holder').hasClass('push-rt')) {
 			$('.img-idp-holder').switchClass( 'push-rt', 'push-none', 500, 'easeInOutQuad');
 			$('.info').removeClass('hit');
-			$('.info_description').show(5000);
+			$('.info-description').show(5000);
 		}
 	});
 
@@ -78,12 +78,12 @@ $(document).ready(function() {
 		if ($('.img-idp-holder').hasClass('push-none')) {
 			$('.img-idp-holder').switchClass( 'push-none', 'push-rt', 500, 'easeInOutQuad');
 			$('.info').addClass('hit');
-			$('.info_description').show(5000);
+			$('.info-description').show(5000);
 		}
 		else {
 			$('.img-idp-holder').switchClass( 'push-rt', 'push-none', 500, 'easeInOutQuad');
 			$('.info').removeClass('hit');
-			$('.info_description').show(5000);
+			$('.info-description').show(5000);
 		}
 
 		if ($('section').hasClass('push-rt')) {
@@ -95,23 +95,23 @@ $(document).ready(function() {
 		if($(window).width() < 321)
 		{
 			console.log('window width :: '+$(window).width());
-			if ($('.info_description').css("z-index") != 2)
+			if ($('.info-description').css("z-index") != 2)
 			{
-				$('.info_description').css("z-index",2);
+				$('.info-description').css("z-index",2);
 			}
 		}
 	});
 
-	$('.info_description code').click(function(){
+	$('.info-description code').click(function(){
 			$('.img-idp-holder').switchClass( 'push-rt', 'push-none', 500, 'easeInOutQuad');
 			$('.info').removeClass('hit');
-			$('.info_description').show(5000);
+			$('.info-description').show(5000);
 
 			if($(window).width() < 321)
 			{
-				if ($('.info_description').css("z-index") == 2)
+				if ($('.info-description').css("z-index") == 2)
 				{
-					$('.info_description').css("z-index",0);
+					$('.info-description').css("z-index",0);
 				}
 			}	
 
@@ -120,14 +120,14 @@ $(document).ready(function() {
 
 
 
-	$('.like_description code.icon-icons-remove').click(function(){
+	$('.social-links code.icon-icons-remove').click(function(){
 			$('.like').removeClass('hit');
 
 			if($(window).width() < 321)
 			{
-				if ($('.like_description').css("z-index") == 2)
+				if ($('.social-links').css("z-index") == 2)
 				{
-					$('.like_description').css("z-index",0);
+					$('.social-links').css("z-index",0);
 				}
 			}	
 
@@ -145,7 +145,7 @@ $(document).ready(function() {
 		else {
 			$('.img-idp-holder').switchClass( 'push-lt', 'push-none', 500, 'easeInOutQuad');
 			$('.like').removeClass('hit');
-			$('.like_description').show(5000);
+			$('.social-links').show(5000);
 		}
 
 		if ($('section').hasClass('push-lt')) {
@@ -157,9 +157,9 @@ $(document).ready(function() {
 		if($(window).width() < 321)
 		{
 			console.log('window width :: '+$(window).width());
-			if ($('.like_description').css("z-index") != 2)
+			if ($('.social-links').css("z-index") != 2)
 			{
-				$('.like_description').css("z-index",2);
+				$('.social-links').css("z-index",2);
 			}
 		}
 
@@ -184,7 +184,7 @@ $(document).ready(function() {
 
 	// $(window).load(function(){
 
-	// 	$('.info_description, .like_description').height($('.img-idp-holder').height());
+	// 	$('.info_description, .social-links').height($('.img-idp-holder').height());
 	// 	$('.desc_wrapper').height($('.img-idp-holder').height()-50);
 
 	// });
