@@ -10,7 +10,6 @@
 	<link rel="stylesheet" type="text/css" href="resources/style/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="resources/style/css/fonts.css" />
 
-
 	<script type="text/javascript" src="resources/js/vendor/html5shiv.js"></script>
 	<script type="text/javascript" src="resources/js/vendor/modernizr-2.6.2.min.js"></script>
 	<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
@@ -59,26 +58,28 @@
 		</aside>
 
 		<aside class="rt-side">
-			<nav class="active">
-				<img src="http://commondatastorage.googleapis.com/images2.solestruck.com/yes-shoes/YES-shoes-Venus-(Green-Leather)-010804.jpg" />
-				<code class="icon icon-icons-remove"></code>
-				<small>CATHRINE</small>
-				<small>JENNIFER CHOU</small>
-				<small>$100</small>
-			</nav>
-			<nav class="cart_holder">
-				<small>SUBTOTAL</small>
-				<small class="last_subtotal">$200.00</small>
-				<div class="clear"></div>
-			</nav>
+			<div class="scroller">
+				<nav class="active">
+					<img src="http://commondatastorage.googleapis.com/images2.solestruck.com/yes-shoes/YES-shoes-Venus-(Green-Leather)-010804.jpg" />
+					<code class="icon icon-icons-remove"></code>
+					<small>CATHRINE</small>
+					<small>JENNIFER CHOU</small>
+					<small>$100</small>
+				</nav>
+			</div>
 		</aside>
+		<nav class="cart_holder">
+			<small>SUBTOTAL</small>
+			<small class="last_subtotal">$200.00</small>
+			<div class="clear"></div>
+		</nav>
 
 		<section class="push-none">
-			<header>
+			<header class="push-none">
 				<ul class="menu">
 					<li class="main-nav"> 
 						<code class="icon icon-icons-menu"></code>
-						<a href="#">menu</a></li>
+						<a href="javascript:void(0)">menu</a></li>
 					<li class="mid-nav"><a>solestruck</a></li>
 					<li class="rt-nav">
 						<a href="javascript:void(0)">cart</a> <span>3</span>
@@ -87,6 +88,7 @@
 			</header>
 
 			<article class="info_description">
+					<h2><i>MORE INFO</i></h2>
 					<code class="icon icon-icons-remove"></code>
 					<div class="common_scroller desc_wrapper">
 						<h3><i>Description</i></h3>
@@ -104,12 +106,12 @@
 			<article class="like_description">
 					<h2><i>Share the</i> <code class="icon icon-icons-heart"></code> <code class="icon icon-icons-remove"></code></h2>
 					<ul>
-						<li><a href="#"><img src="resources/images/share1.png"/></a></li>
-						<li><a href="#"><img src="resources/images/share2.png"/></a></li>
+						<li><a href="javascript:void(0)"><img src="resources/images/share1.png"/></a></li>
+						<li><a href="javascript:void(0)"><img src="resources/images/share2.png"/></a></li>
 						<li><a href="javascript:void(0)"><img src="resources/images/share3.png"/></a></li>
 						<li><a href="javascript:void(0)"><img src="resources/images/share4.png"/></a></li>
-						<li class="bottom_line"><a href="#"><img src="resources/images/share5.png"/></a></li>
-						<li class="bottom_line"><a href="#"><img src="resources/images/share6.png"/></a></li>
+						<li class="bottom_line"><a href="javascript:void(0)"><img src="resources/images/share5.png"/></a></li>
+						<li class="bottom_line"><a href="javascript:void(0)"><img src="resources/images/share6.png"/></a></li>
 					</ul>
 			</article>
 
@@ -130,7 +132,7 @@
 						<span class="title"><i>Patent Leather Sneaker</i> By MM6 Maison Martin Margila</span>
 					</li>
 				</ul><!-- img-idp -->
-				<div class="sorting-wrapper">
+				<div class="idp-sorting-wrapper">
 					<ul class="dropdown-holder">
 						<li>
 							<div class="selectBox rm_rt_br">
@@ -199,7 +201,7 @@
 							</div>
 						</li>
 					</ul>
-					<button>$190 <code class="icon icon-icons-cart-add"></code></button>
+					<button><i>$190</i> <code class="icon icon-icons-cart-add"></code></button>
 				</div>
 			</article><!-- fullsize -->
 			
@@ -210,8 +212,8 @@
 			</article> <!-- banner-wrapper -->
 
 			<article class="streetcred-wrapper">
-				<h1><i>Street Cred</i></h1>
-				<h4><i>instagram #ss_relax</i></h4>
+				<h1>Street Cred</h1>
+				<h4>instagram #ss_relax</h4>
 				<ul>
 					<li><a href="javascript:void(0)"><img src="resources/images/s1.jpg" /></a></li>
 					<li><a href="javascript:void(0)"><img src="resources/images/s2.jpg" /></a></li>
@@ -283,7 +285,7 @@
 
 					<li class="review_textbox">
 						<input type="text" name="" placeholder="SPEAK YOUR PEACE ...">
-						<div>
+						<div class="rating_select_act">
 							<code class="icon icon-icons-star review_selected"></code>
 							<code class="icon icon-icons-star review_selected"></code>
 							<code class="icon icon-icons-star review_selected"></code>
