@@ -53,11 +53,10 @@
 						<a href="javascript:void(0)">Tumbla women</a>
 					</nav>
 				</div>
-			
-		</aside>
+		</aside><!-- lt-side -->
 
 		<aside class="rt-side">
-			<h3><small>3</small>Items - Checkout now <code class="icon icon-icons-right"></code></h3>
+			<h4><small>3</small> Items - Checkout now <code class="icon icon-icons-right"></code></h4>
 			<article class="scroller">
 				<ul>
 					<li>
@@ -92,9 +91,9 @@
 					<small>SUBTOTAL</small>
 					<small class="last-subtotal">$200.00</small>
 					<div class="clear"></div>
-				</div>
-			</article>
-		</aside>
+				</div><!-- cart-holder -->
+			</article><!-- scroller -->
+		</aside><!-- rt-side -->
 
 		<aside class="rt-side-cart rt-side-cart-color">
 			<h3>Select your Color... <code class="icon icon-icons-remove cart-color-close-act"></code></h3>
@@ -106,8 +105,8 @@
 					<li>Pink Metallic</li>
 					<li>Petrol</li>
 				</ul>
-			</article>
-		</aside>
+			</article><!-- scroller -->
+		</aside><!-- rt-side-cart-color -->
 
 		<aside class="rt-side-cart rt-side-cart-size">
 			<h3>Select your size... <code class="icon icon-icons-remove cart-size-close-act"></code></h3>
@@ -122,8 +121,8 @@
 					<li class="disable">US 9.5 (24CM) Out Of Stock</li>
 					<li class="disable">US 10.5 (24CM) Out Of Stock</li>
 				</ul>
-			</article>
-		</aside>
+			</article><!-- scroller -->
+		</aside><!-- rt-side-cart-size -->
 		
 		
 		<section class="push-none">
@@ -247,9 +246,16 @@
 	</div> <!-- bodyWrapper -->
 	
 	<script type="text/javascript" src="resources/js/vendor/jquery-1.10.2.min.js"></script>
+	
 	<script type="text/javascript" src="resources/js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+	<script type="text/javascript" src="resources/js/vendor/custom.forms.jquery.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('.dropdown, form').customForm();
+		});
 
-	<!-- custom scrollbars plugin -->
+	</script>
+    <!-- custom scrollbars plugin -->
     <script src="resources/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script>
         (function($){
@@ -307,17 +313,13 @@
       })();
     
     </script>
-    <!-- Piwik -->
-    <!-- <script type="text/javascript">   var _paq = _paq || [];  _paq.push(['trackPageView']);  _paq.push(['enableLinkTracking']);  (function() {    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://areaaperta.com/pw//";    _paq.push(['setTrackerUrl', u+'piwik.php']);    _paq.push(['setSiteId', 1]);    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);  })();</script>
-    <noscript><p><img src="http://areaaperta.com/pw/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript> --><!-- End Piwik Code -->
      <!-- nice scroll code end here-->
-
 
      <script>
 		(function($){
 			$(window).load(function(){
 				
-				$('.info-description, .like-description').height($('.img-idp-holder').height());
+				$('.info-description, .social-links').height($('.img-idp-holder').height());
 				$('.desc-wrapper').height($('.img-idp-holder').height()-50);
 
 				$(".common-scroller").mCustomScrollbar({
@@ -330,9 +332,7 @@
 
 	</script>
 
-
-	
 	<script type="text/javascript" src="resources/js/actions.js"></script>
-	
+	<script type="text/javascript" src="resources/js/dropdown.js"></script>
 </body>
 </html>
