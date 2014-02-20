@@ -6,6 +6,7 @@ aside{
 	background:$black;
 	width:265px;
 	height:100%;
+	display:block !important;
 
 	.scroller {
 		height:100%;
@@ -25,7 +26,7 @@ aside{
  		}
  		h4{
 	 		margin:0px;
-	 		padding:5px 0px;
+	 		padding:18px 15px;
 	 		border:2px solid #393939;
 	 		border-width:2px 0px 0px;
 	 		cursor:pointer;
@@ -40,10 +41,20 @@ aside{
  			li{
  				position:relative;
  				padding-bottom:20px;
+ 				h4{
+			 		margin:0px;
+			 		padding:5px 0px;
+			 		border:2px solid #393939;
+			 		border-width:2px 0px 0px;
+			 		cursor:pointer;
+			 		code{
+			 			float:right;
+			 		}
+		 		}
  				span{
 		 			 display:block;
 		 			 padding:3px 0px;
- 			}
+ 				}
  				code{
 		 			&.icon-icons-remove{
 		 				position: absolute;

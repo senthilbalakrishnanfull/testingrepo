@@ -11,11 +11,13 @@ article {
 			margin-bottom:-6px;
 		}
 	}
-	video {
+	&.video {
+		@include fill-parent;
 		position: relative;
 		z-index: 1;
 		min-width: 100%;
 		height: auto;
+		top:70px;
 	}
 }
  
