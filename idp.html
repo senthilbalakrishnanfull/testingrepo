@@ -58,6 +58,7 @@
 		</aside>
 
 		<aside class="rt-side">
+			<h3><small>3</small>Items - Checkout now <code class="icon icon-icons-right"></code></h3>
 			<article class="scroller">
 				<ul>
 					<li>
@@ -66,6 +67,8 @@
 						<span>CATHRINE</span>
 						<span>JENNIFER CHOU</span>
 						<span>$100</span>
+						<h4 class="cart-color-act">Nullametaimvul... <code class="icon icon-icons-right"></code></h4>
+						<h4 class="cart-size-act">US 7.5/23 CM <code class="icon icon-icons-right"></code></h4>
 					</li>
 					<li>
 						<img src="http://commondatastorage.googleapis.com/images2.solestruck.com/yes-shoes/YES-shoes-Venus-(Green-Leather)-010804.jpg" />
@@ -73,6 +76,8 @@
 						<span>CATHRINE</span>
 						<span>JENNIFER CHOU</span>
 						<span>$100</span>
+						<h4 class="cart-color-act">Nullametaimvul... <code class="icon icon-icons-right"></code></h4>
+						<h4 class="cart-size-act">US 7.5/23 CM <code class="icon icon-icons-right"></code></h4>
 					</li>
 					<li>
 						<img src="http://commondatastorage.googleapis.com/images2.solestruck.com/yes-shoes/YES-shoes-Venus-(Green-Leather)-010804.jpg" />
@@ -80,6 +85,8 @@
 						<span>CATHRINE</span>
 						<span>JENNIFER CHOU</span>
 						<span>$100</span>
+						<h4 class="cart-color-act">Nullametaimvul... <code class="icon icon-icons-right"></code></h4>
+						<h4 class="cart-size-act">US 7.5/23 CM <code class="icon icon-icons-right"></code></h4>
 					</li>
 				</ul>
 				<div class="cart-holder">
@@ -87,6 +94,35 @@
 					<small class="last-subtotal">$200.00</small>
 					<div class="clear"></div>
 				</div>
+			</article>
+		</aside>
+
+		<aside class="rt-side-cart rt-side-cart-color">
+			<h3>Select your Color... <code class="icon icon-icons-remove cart-color-close-act"></code></h3>
+			<article class="scroller">
+				<img src="http://commondatastorage.googleapis.com/images2.solestruck.com/yes-shoes/YES-shoes-Venus-(Green-Leather)-010804.jpg" />
+				<ul>
+					<li>Hologram</li>
+					<li>Neon Yellow</li>
+					<li>Pink Metallic</li>
+					<li>Petrol</li>
+				</ul>
+			</article>
+		</aside>
+
+		<aside class="rt-side-cart rt-side-cart-size">
+			<h3>Select your size... <code class="icon icon-icons-remove cart-size-close-act"></code></h3>
+			<article class="scroller">
+				<img src="http://commondatastorage.googleapis.com/images2.solestruck.com/yes-shoes/YES-shoes-Venus-(Green-Leather)-010804.jpg" />
+				<ul>
+					<li>US 7 (24CM)</li>
+					<li class="disable">US 7.5 (24CM) Out Of Stock</li>
+					<li>US 8 (24CM)</li>
+					<li class="disable">US 8.5 (24CM) Out Of Stock</li>
+					<li>US 9 (24CM)</li>
+					<li class="disable">US 9.5 (24CM) Out Of Stock</li>
+					<li class="disable">US 10.5 (24CM) Out Of Stock</li>
+				</ul>
 			</article>
 		</aside>
 
@@ -98,7 +134,7 @@
 						<a href="javascript:void(0)">menu</a></li>
 					<li class="mid-nav"><a>solestruck</a></li>
 					<li class="rt-nav">
-						<a href="javascript:void(0)">cart</a> <span>3</span>
+						<a href="javascript:void(0)">cart</a> <span class="active">3</span>
 					</li>
 				</ul>
 			</header>
@@ -149,16 +185,27 @@
 				<div class="idp-sorting-wrapper">
 					<ul class="dropdown-holder">
 						<li>
-							<div class="selectBox rm-rt-br">
-								<span class='selected'></span><code class='selectArrow'></code>
+							<div class='selectBox'>
+								<span class='selected'></span>
+								<code class='selectArrow'></code>
 								<div class="selectOptions common-scroller">
-									<ul>
-										<li class="selectOption" value="Option 0">PLEASE COLOR</li>
-										<li class="selectOption" value="Option 1">BLACK</li>
-										<li class="selectOption" value="Option 2">WHITE</li>
-										<li class="selectOption" value="Option 3">BLUE</li>
-										<li class="selectOption" value="Option 4">RED</li>
-										<li class="selectOption" value="Option 5">GREEN</li>
+									<ul class="img-list">
+										<!-- Start Changes -->
+										<!-- Please make sure that these close when users click outside of it. -->
+										<li class="selectOption" value="Option 0">SELECT COLOR</li>
+										<li class="selectOption" value="Option 1">
+											<img src="resources/images/Pierre_Green.png" width="30px" />
+											 <b>Selected the first option one</b>
+										</li>
+										<li class="selectOption" value="Option 2">
+											<img src="resources/images/Pierre_Green.png" width="30px" />
+											<b>Option 2</b>
+										</li>
+										<li class="selectOption" value="Option 3">
+											<img src="resources/images/Pierre_Green.png" width="30px" />
+											<b>Option 3</b>
+										</li>
+										<!-- End Changes -->
 									</ul>
 								</div>
 							</div>
@@ -169,7 +216,7 @@
 							<code class='selectArrow'></code>
 								<div class="selectOptions common-scroller">
 									<ul>
-										<li class="selectOption" value="Option 0">PLEASE SIZE</li>
+										<li class="selectOption" value="Option 0">SELECT SIZE</li>
 										<li class="selectOption" value="Option 1">4</li>
 										<li class="selectOption" value="Option 2">4.5 (EG.CM)</li>
 										<li class="selectOption" value="Option 3">5</li>
@@ -188,32 +235,7 @@
 								</div>
 							</div>
 						</li>
-						<li>
-							<div class='selectBox'>
-								<span class='selected'></span>
-								<code class='selectArrow'></code>
-								<div class="selectOptions common-scroller">
-									<ul class="img-list">
-										<!-- Start Changes -->
-										<!-- Please make sure that these close when users click outside of it. -->
-										<li class="selectOption" value="Option 0">PLEASE QTY</li>
-										<li class="selectOption" value="Option 1">
-											<img src="resources/images/Pierre_Green.png" width="30px" />
-											 <b>Selected the first option one</b>
-										</li>
-										<li class="selectOption" value="Option 2">
-											<img src="resources/images/Pierre_Green.png" width="30px" />
-											<b>Option 2</b>
-										</li>
-										<li class="selectOption" value="Option 3">
-											<img src="resources/images/Pierre_Green.png" width="30px" />
-											<b>Option 3</b>
-										</li>
-										<!-- End Changes -->
-									</ul>
-								</div>
-							</div>
-						</li>
+						
 					</ul>
 					<button><i>$190</i> <code class="icon icon-icons-cart-add"></code></button>
 				</div><!-- idp-sorting-wrapper -->
@@ -222,7 +244,10 @@
 			<article class="banner-wrapper">
 				<img src="resources/images/banner6.jpg" />
 				<img src="resources/images/banner7.jpg" />
-				<img src="resources/images/banner8.jpg" />
+				<!-- <img src="resources/images/banner8.jpg" /> -->
+
+
+				
 			</article> <!-- banner-wrapper -->
 
 			<article class="streetcred-wrapper">
@@ -253,44 +278,44 @@
 				<ul>
 					<li>
 						<img src="resources/images/post1.png"/>
-						<div class="ratting-mob"><!-- ratting-mobile -->
-							<code class="icon icon-icons-star review-selected"></code>
-							<code class="icon icon-icons-star review-selected"></code>
-							<code class="icon icon-icons-star review-selected"></code>
-							<code class="icon icon-icons-star"></code>
-							<code class="icon icon-icons-star"></code>
+						<div class="rating-mob rating-select-act"><!-- ratting-mobile -->
+							<code class="icon icon-icons-star selected-rating"></code>
+							<code class="icon icon-icons-star selected-rating"></code>
+							<code class="icon icon-icons-star selected-rating"></code>
+							<code class="icon icon-icons-star default-rating"></code>
+							<code class="icon icon-icons-star default-rating"></code>
 						</div>
 						<div class="idp-review-content">
 							<h3>really want to get some Y.R.U. Loafers.</h3>
 							<small>- RosalinOdessa Orabella</small>
-							<div class="ratting">
-								<code class="icon icon-icons-star review-selected"></code>
-								<code class="icon icon-icons-star review-selected"></code>
-								<code class="icon icon-icons-star review-selected"></code>
-								<code class="icon icon-icons-star"></code>
-								<code class="icon icon-icons-star"></code>
+							<div class="rating">
+								<code class="icon icon-icons-star selected-rating"></code>
+								<code class="icon icon-icons-star selected-rating"></code>
+								<code class="icon icon-icons-star selected-rating"></code>
+								<code class="icon icon-icons-star default-rating"></code>
+								<code class="icon icon-icons-star default-rating"></code>
 							</div>
 						</div>
 						<div class="clear-both"></div>
 					</li>
 					<li>
 						<img src="resources/images/post2.png"/>
-						<div class="ratting-mob"><!-- ratting-mobile -->
-							<code class="icon icon-icons-star review-selected"></code>
-							<code class="icon icon-icons-star review-selected"></code>
-							<code class="icon icon-icons-star review-selected"></code>
-							<code class="icon icon-icons-star"></code>
-							<code class="icon icon-icons-star"></code>
+						<div class="rating-mob"><!-- ratting-mobile -->
+							<code class="icon icon-icons-star selected-rating"></code>
+							<code class="icon icon-icons-star selected-rating"></code>
+							<code class="icon icon-icons-star selected-rating"></code>
+							<code class="icon icon-icons-star default-rating"></code>
+							<code class="icon icon-icons-star default-rating"></code>
 						</div>
 						<div class="idp-review-content">
 							<h3>Will you be restocking the Deandri Charlie Oxfords anytime soon/ever? They are my life and I cant find them in my size anywhere else!!</h3>
 							<small>- Shauni Adekoya</small>
-							<div class="ratting">
-								<code class="icon icon-icons-star review-selected"></code>
-								<code class="icon icon-icons-star review-selected"></code>
-								<code class="icon icon-icons-star review-selected"></code>
-								<code class="icon icon-icons-star"></code>
-								<code class="icon icon-icons-star"></code>
+							<div class="rating">
+								<code class="icon icon-icons-star selected-rating"></code>
+								<code class="icon icon-icons-star selected-rating"></code>
+								<code class="icon icon-icons-star selected-rating"></code>
+								<code class="icon icon-icons-star default-rating"></code>
+								<code class="icon icon-icons-star default-rating"></code>
 							</div>
 						</div>
 						<div class="clear-both"></div>
@@ -299,18 +324,18 @@
 				<div class="review-box">
 					<input type="text" name="" placeholder="SPEAK YOUR PEACE ...">
 					<div class="rating-select-act">
-						<code class="icon icon-icons-star review-selected"></code>
-						<code class="icon icon-icons-star review-selected"></code>
-						<code class="icon icon-icons-star review-selected"></code>
-						<code class="icon icon-icons-star"></code>
-						<code class="icon icon-icons-star"></code>
+						<code class="icon icon-icons-star default-rating"></code>
+						<code class="icon icon-icons-star default-rating"></code>
+						<code class="icon icon-icons-star default-rating"></code>
+						<code class="icon icon-icons-star default-rating"></code>
+						<code class="icon icon-icons-star default-rating"></code>
 					</div>
 					<button>Post</button>
 				</div>
 				
 		    </article>
 		    <article class="mid-content-holder">
-		    	<h1>rid the world of ugly shoes one pair at a time.</h1>
+		    	<h1 class="footer-text">rid the world of ugly shoes one pair at a time.</h1>
 		    </article>
 
 		</section>
