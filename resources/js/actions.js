@@ -145,7 +145,6 @@ $(document).ready(function() {
 
 	$('.social-links code.icon-icons-remove').click(function(){
 			$('.like').removeClass('hit');
-
 			if($(window).width() < 321)
 			{
 				if ($('.social-links').css("z-index") == 2)
@@ -156,8 +155,6 @@ $(document).ready(function() {
 
 
 	});
-
-
 
 
 	$('.like').click(function(){
