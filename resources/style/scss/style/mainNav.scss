@@ -18,19 +18,37 @@ aside{
 		width:265px;
  		z-index:1;
  		color:$white;
+ 		h3{
+ 			background-color:$red;
+ 			color:$white;
+ 			padding:18px 15px;
+ 		}
+ 		h4{
+	 		margin:0px;
+	 		padding:5px 0px;
+	 		border:2px solid #393939;
+	 		border-width:2px 0px 0px;
+	 		cursor:pointer;
+	 		code{
+	 			float:right;
+	 		}
+ 		}
  		ul{ 
  			list-style:none;
  			margin:0px;
- 			padding:15px;
- 			span{
- 			 display:block;
- 			 padding:3px 0px;
+ 			padding:15px 15px 80px;
+ 			li{
+ 				position:relative;
+ 				padding-bottom:20px;
+ 				span{
+		 			 display:block;
+		 			 padding:3px 0px;
  			}
  				code{
 		 			&.icon-icons-remove{
 		 				position: absolute;
-						right: 10px;
-						top: 10px;
+						right: -2px;
+						top: -2px;
 						border: 3px solid black;
 						line-height: 20px;
 						color:$black;
@@ -38,27 +56,77 @@ aside{
 		 			}
 		 		}
  			}
- 		
+ 			
+ 		}
  		
  	}
+
+ 	&.rt-side-cart{
+ 		left:inherit;
+		right:-265px;
+		width:265px;
+ 		z-index:1;
+ 		color:$white;
+ 		h3{
+ 			color:$white;
+ 			padding:18px 15px;
+ 			background-color:#262626;
+ 			code{
+ 				float:right;
+ 				color:#646464;
+ 				cursor:pointer;
+ 			}
+ 		}
+ 		.mCustomScrollBox{
+			width:100%;
+		}
+ 		img{
+ 			padding:15px;
+ 		}
+ 		ul{ 
+ 			list-style:none;
+ 			margin:0px;
+ 			padding:15px 15px 30px;
+ 			li{
+ 				margin:0px;
+		 		padding:10px 0px;
+		 		border:2px solid #333333;
+		 		border-width:2px 0px 0px;
+		 		cursor:pointer;
+
+		 		&.disable{
+ 					color:#333333;
+ 				}
+ 			}
+
+ 			
+ 		}
+ 	}
+ 	&.push-rt{
+ 		right:0px;
+ 	}
+
  	&.lt-side{
  		code{
  			color:$white;
  			position:absolute;
- 			margin:20px 5px 0px;
+ 			margin:25px 8px 0px;
+ 			font-size:20px;
+ 			color:#646464;
  		}
  		
- 		input[type="text"]{
+ 		input{
  			margin:0px;
  			color:$white;
  			border:0px;
  			width:265px;
  			background-color:#262626;
- 			padding-left:40px;
+ 			padding:25px 0px 25px 40px;
+ 			text-transform:uppercase;
  		}
  	}
 	nav {
-		border-bottom:2px solid #cccccc;
+		border-bottom:2px solid #333333;
 		padding:15px 0px;
 		margin:0px 15px;
 		
@@ -71,7 +139,7 @@ aside{
 			display:block;
 			padding:5px 0px 5px 25px;
 			font-weight:bold;
-			color:#262626;
+			color:#333333;
 		}
 	}
 }
@@ -79,7 +147,7 @@ aside{
 div{
 	&.cart-holder{
 	padding:15px;
-	baclground-color:$black;
+	background-color:$black;
 	color:$white;
 	position:fixed;
 	z-index:1;

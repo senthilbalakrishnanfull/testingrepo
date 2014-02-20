@@ -12,11 +12,13 @@ body {
 			position:relative;
 		}
 		code{
-			&.icon-icons-star{
+			&.default-rating{
 				color:#cccccc;
+				cursor:pointer;
 			}
 			&.review-selected{
 				color:$black !important;
+				cursor:pointer;
 			}
 		}
 		
@@ -63,9 +65,9 @@ body {
 				clear:both;
 				margin:0px auto !important;
 				background-color:$white;
-				z-index:1;
+				z-index:-1;
 				position:relative;
-				top:61px;
+				top:70px;
 
 				@include media($twig) {
 					width:800px;
@@ -96,7 +98,7 @@ body {
 					}
 					
 				}
-				h1{
+				.footer-text{
 					color:#f2f2f2;
 					text-transform:uppercase;
 					text-align:center;
@@ -155,10 +157,10 @@ body {
 	  	background-color:$black;
 	  	text-align:center;
 	  	color:$white;
-	  	padding:15px 0px 50px;
+	  	padding:15px 0px 60px;
 	  	position:relative;
 	  	font-style:italic;
-	  	top:61px;
+	  	top:70px;
 
 	  	@include media($leaf) {
 			padding:15px 0px 10px;
@@ -169,13 +171,15 @@ body {
 	  	
 	  	h1{
 	  		padding:0px;
+	  		margin:0;
 	  		
 	  	}
 	  	h4{
 	  		padding:0px;
+	  		margin:-8px 0px 0px;
 	  	}
   		ul{
-  			margin:0px;
+  			margin:20px 0px 0px;
 			padding:0px;
 			list-style-type:none;
 			text-align:left;

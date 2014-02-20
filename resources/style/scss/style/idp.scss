@@ -184,6 +184,7 @@ article {
 			height:74px;
 			background:$white;
 			position:fixed;
+			top:70px;
 			.dropdown-holder {
 				@include span-columns(10);
 				@include omega(0);
@@ -220,7 +221,7 @@ article {
   	}
   	&.idp-review{
   		text-transform:uppercase;
-  		top:61px;
+  		top:70px;
   		.review-box{ 
 			text-align:center;
 			position:relative;
@@ -318,7 +319,7 @@ article {
 						width:280px;
 					}
   				}
-  			&.ratting-mob{
+  			&.rating-mob{
 				display:none;
 				@include media($seed) {
 						display:block;
@@ -328,11 +329,12 @@ article {
 						font-size:15px;
 					}
 			}
-			&.ratting{
+			&.rating{
 				
 				margin:-1px 0 0 12px;
+				display:block;
 				@include media($seed) {
-						display:none
+						display:none;
 					}
 					code{
 						font-size:15px;
@@ -350,7 +352,7 @@ article {
   		background-color:$black;
   		color:$white;
   		position:absolute;
-  		top:61px;
+  		top:70px;
   		left:0px;
   		width:70%;
   		padding:35px 18px 20px 0px;
@@ -374,7 +376,7 @@ article {
   		h2{
   			background-color: $white;
 		    color: $black;
-		    height: 61px;
+		    height: 70px;
 		    margin: -35px 0 15px;
 		    width: 100%;
 		    display:none;
@@ -414,7 +416,7 @@ article {
   		background-color:$black;
   		color:$white;
   		position:absolute;
-  		top:61px;
+  		top:70px;
   		right:0px;
   		width:30%;
   		text-align:center;

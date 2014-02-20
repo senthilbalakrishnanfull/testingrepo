@@ -24,18 +24,17 @@ section {
 
 		@include fill-parent;
 		overflow:hidden;
-		padding:8px 15px;
+		padding:0px 15px;
 		background-color:$white;
 		position:fixed;
 		z-index:2;
-		height:61px;
+		height:70px;
 		.menu {
 			margin:0px;
 			padding:0px;
 			list-style-type:none;
 			li {
 				@include span-columns(2);
-				padding:10px 0px 0px;
 				font-weight:600;
 				a {
 					text-align:left;
@@ -45,11 +44,19 @@ section {
 
 				   }
 				&.main-nav{
-
+					code{
+						display:block;
+						margin:24px 0px 0px;
+					}
+					@-moz-document url-prefix() { 
+					  a {
+					     margin-top: -26px;
+					  }
+					}
 					a {
-						margin-top: -23px;
-						margin-left: 35px;
-						display: block;
+						margin-top: -26px;
+						left: 50px;
+						position: absolute;
 						@include media($seed) {
 							display:none;
 						}
@@ -61,26 +68,32 @@ section {
 					a {
 
 						position: absolute;
-					    right: 56px;
-					    top: 25px;
+					    right: 50px;
+					    top: 28px;
 						@include media($seed) {
 							display:none;
 						}
 					}
 					span{
 						border:3px solid $black;
-						padding:0px 5px;
+						padding:3px 4px 0px;
 						border-width: 0px 4px 4px;
 						position:absolute;
-						right:16px;
-						top:21px;
+						right:15px;
+						top:26px;
+						line-height:16px;
+						&.active{
+							border-color:$red;
+							color:$white;
+							background-color:$red;
+						}
 					}
 					
 				}
 				&.mid-nav {
 					@include span-columns(8);
 					text-align:center;
-					padding:7px 0px 0px;
+					padding-top:13px;
 				}
 				
 			}
