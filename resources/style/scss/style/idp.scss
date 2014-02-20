@@ -194,10 +194,9 @@ article {
 				@include omega(0);
 
 			}
-
-			div{
-				&.mCSB_container{
-				z-index:9 !important;
+			div {
+				&.mCSB_container {
+					z-index:9 !important;
 				}
 			}
 
@@ -282,8 +281,6 @@ article {
 						padding:20px;
 						text-align:center;
 					}
-
-  				
   				img{
 	  				float:left;
 	  				padding-right:20px;
@@ -497,14 +494,17 @@ article {
 		}
 	}
 	&.push-lt {
-		right:30%;
+		left:-30%;
 		position:relative;
 		@include media($seed) {
-			right:0px;
+			left:0px;
 		}
 		@include media($leaf) {
-			right:45%;
+			left:-45%;
 		}
+	}
+	&.push-none{
+		left:0px;
 	}
 }  
 		

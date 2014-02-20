@@ -11,5 +11,11 @@ article {
 			margin-bottom:-6px;
 		}
 	}
+	video {
+		position: relative;
+		z-index: 1;
+		min-width: 100%;
+		height: auto;
+	}
 }
  
