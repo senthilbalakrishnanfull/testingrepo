@@ -186,7 +186,7 @@
 							<div class='selectBox'>
 								<span class='selected'></span>
 								<code class='selectArrow'></code>
-								<div class="selectOptions common-scroller">
+								<div class="selectOptions dropdown_scroller">
 									<ul class="img-list">
 										<li class="selectOption" value="Option 0">SELECT COLOR</li>
 										<li class="selectOption" value="Option 1">
@@ -209,7 +209,7 @@
 							<div class='selectBox rm-rt-br'>
 							<span class='selected'></span>
 							<code class='selectArrow'></code>
-								<div class="selectOptions common-scroller">
+								<div class="selectOptions dropdown_scroller">
 									<ul>
 										<li class="selectOption" value="Option 0">SELECT SIZE</li>
 										<li class="selectOption" value="Option 1">4</li>
@@ -420,6 +420,7 @@
 						enable:true
 					}
 				});
+				$(".dropdown_scroller").mCustomScrollbar();
 			});
 		})(jQuery);
 
