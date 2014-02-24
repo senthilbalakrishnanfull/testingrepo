@@ -2,6 +2,8 @@ article {
 	
 	&.img-idp-holder{
 		button{
+		font-style:normal;
+		font-weight:bold;
 			code{
 				margin: 0px 10px;
 				position:absolute;
@@ -146,6 +148,7 @@ article {
 							cursor:default;
 							i{
 								display:block;
+								font-weight:bold;
 							}
 						}
 						&.like{
@@ -263,6 +266,8 @@ article {
 				}
 			}
 			button{
+				font-weight:bold;
+
 				@include media($seed) {
 				width:80%;
 				}
@@ -371,17 +376,25 @@ article {
 			cursor:pointer;
   		}
   		h2{
-  			background-color: $white;
-		    color: $black;
-		    height: 70px;
-		    margin: -35px 0 15px;
-		    width: 100%;
-		    display:none;
-		    padding:15px 20px;
-		    @include media($seed) {
-				display:block;
-				width: 106%;
+  			color:$white;
+  			font-style:italic;
+  			padding:0px 20px 20px;
+  			text-transform:uppercase;
+  			font-weight:bold;
+  			
+			&.moreinfo{
+				background-color: $white;
+			    color: $black;
+			    height: 70px;
+			    margin: -35px 0 15px;
+			    width: 100%;
+			    display:none;
+			    padding:15px 20px;
+			    @include media($seed) {
+					display:block;
+					width: 106%;
 
+				}
 			}
   		}
   		h3{

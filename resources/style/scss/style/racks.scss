@@ -17,6 +17,7 @@ ul {
 					position:absolute;
 					z-index:10;
 					margin:10px;
+					text-transform:uppercase;
 					&.new {
 						top:0px;
 						left:0px;
@@ -24,6 +25,7 @@ ul {
 					&.name {
 						bottom:0px;
 						left:0px;
+						font-weight:bold;
 					}
 					&.price{
 						right:0px;
@@ -62,10 +64,13 @@ ul {
 .shoe-grid-wrapper{
 	position:relative;
 	top:70px;
+	padding:0px 10px;
 	h1{
 		padding:60px 0px;
 		text-transform:uppercase;
 		text-align:center;
+		font-style: italic;
+		font-weight:bold;
 	}
 }
 .category-shoe-grid-wrapper{
@@ -73,5 +78,5 @@ ul {
 	position:relative;
 	background:$white;
 	z-index:-1;
-	margin-bottom:140px;
+	margin-bottom:70px;
 }

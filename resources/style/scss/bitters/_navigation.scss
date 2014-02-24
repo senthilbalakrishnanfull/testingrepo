@@ -12,14 +12,21 @@ ul {
 			padding:8px 20px;
 			display:inline-block;
 			border-left:3px solid $black;
+			font-weight:bold;
 
 			&:first-child {
 			    border-left:0px;
 			}
 			a {
 				text-decoration:none;
+				font-weight:bold;
 			}
 		}
+	}
+	&.navigation-breadcrumb{
+		position:relative !important;
+		top:70px;
+		margin:50px 0px 0px;
 	}
 }
 

@@ -46,16 +46,11 @@ section {
 					}
 					&.main-nav{
 						code{
-							display:block;
+							display:inline-block;
 							margin:24px 0px 0px;
 						}
-						@-moz-document url-prefix() { 
-							a {
-								margin-top: -26px;
-							}
-						}
 						a {
-							margin-top: -26px;
+							top: 26px;
 							left: 50px;
 							position: absolute;
 
@@ -70,7 +65,7 @@ section {
 				a {
 					position: absolute;
 					right: 50px;
-					top: 28px;
+					top: 27px;
 
 					@include media($seed) {
 						display:none;
@@ -78,11 +73,11 @@ section {
 				}
 				span{
 					border:3px solid $black;
-					padding:3px 4px 0px;
+					padding:5px 4px 0px;
 					border-width: 0px 4px 4px;
 					position:absolute;
 					right:15px;
-					top:26px;
+					top:24px;
 					line-height:16px;
 
 					&.active{
@@ -110,6 +105,8 @@ article {
 		color:$white;
 		text-align:center;
 		padding:30px 0px;
+		top:70px;
+		position:relative;
 		
 			nav {
 				width:47%;
