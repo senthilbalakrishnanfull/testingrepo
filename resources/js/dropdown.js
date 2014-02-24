@@ -30,7 +30,7 @@ function enableSelectBoxes(){
 		});
 		
 		$(this).find('ul').find('li.selectOption').click(function(){
-			$(this).parent().parent().css('display','none');
+			//$(this).parent().parent().css('display','none');
 			$(this).closest('div.selectBox').attr('value',$(this).attr('value'));
 			$(this).closest('div.selectBox').find('span.selected').html($(this).html());
 			//$(this).parent().parent().siblings('span.selected').html($(this).html());
