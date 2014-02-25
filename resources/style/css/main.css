@@ -1349,13 +1349,13 @@ aside {
     border-bottom: 2px solid #333333;
     padding: 15px 0px;
     margin: 0px 15px; }
-    aside nav.active a {
-      color: white; }
     aside nav a {
       display: block;
       padding: 5px 0px 5px 25px;
       font-weight: bold;
       color: #333333; }
+      aside nav a.active {
+        color: white; }
 
 div.cart-holder {
   padding: 15px;
@@ -2010,7 +2010,7 @@ ul.img-rack {
     display: table;
     clear: both; }
   ul.img-rack li {
-    margin-bottom: 6px;
+    margin-bottom: 10px;
     margin-right: 10px; }
     ul.img-rack li a {
       width: 100%;

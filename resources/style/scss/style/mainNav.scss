@@ -169,17 +169,16 @@ aside{
 		border-bottom:2px solid #333333;
 		padding:15px 0px;
 		margin:0px 15px;
-		
-		&.active{
-			a{
-				color:$white;
-			}
-		}
+
 		a {
 			display:block;
 			padding:5px 0px 5px 25px;
 			font-weight:bold;
 			color:#333333;
+			
+			&.active{
+				color:$white;
+			}
 		}
 	}
 }
