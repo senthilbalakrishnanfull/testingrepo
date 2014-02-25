@@ -1,6 +1,6 @@
 aside{
-	//position:absolute;
-	position:fixed;
+	position:absolute;
+	//position:fixed;
 	z-index:1;
 	left:0px;
 	background:$black;
@@ -40,6 +40,7 @@ aside{
  			margin:0px;
  			font-style:italic;
  			text-transform:uppercase;
+ 			cursor:pointer;
  			code{
 	 			float:right;
 	 		}
@@ -58,7 +59,7 @@ aside{
  		ul{ 
  			list-style:none;
  			margin:0px;
- 			padding:10px 10px 80px;
+ 			padding:10px;
  			li{
  				position:relative;
  				padding-bottom:35px;
@@ -80,7 +81,7 @@ aside{
 		 			&.icon-icons-remove{
 		 				position: absolute;
 						right: -2px;
-						top: -2px;
+						top: -3px;
 						border: 3px solid black;
 						line-height: 20px;
 						color:$black;
@@ -98,7 +99,7 @@ aside{
 		right:-265px;
 		width:265px;
  		z-index:1;
- 		color:$white;
+ 		color:$gray-clr;
  		h4{
  			color:$white;
  			padding:22px 15px;
@@ -123,12 +124,18 @@ aside{
  			li{
  				margin:0px;
 		 		padding:15px 0px 15px 7px;
-		 		border:3px solid #333333;
+		 		border:3px solid $dark-gray-clr;
 		 		border-width:0px 0px 3px;
 		 		cursor:pointer;
 
-		 		&.disable{
- 					color:#333333;
+		 		&.active{
+ 					color:$white;
+ 					&:hover{
+ 						color:$white;
+ 					}
+ 				}
+ 				&:hover{
+ 					color:$red;
  				}
  			}
 
@@ -182,7 +189,7 @@ div{
 	padding:15px;
 	background-color:$black;
 	color:$white;
-	position:fixed;
+	//position:fixed;
 	z-index:1;
 	right:0px;
 	bottom:0px;

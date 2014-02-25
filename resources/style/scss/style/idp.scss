@@ -60,7 +60,7 @@ article {
 			}
 
 			.dropdown-holder {
-				@include span-columns(10);
+				@include span-columns(8);
 				@include omega(0);
 				margin:0px;
 
@@ -189,8 +189,15 @@ article {
 			position:fixed;
 			top:70px;
 			.dropdown-holder {
-				@include span-columns(10);
+				@include span-columns(12);
 				@include omega(0);
+				li {
+					&.category-dwn-list{
+						@include span-columns(4);
+						@include omega();
+						width:24.99999%;
+					}
+				}
 			}
 			button {
 				@include span-columns(2);
@@ -216,6 +223,10 @@ article {
 				left:-265px;
 				
 			}
+
+		}
+
+		.sorting{
 
 		}
 
