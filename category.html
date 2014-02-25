@@ -1,11 +1,13 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Solestruck</title>
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Solestruck</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width">
 
 	<link rel="stylesheet" type="text/css" href="resources/style/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="resources/style/css/fonts.css" />
@@ -21,7 +23,7 @@
 			<code class="icon icon-icons-search"></code>
 			<input type="text" placeholder="Search"/>
 			
-				<div class="scroller">
+				<div>
 					<nav class="active">
 						<a href="javascript:void(0)">Women</a>
 						<a href="javascript:void(0)">Men</a>
@@ -58,12 +60,12 @@
 
 		<aside class="rt-side">
 			<h4 class="active"><b>3</b> Items - Checkout now <code class="icon icon-icons-right"></code></h5>
-			<article class="scroller">
+			<article>
 				<ul>
-					<li>
+					<li id="cartItem_1">
 						<img src="http://commondatastorage.googleapis.com/images2.solestruck.com/yes-shoes/YES-shoes-Venus-(Green-Leather)-010804.jpg" />
+						<code class="icon icon-icons-remove cart-item-remove-act"></code>
 						<div class="cart-name-holder">
-							<code class="icon icon-icons-remove"></code>
 							<b>CATHRINE</b>
 							<small>JENNIFER CHOU</small>
 							<small>$100</small>
@@ -72,9 +74,9 @@
 						<h5 class="cart-size-act">US 7.5/23 CM <code class="icon icon-icons-right"></code></h5>
 					</li>
 					<li>
-						<img src="http://commondatastorage.googleapis.com/images2.solestruck.com/yes-shoes/YES-shoes-Venus-(Green-Leather)-010804.jpg" />
+						<img src="http://commondatastorage.googleapis.com/images2.solestruck.com/yes-shoes/YES-shoes-Revolver-(Yellow-Black)-010604.jpg" />
+						<code class="icon icon-icons-remove cart-item-remove-act"></code>
 						<div class="cart-name-holder">
-							<code class="icon icon-icons-remove"></code>
 							<b>CATHRINE</b>
 							<small>JENNIFER CHOU</small>
 							<small>$100</small>
@@ -83,9 +85,9 @@
 						<h5 class="cart-size-act">US 7.5/23 CM <code class="icon icon-icons-right"></code></h5>
 					</li>
 					<li>
-						<img src="http://commondatastorage.googleapis.com/images2.solestruck.com/yes-shoes/YES-shoes-Venus-(Green-Leather)-010804.jpg" />
+						<img src="http://commondatastorage.googleapis.com/images2.solestruck.com/yes-shoes/YES-shoes-Clipper-(Black)-010604.jpg" />
+						<code class="icon icon-icons-remove cart-item-remove-act"></code>
 						<div class="cart-name-holder">
-							<code class="icon icon-icons-remove"></code>
 							<b>CATHRINE</b>
 							<small>JENNIFER CHOU</small>
 							<small>$100</small>
@@ -104,11 +106,11 @@
 
 		<aside class="rt-side-cart rt-side-cart-color">
 			<h4>Select your Color... <code class="icon icon-icons-remove cart-color-close-act"></code></h4>
-			<article class="scroller">
+			<article>
 				<img src="http://commondatastorage.googleapis.com/images2.solestruck.com/yes-shoes/YES-shoes-Venus-(Green-Leather)-010804.jpg" />
 				<ul>
 					<li>Hologram</li>
-					<li>Neon Yellow</li>
+					<li class="active cart-color-select-act">Neon Yellow</li>
 					<li>Pink Metallic</li>
 					<li>Petrol</li>
 				</ul>
@@ -117,16 +119,16 @@
 
 		<aside class="rt-side-cart rt-side-cart-size">
 			<h4>Select your size... <code class="icon icon-icons-remove cart-size-close-act"></code></h4>
-			<article class="scroller">
+			<article>
 				<img src="http://commondatastorage.googleapis.com/images2.solestruck.com/yes-shoes/YES-shoes-Venus-(Green-Leather)-010804.jpg" />
 				<ul>
 					<li>US 7 (24CM)</li>
-					<li class="disable">US 7.5 (24CM) Out Of Stock</li>
+					<li class="active cart-size-select-act">US 7.5 (24CM) Out Of Stock</li>
 					<li>US 8 (24CM)</li>
-					<li class="disable">US 8.5 (24CM) Out Of Stock</li>
+					<li>US 8.5 (24CM) Out Of Stock</li>
 					<li>US 9 (24CM)</li>
-					<li class="disable">US 9.5 (24CM) Out Of Stock</li>
-					<li class="disable">US 10.5 (24CM) Out Of Stock</li>
+					<li>US 9.5 (24CM) Out Of Stock</li>
+					<li>US 10.5 (24CM) Out Of Stock</li>
 				</ul>
 			</article><!-- scroller -->
 		</aside><!-- rt-side-cart-size -->
@@ -147,98 +149,70 @@
 			<article class="fullsize">
 				<div class="sorting-wrapper push-none">
 					<ul class="dropdown-holder">
-						<li>
-							<div class="selectBox rm-rt-br">
+						<li class="category-dwn-list">
+							<div class="selectBox rm_rt_br">
 								<span class='selected'></span><code class='selectArrow'></code>
 								<div class="selectOptions dropdown_scroller">
 									<ul>
-										<li class="selectOption" value="Option 0">PLEASE COLOR</li>
-										<li class="selectOption" value="Option 1">BLACK</li>
-										<li class="selectOption" value="Option 2">WHITE</li>
-										<li class="selectOption" value="Option 3">BLUE</li>
-										<li class="selectOption" value="Option 4">RED</li>
-										<li class="selectOption" value="Option 5">GREEN</li>
+										<li class="selectOption" value="Option 0">Please Select</li>
+										<li class="selectOption" value="Option 1">Selected the first option one</li>
+										<li class="selectOption" value="Option 2">Option 2</li>
+										<li class="selectOption" value="Option 3">Option 3</li>
+										<li class="selectOption" value="Option 3">Option 4</li>
+										<li class="selectOption" value="Option 3">Option 5</li>
 									</ul>
 								</div>
 							</div>
 						</li>
-						<li>
-							<div class='selectBox rm-rt-br'>
+						<li class="category-dwn-list">
+							<div class='selectBox rm_rt_br'>
 							<span class='selected'></span>
 							<code class='selectArrow'></code>
 								<div class="selectOptions dropdown_scroller">
 									<ul>
-										<li class="selectOption" value="Option 0">PLEASE SIZE</li>
-										<li class="selectOption" value="Option 1">4</li>
-										<li class="selectOption" value="Option 2">4.5 (EG.CM)</li>
-										<li class="selectOption" value="Option 3">5</li>
-										<li class="selectOption" value="Option 4">5.5 (EG.CM)</li>
-										<li class="selectOption" value="Option 5">6</li>
-										<li class="selectOption" value="Option 6">6.5 (EG.CM)</li>
-										<li class="selectOption" value="Option 7">7</li>
-										<li class="selectOption" value="Option 8">7.5 (EG.CM)</li>
-										<li class="selectOption" value="Option 9">8</li>
-										<li class="selectOption" value="Option 10">8.5 (EG.CM)</li>
-										<li class="selectOption" value="Option 11">9</li>
-										<li class="selectOption" value="Option 12">9.5 (EG.CM)</li>
-										<li class="selectOption" value="Option 13">10</li>
-										<li class="selectOption" value="Option14">10.5 (EG.CM)</li>
+										<li class="selectOption" value="Option 0">Please Select</li>
+										<li class="selectOption" value="Option 1">Selected the first option one</li>
+										<li class="selectOption" value="Option 2">Option 2</li>
+										<li class="selectOption" value="Option 3">Option 3</li>
+										<li class="selectOption" value="Option 3">Option 4</li>
+										<li class="selectOption" value="Option 3">Option 5</li>
 									</ul>
 								</div>
 							</div>
 						</li>
-						<li>
+						<li class="category-dwn-list">
+							<div class='selectBox rm_rt_br'>
+								<span class='selected'></span>
+								<code class='selectArrow'></code>
+								<div class="selectOptions dropdown_scroller">
+									<ul>
+										<li class="selectOption" value="Option 0">Please Select</li>
+										<li class="selectOption" value="Option 1">Selected the first option one</li>
+										<li class="selectOption" value="Option 2">Option 2</li>
+										<li class="selectOption" value="Option 3">Option 3</li>
+										<li class="selectOption" value="Option 3">Option 4</li>
+										<li class="selectOption" value="Option 3">Option 5</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="category-dwn-list">
 							<div class='selectBox'>
 								<span class='selected'></span>
 								<code class='selectArrow'></code>
 								<div class="selectOptions dropdown_scroller">
-									<ul class="img-list">
-										<!-- Start Changes -->
-										<!-- Please make sure that these close when users click outside of it. -->
-										<li class="selectOption" value="Option 0">PLEASE QTY</li>
-										<li class="selectOption" value="Option 1">
-											<img src="resources/images/Pierre_Green.png" width="30px" />
-											 <b>Selected the first option one</b>
-										</li>
-										<li class="selectOption" value="Option 2">
-											<img src="resources/images/Pierre_Green.png" width="30px" />
-											<b>Option 2</b>
-										</li>
-										<li class="selectOption" value="Option 3">
-											<img src="resources/images/Pierre_Green.png" width="30px" />
-											<b>Option 3</b>
-										</li>
-										<!-- End Changes -->
-									</ul>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class='selectBox rm-rt-br'>
-							<span class='selected'></span>
-							<code class='selectArrow'></code>
-								<div class="selectOptions dropdown_scroller">
 									<ul>
-										<li class="selectOption" value="Option 0">PLEASE SIZE</li>
-										<li class="selectOption" value="Option 1">4</li>
-										<li class="selectOption" value="Option 2">4.5 (EG.CM)</li>
-										<li class="selectOption" value="Option 3">5</li>
-										<li class="selectOption" value="Option 4">5.5 (EG.CM)</li>
-										<li class="selectOption" value="Option 5">6</li>
-										<li class="selectOption" value="Option 6">6.5 (EG.CM)</li>
-										<li class="selectOption" value="Option 7">7</li>
-										<li class="selectOption" value="Option 8">7.5 (EG.CM)</li>
-										<li class="selectOption" value="Option 9">8</li>
-										<li class="selectOption" value="Option 10">8.5 (EG.CM)</li>
-										<li class="selectOption" value="Option 11">9</li>
-										<li class="selectOption" value="Option 12">9.5 (EG.CM)</li>
-										<li class="selectOption" value="Option 13">10</li>
-										<li class="selectOption" value="Option14">10.5 (EG.CM)</li>
+										<li class="selectOption" value="Option 0">Please Select</li>
+										<li class="selectOption" value="Option 1">Selected the first option one</li>
+										<li class="selectOption" value="Option 2">Option 2</li>
+										<li class="selectOption" value="Option 3">Option 3</li>
+										<li class="selectOption" value="Option 3">Option 4</li>
+										<li class="selectOption" value="Option 3">Option 5</li>
 									</ul>
 								</div>
 							</div>
 						</li>
-					</ul>
+					</ul><!-- dropdown-holder -->
 				</div><!-- sorting-wrapper -->
 			</article><!-- fullsize -->
 
