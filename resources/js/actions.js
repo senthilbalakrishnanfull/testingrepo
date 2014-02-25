@@ -116,7 +116,20 @@ $(document).ready(function() {
 		$('.rt-side-cart-size').removeClass( 'push-rt', 200, 'easeInOutQuad');
 	});
 
+	$('.left-menu-list a').click(function(){
+		$(this).siblings().removeClass('active');
+		$(this).addClass('active');
+		$('section').switchClass( 'push-rt', 'push-none', 200, 'easeInOutQuad');
+		$('header').switchClass( 'push-rt', 'push-none', 200, 'easeInOutQuad');
+		$('.sorting-wrapper').switchClass( 'push-rt', 'push-none', 200, 'easeInOutQuad');
+	});
 
+	$('.checkout-act').click(function(){
+		$('section').switchClass( 'push-lt', 'push-none', 200, 'easeInOutQuad');
+		$('header').switchClass( 'push-lt', 'push-none', 200, 'easeInOutQuad');
+		$('.sorting-wrapper').switchClass( 'push-lt', 'push-none', 200, 'easeInOutQuad');
+	});
+	
 
 
 	$('.info').click(function(){
