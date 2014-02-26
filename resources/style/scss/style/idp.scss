@@ -60,13 +60,17 @@ article {
 			}
 
 			.dropdown-holder {
-				@include span-columns(8);
-				@include omega(0);
+				@include span-columns(10);
+				@include omega(n);
 				margin:0px;
+
+				>li{
+					@include span-columns(6);
+					@include omega(n);
+				}
 
 				@include media($twig) {
 					height:78px;
-
 				}
 			}
 			button {
