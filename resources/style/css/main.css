@@ -1846,6 +1846,8 @@ article.idp-review {
         @media screen and (min-width: 480px) and (max-width: 640px) {
           article.idp-review ul div.idp-review-content {
             width: 280px; } }
+        article.idp-review ul div.idp-review-content code {
+          cursor: auto !important; }
       article.idp-review ul div.rating-mob {
         display: none; }
         @media screen and (min-width: 320px) and (max-width: 480px) {

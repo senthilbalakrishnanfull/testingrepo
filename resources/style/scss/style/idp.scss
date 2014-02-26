@@ -335,6 +335,9 @@ article {
 					@include media($small-tab) {
 						width:280px;
 					}
+					code{
+						cursor:auto !important;
+					}
   				}
   			&.rating-mob{
 				display:none;
