@@ -14,8 +14,12 @@ $(document).ready(function() {
 
 			$('.info-description, .social-links').height($('.img-idp-holder').height());
 				$('.desc-wrapper').height($('.img-idp-holder').height()-50);
+				$('.img-rack li a').height($('.img-rack li').height());
 
 	});
+
+	$('.img-rack li a').height($('.img-rack li').height());
+
 	 // left side menu navigation code start 
 	$('.main-nav a, .main-nav code').click(function(){
 		$('.rt-side').hide();
@@ -116,7 +120,7 @@ $(document).ready(function() {
 		$('.rt-side-cart-size').removeClass( 'push-rt', 200, 'easeInOutQuad');
 	});
 
-	$('.left-menu-list a').click(function(){
+	$('.lt-side nav a').click(function(){
 		$(this).siblings().removeClass('active');
 		$(this).addClass('active');
 		$('section').switchClass( 'push-rt', 'push-none', 200, 'easeInOutQuad');
