@@ -2,7 +2,7 @@ aside{
 	position:absolute;
 	//position:fixed;
 	z-index:1;
-	left:0px;
+	left:-265px;
 	background:$black;
 	width:265px;
 	height:100%;
@@ -12,10 +12,19 @@ aside{
 		height:100%;
 		padding-bottom:50px;
 	}
+	&.lt-side{
+		&.open-menu{
+			left:0px
+		}
+	}
 
  	&.rt-side {
+ 		&.open-menu{
+			right:0px
+		}
+
 		left:inherit;
-		right:0px;
+		right:-265px;
 		width:265px;
  		z-index:1;
  		color:$white;
@@ -155,13 +164,13 @@ aside{
  			color:#646464;
  		}
  		
- 		input{
+ 		input[type="text"]{
  			margin:0px;
  			color:$white;
  			border:0px;
  			width:265px;
  			background-color:#262626;
- 			padding:25px 0px 25px 40px;
+ 			padding:25px 25px 25px 40px;
  			text-transform:uppercase;
 
  			&:focus{

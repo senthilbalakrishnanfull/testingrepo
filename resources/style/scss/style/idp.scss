@@ -64,14 +64,19 @@ article {
 				@include omega(n);
 				margin:0px;
 
+				@include media($twig) {
+					
+					height:75px;
+				}
+
 				>li{
 					@include span-columns(6);
 					@include omega(n);
+
+					
 				}
 
-				@include media($twig) {
-					height:78px;
-				}
+				
 			}
 			button {
 				@include span-columns(2);
@@ -85,6 +90,34 @@ article {
 				}
 			}
 
+		}
+		.shoe-shot-wrapper{
+			position: absolute;
+		    right: 20px;
+		    top: 150px;
+		    width: 310px;
+		    z-index:1;
+		    display:none;
+
+		    @include media($twig) {
+		  		display:block;
+		  	}
+
+		    ul{
+		    	list-style:none;
+		    	padding:0px;
+		    	margin:0px;
+		    	>li{
+		    		cursor:pointer;
+		    		border:3px solid $black;
+		    		margin:5px 0px 0px 5px;
+		    		float:left;
+		    		width:150px;
+		    		img{
+		    			margin-bottom:-5px;
+		    		}
+		    	}
+		    }
 		}
 
 

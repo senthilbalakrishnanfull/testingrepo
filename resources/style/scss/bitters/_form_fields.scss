@@ -88,7 +88,7 @@ p {
 .dropdown-holder {
 	margin: 0;
 	padding: 0;
-	background:$white;
+	//background:$white;
 	list-style-type: none;
 	>li {
 		@include media($twig) {
@@ -121,6 +121,12 @@ div.selectBox {
   border: 3px solid $black;
   border-width:3px 3px 3px 3px;
   width:100%;
+  @include media($leaf) {
+  		background-color:$white;
+  	}
+  	@include media($seed) {
+  		background-color:$white;
+  	}
   &.rm_rt_br {
   	@include media($twig) {
   		border-width:3px 0px 3px 3px;
@@ -136,8 +142,8 @@ div.selectBox {
     width: 90%;
     border-right: none;
     overflow: hidden;
-    padding: 18px 0px 21px 20px;
-    height: 72px;
+    padding: 20px 0px 21px 20px;
+    height: 70px;
     position: relative;
     float: left;
     z-index: 1;

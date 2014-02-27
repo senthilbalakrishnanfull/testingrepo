@@ -258,7 +258,6 @@ p.error-text {
 .dropdown-holder {
   margin: 0;
   padding: 0;
-  background: white;
   list-style-type: none; }
   @media screen and (min-width: 1024px) {
     .dropdown-holder > li {
@@ -305,6 +304,12 @@ div.selectBox {
   border: 3px solid black;
   border-width: 3px 3px 3px 3px;
   width: 100%; }
+  @media screen and (min-width: 480px) and (max-width: 1024px) {
+    div.selectBox {
+      background-color: white; } }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    div.selectBox {
+      background-color: white; } }
   @media screen and (min-width: 1024px) {
     div.selectBox.rm_rt_br {
       border-width: 3px 0px 3px 3px; } }
@@ -318,8 +323,8 @@ div.selectBox {
     width: 90%;
     border-right: none;
     overflow: hidden;
-    padding: 18px 0px 21px 20px;
-    height: 72px;
+    padding: 20px 0px 21px 20px;
+    height: 70px;
     position: relative;
     float: left;
     z-index: 1;
@@ -1225,7 +1230,7 @@ section article.header-subnav {
 aside {
   position: absolute;
   z-index: 1;
-  left: 0px;
+  left: -265px;
   background: black;
   width: 265px;
   height: 100%;
@@ -1233,12 +1238,16 @@ aside {
   aside .scroller {
     height: 100%;
     padding-bottom: 50px; }
+  aside.lt-side.open-menu {
+    left: 0px; }
   aside.rt-side {
     left: inherit;
-    right: 0px;
+    right: -265px;
     width: 265px;
     z-index: 1;
     color: white; }
+    aside.rt-side.open-menu {
+      right: 0px; }
     aside.rt-side h3 {
       background-color: #f2646d;
       color: white;
@@ -1337,15 +1346,15 @@ aside {
     margin: 25px 8px 0px;
     font-size: 20px;
     color: #646464; }
-  aside.lt-side input {
+  aside.lt-side input[type="text"] {
     margin: 0px;
     color: white;
     border: 0px;
     width: 265px;
     background-color: #262626;
-    padding: 25px 0px 25px 40px;
+    padding: 25px 25px 25px 40px;
     text-transform: uppercase; }
-    aside.lt-side input:focus {
+    aside.lt-side input[type="text"]:focus {
       outline: 0; }
   aside nav {
     margin: 15px; }
@@ -1629,6 +1638,9 @@ article.img-idp-holder .idp-sorting-wrapper {
       margin-right: 0; }
     article.img-idp-holder .idp-sorting-wrapper .dropdown-holder:nth-child(n) {
       margin-right: 0; }
+    @media screen and (min-width: 1024px) {
+      article.img-idp-holder .idp-sorting-wrapper .dropdown-holder {
+        height: 75px; } }
     article.img-idp-holder .idp-sorting-wrapper .dropdown-holder > li {
       display: block;
       float: left;
@@ -1638,9 +1650,6 @@ article.img-idp-holder .idp-sorting-wrapper {
         margin-right: 0; }
       article.img-idp-holder .idp-sorting-wrapper .dropdown-holder > li:nth-child(n) {
         margin-right: 0; }
-    @media screen and (min-width: 1024px) {
-      article.img-idp-holder .idp-sorting-wrapper .dropdown-holder {
-        height: 78px; } }
   article.img-idp-holder .idp-sorting-wrapper button {
     display: block;
     float: left;
@@ -1655,6 +1664,28 @@ article.img-idp-holder .idp-sorting-wrapper {
       clear: left; }
   article.img-idp-holder .idp-sorting-wrapper div.mCSB_container {
     z-index: 9 !important; }
+article.img-idp-holder .shoe-shot-wrapper {
+  position: absolute;
+  right: 20px;
+  top: 150px;
+  width: 310px;
+  z-index: 1;
+  display: none; }
+  @media screen and (min-width: 1024px) {
+    article.img-idp-holder .shoe-shot-wrapper {
+      display: block; } }
+  article.img-idp-holder .shoe-shot-wrapper ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
+    article.img-idp-holder .shoe-shot-wrapper ul > li {
+      cursor: pointer;
+      border: 3px solid black;
+      margin: 5px 0px 0px 5px;
+      float: left;
+      width: 150px; }
+      article.img-idp-holder .shoe-shot-wrapper ul > li img {
+        margin-bottom: -5px; }
 article.fullsize .img-idp {
   position: relative;
   text-transform: uppercase; }
