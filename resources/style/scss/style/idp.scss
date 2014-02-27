@@ -72,11 +72,7 @@ article {
 				>li{
 					@include span-columns(6);
 					@include omega(n);
-
-					
-				}
-
-				
+				}	
 			}
 			button {
 				@include span-columns(2);
